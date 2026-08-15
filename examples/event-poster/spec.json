@@ -1,0 +1,58 @@
+{
+  "$comment": "event-poster: NIGHT OF SOUND — V0.2（粒子 / 3D 倾斜 / 滚动显现）",
+  "canvas": { "width": 1200, "height": 1600, "unit": "px", "responsive": true },
+  "content": {
+    "title": "NIGHT OF SOUND",
+    "subtitle": "AN IMMERSIVE AUDIO EXPERIENCE",
+    "date": "23 AUG 2026",
+    "location": "SINGAPORE · MARINA BAY",
+    "cta": "GET TICKETS",
+    "metadata": {
+      "brand": "NOS//26",
+      "tag": "INTERACTIVE POSTER",
+      "lineup": "DJ KAI · NOVA · STATIC",
+      "time": "DOORS 20:00",
+      "note": "CLICK THE DATE FOR DETAILS · SCROLL FOR MORE",
+      "moreHeading": "ABOUT THE NIGHT"
+    }
+  },
+  "style": {
+    "colors": {
+      "bg": "#0a0a12",
+      "surface": "#15152a",
+      "ink": "#f4f2ff",
+      "accent": "#00e5ff",
+      "accent2": "#ff2bd6",
+      "muted": "#8a87a8"
+    },
+    "typography": {
+      "fontFamily": "'Arial Black', 'Helvetica Neue', Arial, sans-serif",
+      "bodyFont": "'Helvetica Neue', Arial, sans-serif",
+      "scaleRatio": 1.25,
+      "baseSize": 16
+    },
+    "layout": {
+      "gridColumns": 12,
+      "gutter": 24,
+      "margin": 64,
+      "layers": ["background", "grid", "particles", "glow", "content", "details"]
+    },
+    "imagery": { "background": "gradient + noise", "duotone": true }
+  },
+  "animation": {
+    "title": { "reveal": "chars", "stagger": 0.06, "float": true },
+    "glow": { "pulse": true },
+    "meta": { "fadeUp": 0.65 },
+    "particles": { "count": 36, "color": "#00e5ff", "speed": 1 },
+    "scroll": { "reveal": true }
+  },
+  "interactions": {
+    "background": { "type": "parallax", "depth": 0.18 },
+    "glow": { "type": "cursorLight", "blend": "screen" },
+    "title": { "type": "hover", "effect": "distortion" },
+    "date": { "type": "click", "action": "expand" },
+    "cta": { "type": "hover", "effect": "magnetic" },
+    "poster": { "type": "tilt3d", "max": 6 }
+  },
+  "assets": []
+}

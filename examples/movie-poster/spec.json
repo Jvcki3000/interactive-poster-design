@@ -1,0 +1,79 @@
+{
+  "$comment": "movie-poster: Interactive Movie Poster（DUNE 风格）— 点击人物/日期/星球弹不同内容",
+  "canvas": { "width": 1080, "height": 1620, "unit": "px", "responsive": true },
+  "content": {
+    "title": "DUNE",
+    "subtitle": "PART THREE",
+    "date": "2026.12.18",
+    "location": "IN THEATERS · IMAX",
+    "metadata": {
+      "brand": "LEGENDARY",
+      "tag": "INTERACTIVE POSTER",
+      "note": "CLICK CHARACTER · DATE · PLANET TO EXPLORE"
+    },
+    "hotspots": [
+      {
+        "x": 50, "y": 42, "r": 15,
+        "label": "PAUL ATREIDES",
+        "meta": "CHARACTER PROFILE",
+        "detail": "The heir of House Atreides. Chosen or cursed — the desert will decide.",
+        "sections": [
+          { "heading": "House", "text": "House Atreides · Caladan" },
+          { "heading": "Role", "text": "Duke · Kwisatz Haderach" },
+          { "heading": "Quote", "text": "\"The mystery of life isn't a problem to solve, but a reality to experience.\"" }
+        ]
+      },
+      {
+        "x": 50, "y": 90, "r": 11,
+        "label": "2026.12.18",
+        "meta": "RELEASE DATE",
+        "detail": "In theaters December 18, 2026.",
+        "sections": [
+          { "heading": "Trailer", "text": "Watch the official trailer — arrive on Arrakis in 2:37." },
+          { "heading": "Synopsis", "text": "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family." },
+          { "heading": "Cast", "text": "Timothée Chalamet · Zendaya · Rebecca Ferguson · Javier Bardem · Austin Butler" }
+        ]
+      },
+      {
+        "x": 76, "y": 26, "r": 9,
+        "label": "ARRAKIS",
+        "meta": "THE PLANET",
+        "detail": "The desert planet. Sand, spice, and the worms beneath.",
+        "sections": [
+          { "heading": "Spice", "text": "The most valuable substance in the universe." },
+          { "heading": "Shai-Hulud", "text": "The sandworms — guardians of the deep desert." }
+        ]
+      }
+    ]
+  },
+  "style": {
+    "colors": {
+      "bg": "#0c0a07",
+      "surface": "#181310",
+      "ink": "#ece3d3",
+      "accent": "#c9a227",
+      "accent2": "#8a6f3d",
+      "muted": "#9b8f7a"
+    },
+    "typography": {
+      "fontFamily": "'Playfair Display', Georgia, 'Times New Roman', serif",
+      "bodyFont": "'Helvetica Neue', Arial, sans-serif",
+      "scaleRatio": 1.28,
+      "titleScale": 3.0
+    },
+    "layout": { "gridColumns": 12, "gutter": 24, "margin": 56, "mode": "hero" },
+    "imagery": {
+      "image": { "src": "../../assets/reference/ref.jpg", "fit": "cover", "duotone": true, "scrim": true, "zoom": true }
+    }
+  },
+  "animation": {
+    "title": { "reveal": "chars", "stagger": 0.08 },
+    "scroll": { "reveal": true }
+  },
+  "interactions": {
+    "background": { "type": "parallax", "depth": 0.1 },
+    "glow": { "type": "cursorLight", "blend": "screen" },
+    "title": { "type": "hover", "effect": "distort" }
+  },
+  "assets": []
+}

@@ -1,0 +1,5814 @@
+{
+ "version": "1.0.0",
+ "description": "预置 Design DNA 库",
+ "defaults": {
+  "composition": {
+   "structure": "asymmetric",
+   "orientation": "portrait",
+   "focal_point": "upper_left",
+   "visual_axis": "diagonal",
+   "balance": "dynamic",
+   "symmetry": 0.2,
+   "edge_tension": 0.7,
+   "cropping": "moderate",
+   "layering": "shallow",
+   "overlap": 0.3,
+   "alignment": [
+    "left_edge"
+   ]
+  },
+  "grid": {
+   "type": "12_column",
+   "columns": 12,
+   "rows": 8,
+   "gutter": "medium",
+   "margin": "tight",
+   "baseline_grid": true,
+   "alignment_mode": "mixed",
+   "grid_visibility": 0,
+   "break_grid": 0.4
+  },
+  "visual_hierarchy": {
+   "primary": "title",
+   "secondary": "date",
+   "tertiary": "graphic",
+   "reading_direction": "top_to_bottom",
+   "hierarchy_strength": 0.8,
+   "scale_contrast": 0.75,
+   "weight_contrast": 0.6
+  },
+  "typography": {
+   "category": "neo_grotesk",
+   "width": "condensed",
+   "weight": "bold",
+   "contrast": "low",
+   "case": "uppercase",
+   "tracking": "tight",
+   "leading": "tight",
+   "scale": "large",
+   "alignment": "left",
+   "orientation": "horizontal",
+   "distortion": 0.1,
+   "cropping": 0.2,
+   "layering": "isolated",
+   "variable_font": false
+  },
+  "color": {
+   "strategy": "black_and_accent",
+   "temperature": "neutral",
+   "saturation": 0.4,
+   "contrast": 0.85,
+   "brightness": 0.4,
+   "dominant_ratio": 0.8,
+   "accent_ratio": 0.08,
+   "accent_count": 1,
+   "gradient": false,
+   "palette": [
+    "#111111",
+    "#E8E5DC",
+    "#FF3B30"
+   ],
+   "ai_aesthetic_risk": 0.1
+  },
+  "imagery": {
+   "source": "typography_only",
+   "subject": "",
+   "scale": "medium",
+   "crop": "moderate",
+   "position": "center",
+   "treatment": "raw",
+   "contrast": "medium",
+   "depth": "flat",
+   "focus": "sharp",
+   "color_treatment": "monochrome",
+   "image_density": 0.2
+  },
+  "graphic_language": {
+   "elements": [
+    "line",
+    "number"
+   ],
+   "shape_language": "geometric",
+   "line_weight": "medium",
+   "corner_style": "sharp",
+   "repetition": 0.3,
+   "pattern": "none",
+   "symbolism": "functional"
+  },
+  "texture": {
+   "presence": 0.1,
+   "type": [
+    "paper"
+   ],
+   "scale": "fine",
+   "contrast": 0.2,
+   "uniformity": 0.9
+  },
+  "depth": {
+   "mode": "flat",
+   "layers": 2,
+   "perspective": 0,
+   "parallax": 0,
+   "blur_depth": 0,
+   "foreground_ratio": 0.3
+  },
+  "motion": {
+   "enabled": false,
+   "style": "static",
+   "intensity": 0,
+   "speed": "medium",
+   "direction": "none",
+   "loop": false,
+   "easing": "ease_in_out",
+   "elements": []
+  },
+  "interaction": {
+   "enabled": true,
+   "primary": "hover",
+   "secondary": [
+    "click"
+   ],
+   "intensity": 0.3,
+   "responsiveness": 0.7,
+   "discoverability": 0.6
+  },
+  "density": {
+   "overall": 0.4,
+   "text": 0.4,
+   "image": 0.1,
+   "graphic": 0.3,
+   "information": 0.4
+  },
+  "negative_space": {
+   "amount": 0.6,
+   "distribution": "asymmetric",
+   "location": "upper_left",
+   "tension": 0.4
+  },
+  "materiality": {
+   "medium": "digital",
+   "physicality": 0.2,
+   "imperfection": 0.1,
+   "surface": "matte",
+   "printing_process": "none"
+  },
+  "branding": {
+   "logo_prominence": 0.3,
+   "brand_color_strictness": 0.6,
+   "system_consistency": 0.7
+  },
+  "design_tension": {
+   "order_vs_chaos": 0.4,
+   "precision_vs_imperfection": 0.3,
+   "minimalism_vs_density": 0.3,
+   "static_vs_dynamic": 0.3,
+   "legibility_vs_expression": 0.5,
+   "digital_vs_physical": 0.2
+  },
+  "constraints": {
+   "avoid": [
+    "gradient"
+   ],
+   "must_include": [
+    "title"
+   ],
+   "max_gradients": 0,
+   "max_accent_colors": 2,
+   "max_interaction_layers": 2
+  }
+ },
+ "presets": [
+  {
+   "key": "swiss-international",
+   "name": "Swiss International 瑞士国际主义",
+   "description": "网格驱动、无衬线、红/黑点缀、克制的秩序感",
+   "tags": [
+    "swiss",
+    "grid",
+    "minimal",
+    "editorial"
+   ],
+   "dna": {
+    "design_movements": [
+     "swiss_international"
+    ],
+    "composition": {
+     "structure": "modular",
+     "focal_point": "upper_left",
+     "visual_axis": "horizontal",
+     "balance": "stable",
+     "symmetry": 0.7,
+     "edge_tension": 0.3,
+     "cropping": "subtle",
+     "layering": "flat",
+     "overlap": 0.05,
+     "alignment": [
+      "left_edge",
+      "baseline"
+     ]
+    },
+    "grid": {
+     "type": "12_column",
+     "gutter": "medium",
+     "margin": "medium",
+     "alignment_mode": "strict",
+     "grid_visibility": 0.15,
+     "break_grid": 0.1
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "date",
+     "tertiary": "metadata",
+     "reading_direction": "left_to_right",
+     "hierarchy_strength": 0.9,
+     "scale_contrast": 0.8
+    },
+    "typography": {
+     "category": "neo_grotesk",
+     "width": "condensed",
+     "weight": "bold",
+     "case": "uppercase",
+     "tracking": "tight",
+     "leading": "tight",
+     "scale": "large",
+     "alignment": "left",
+     "distortion": 0,
+     "cropping": 0.05,
+     "layering": "isolated"
+    },
+    "color": {
+     "strategy": "black_and_accent",
+     "temperature": "neutral",
+     "saturation": 0.2,
+     "contrast": 0.95,
+     "brightness": 0.35,
+     "dominant_ratio": 0.85,
+     "accent_ratio": 0.06,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#111111",
+      "#F4F1EA",
+      "#E63329"
+     ],
+     "ai_aesthetic_risk": 0.05
+    },
+    "imagery": {
+     "source": "typography_only",
+     "treatment": "raw",
+     "color_treatment": "monochrome"
+    },
+    "graphic_language": {
+     "elements": [
+      "line",
+      "grid",
+      "number"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "medium",
+     "corner_style": "sharp",
+     "repetition": 0.6,
+     "pattern": "linear",
+     "symbolism": "functional"
+    },
+    "texture": {
+     "presence": 0.05,
+     "type": [
+      "paper"
+     ],
+     "scale": "fine",
+     "uniformity": 0.95
+    },
+    "depth": {
+     "mode": "flat",
+     "layers": 1,
+     "perspective": 0,
+     "parallax": 0
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": false,
+     "primary": "none",
+     "intensity": 0
+    },
+    "density": {
+     "overall": 0.35,
+     "text": 0.45,
+     "graphic": 0.2
+    },
+    "negative_space": {
+     "amount": 0.65,
+     "distribution": "uniform",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "printed",
+     "physicality": 0.4,
+     "imperfection": 0.1,
+     "surface": "matte",
+     "printing_process": "offset"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.15,
+     "minimalism_vs_density": 0.3,
+     "static_vs_dynamic": 0.15,
+     "legibility_vs_expression": 0.8
+    }
+   }
+  },
+  {
+   "key": "japanese-experimental",
+   "name": "Japanese Experimental 日式实验",
+   "description": "非对称、错位网格、有机形状、高密度信息拼贴",
+   "tags": [
+    "japan",
+    "experimental",
+    "asymmetric",
+    "dense"
+   ],
+   "dna": {
+    "design_movements": [
+     "japanese_experimental"
+    ],
+    "composition": {
+     "structure": "broken_grid",
+     "focal_point": "upper_right",
+     "visual_axis": "diagonal",
+     "balance": "tense",
+     "symmetry": 0.1,
+     "edge_tension": 0.9,
+     "cropping": "aggressive",
+     "layering": "deep",
+     "overlap": 0.7,
+     "alignment": [
+      "right_edge",
+      "baseline"
+     ]
+    },
+    "grid": {
+     "type": "broken",
+     "columns": 8,
+     "alignment_mode": "free",
+     "grid_visibility": 0,
+     "break_grid": 0.9
+    },
+    "visual_hierarchy": {
+     "primary": "graphic",
+     "secondary": "title",
+     "tertiary": "metadata",
+     "reading_direction": "diagonal",
+     "hierarchy_strength": 0.7,
+     "scale_contrast": 0.9
+    },
+    "typography": {
+     "category": "mixed",
+     "width": "normal",
+     "weight": "variable",
+     "contrast": "high",
+     "case": "mixed",
+     "tracking": "loose",
+     "leading": "normal",
+     "scale": "oversized",
+     "alignment": "mixed",
+     "orientation": "mixed",
+     "distortion": 0.5,
+     "cropping": 0.7,
+     "layering": "overlap",
+     "variable_font": true
+    },
+    "color": {
+     "strategy": "complementary",
+     "temperature": "cool",
+     "saturation": 0.6,
+     "contrast": 0.8,
+     "brightness": 0.45,
+     "dominant_ratio": 0.6,
+     "accent_ratio": 0.12,
+     "accent_count": 2,
+     "gradient": false,
+     "palette": [
+      "#101018",
+      "#E6E1D8",
+      "#D94F5A",
+      "#2E6BD6"
+     ],
+     "ai_aesthetic_risk": 0.15
+    },
+    "imagery": {
+     "source": "collage",
+     "treatment": "cutout",
+     "color_treatment": "duotone",
+     "image_density": 0.6
+    },
+    "graphic_language": {
+     "elements": [
+      "line",
+      "circle",
+      "cross",
+      "number",
+      "symbol"
+     ],
+     "shape_language": "irregular",
+     "line_weight": "variable",
+     "corner_style": "mixed",
+     "repetition": 0.5,
+     "pattern": "random",
+     "symbolism": "ambiguous"
+    },
+    "texture": {
+     "presence": 0.35,
+     "type": [
+      "paper_grain",
+      "noise"
+     ],
+     "scale": "medium",
+     "contrast": 0.5,
+     "uniformity": 0.3
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 5,
+     "perspective": 0.3,
+     "parallax": 0.3,
+     "blur_depth": 0.4,
+     "foreground_ratio": 0.5
+    },
+    "motion": {
+     "enabled": true,
+     "style": "kinetic",
+     "intensity": 0.5,
+     "speed": "fast",
+     "direction": "multi_axis"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "secondary": [
+      "click"
+     ],
+     "intensity": 0.5,
+     "discoverability": 0.7
+    },
+    "density": {
+     "overall": 0.85,
+     "text": 0.8,
+     "image": 0.6,
+     "graphic": 0.8,
+     "information": 0.8
+    },
+    "negative_space": {
+     "amount": 0.15,
+     "distribution": "fragmented",
+     "location": "multiple"
+    },
+    "materiality": {
+     "medium": "mixed_media",
+     "physicality": 0.6,
+     "imperfection": 0.5,
+     "surface": "rough",
+     "printing_process": "screen_print"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.8,
+     "precision_vs_imperfection": 0.6,
+     "minimalism_vs_density": 0.9,
+     "static_vs_dynamic": 0.7,
+     "legibility_vs_expression": 0.4,
+     "digital_vs_physical": 0.5
+    }
+   }
+  },
+  {
+   "key": "brutalist-editorial",
+   "name": "Brutalist Editorial 粗野编辑",
+   "description": "超大无衬线、生硬网格、未修饰素材、粗糙边缘",
+   "tags": [
+    "brutalist",
+    "bold",
+    "harsh",
+    "editorial"
+   ],
+   "dna": {
+    "design_movements": [
+     "brutalist"
+    ],
+    "composition": {
+     "structure": "broken_grid",
+     "focal_point": "center",
+     "visual_axis": "vertical",
+     "balance": "unstable",
+     "symmetry": 0.05,
+     "edge_tension": 0.85,
+     "cropping": "aggressive",
+     "layering": "medium",
+     "overlap": 0.5,
+     "alignment": [
+      "left_edge",
+      "right_edge"
+     ]
+    },
+    "grid": {
+     "type": "6_column",
+     "columns": 6,
+     "alignment_mode": "mixed",
+     "grid_visibility": 0.3,
+     "break_grid": 0.75
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "image",
+     "tertiary": "date",
+     "reading_direction": "top_to_bottom",
+     "hierarchy_strength": 0.95,
+     "scale_contrast": 1
+    },
+    "typography": {
+     "category": "grotesk",
+     "width": "ultra_condensed",
+     "weight": "black",
+     "contrast": "low",
+     "case": "uppercase",
+     "tracking": "very_tight",
+     "leading": "tight",
+     "scale": "extreme",
+     "alignment": "left",
+     "distortion": 0.3,
+     "cropping": 0.8,
+     "layering": "stacked"
+    },
+    "color": {
+     "strategy": "high_contrast",
+     "temperature": "neutral",
+     "saturation": 0.3,
+     "contrast": 1,
+     "brightness": 0.3,
+     "dominant_ratio": 0.8,
+     "accent_ratio": 0.1,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#0B0B0B",
+      "#F0EDE6",
+      "#D7263D"
+     ],
+     "ai_aesthetic_risk": 0.08
+    },
+    "imagery": {
+     "source": "photography",
+     "treatment": "threshold",
+     "color_treatment": "monochrome",
+     "contrast": "extreme",
+     "image_density": 0.5
+    },
+    "graphic_language": {
+     "elements": [
+      "rectangle",
+      "line",
+      "number"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "bold",
+     "corner_style": "sharp",
+     "repetition": 0.7,
+     "pattern": "linear",
+     "symbolism": "semantic"
+    },
+    "texture": {
+     "presence": 0.4,
+     "type": [
+      "paper_grain",
+      "ink_bleed"
+     ],
+     "scale": "coarse",
+     "contrast": 0.6,
+     "uniformity": 0.2
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 3,
+     "perspective": 0.1,
+     "parallax": 0.1
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "click",
+     "secondary": [
+      "hover"
+     ],
+     "intensity": 0.4
+    },
+    "density": {
+     "overall": 0.7,
+     "text": 0.7,
+     "image": 0.5,
+     "graphic": 0.5,
+     "information": 0.7
+    },
+    "negative_space": {
+     "amount": 0.2,
+     "distribution": "compressed",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "offset",
+     "physicality": 0.5,
+     "imperfection": 0.7,
+     "surface": "rough",
+     "printing_process": "offset"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.8,
+     "precision_vs_imperfection": 0.8,
+     "minimalism_vs_density": 0.7,
+     "static_vs_dynamic": 0.4,
+     "legibility_vs_expression": 0.3,
+     "digital_vs_physical": 0.6
+    }
+   }
+  },
+  {
+   "key": "luxury-fashion",
+   "name": "Luxury Fashion 奢侈时尚",
+   "description": "大留白、衬线、克制配色、摄影大片、精致细节",
+   "tags": [
+    "luxury",
+    "fashion",
+    "serif",
+    "minimal",
+    "elegant"
+   ],
+   "dna": {
+    "design_movements": [
+     "luxury_editorial"
+    ],
+    "composition": {
+     "structure": "centered",
+     "focal_point": "center",
+     "visual_axis": "vertical",
+     "balance": "stable",
+     "symmetry": 0.8,
+     "edge_tension": 0.2,
+     "cropping": "subtle",
+     "layering": "shallow",
+     "overlap": 0.1,
+     "alignment": [
+      "center_axis"
+     ]
+    },
+    "grid": {
+     "type": "modular",
+     "columns": 6,
+     "gutter": "large",
+     "margin": "large",
+     "alignment_mode": "strict",
+     "grid_visibility": 0,
+     "break_grid": 0.05
+    },
+    "visual_hierarchy": {
+     "primary": "image",
+     "secondary": "title",
+     "tertiary": "date",
+     "reading_direction": "top_to_bottom",
+     "hierarchy_strength": 0.7,
+     "scale_contrast": 0.5,
+     "weight_contrast": 0.5
+    },
+    "typography": {
+     "category": "serif",
+     "width": "normal",
+     "weight": "light",
+     "contrast": "high",
+     "case": "title_case",
+     "tracking": "loose",
+     "leading": "loose",
+     "scale": "medium",
+     "alignment": "center",
+     "distortion": 0,
+     "cropping": 0.05,
+     "layering": "isolated"
+    },
+    "color": {
+     "strategy": "neutral",
+     "temperature": "neutral",
+     "saturation": 0.1,
+     "contrast": 0.75,
+     "brightness": 0.5,
+     "dominant_ratio": 0.9,
+     "accent_ratio": 0.05,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#111111",
+      "#EDEAE2",
+      "#A08C5A"
+     ],
+     "ai_aesthetic_risk": 0.02
+    },
+    "imagery": {
+     "source": "photography",
+     "scale": "hero",
+     "treatment": "raw",
+     "color_treatment": "full_color",
+     "focus": "soft",
+     "image_density": 0.7
+    },
+    "graphic_language": {
+     "elements": [
+      "line",
+      "frame"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.1,
+     "pattern": "none",
+     "symbolism": "semantic"
+    },
+    "texture": {
+     "presence": 0.1,
+     "type": [
+      "paper"
+     ],
+     "scale": "fine",
+     "uniformity": 0.95
+    },
+    "depth": {
+     "mode": "photographic",
+     "layers": 3,
+     "perspective": 0.2,
+     "parallax": 0.2,
+     "blur_depth": 0.3,
+     "foreground_ratio": 0.4
+    },
+    "motion": {
+     "enabled": true,
+     "style": "subtle",
+     "intensity": 0.2,
+     "speed": "slow",
+     "direction": "vertical"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "secondary": [
+      "scroll"
+     ],
+     "intensity": 0.2,
+     "discoverability": 0.4
+    },
+    "density": {
+     "overall": 0.15,
+     "text": 0.2,
+     "image": 0.7,
+     "graphic": 0.1,
+     "information": 0.15
+    },
+    "negative_space": {
+     "amount": 0.85,
+     "distribution": "central",
+     "location": "center",
+     "tension": 0.2
+    },
+    "materiality": {
+     "medium": "magazine",
+     "physicality": 0.3,
+     "imperfection": 0.05,
+     "surface": "glossy",
+     "printing_process": "offset"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.1,
+     "precision_vs_imperfection": 0.1,
+     "minimalism_vs_density": 0.9,
+     "static_vs_dynamic": 0.2,
+     "legibility_vs_expression": 0.8,
+     "digital_vs_physical": 0.3
+    }
+   }
+  },
+  {
+   "key": "art-school-poster",
+   "name": "Art School Poster 艺术学院海报",
+   "description": "手作感、实验字体、拼贴、颜料/马克笔质感",
+   "tags": [
+    "art",
+    "school",
+    "experimental",
+    "handmade",
+    "collage"
+   ],
+   "dna": {
+    "design_movements": [
+     "experimental_editorial"
+    ],
+    "composition": {
+     "structure": "collage",
+     "focal_point": "multiple",
+     "visual_axis": "diagonal",
+     "balance": "unstable",
+     "symmetry": 0.1,
+     "edge_tension": 0.8,
+     "cropping": "extreme",
+     "layering": "deep",
+     "overlap": 0.8,
+     "alignment": [
+      "mixed"
+     ]
+    },
+    "grid": {
+     "type": "broken",
+     "alignment_mode": "free",
+     "grid_visibility": 0,
+     "break_grid": 0.85
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "graphic",
+     "tertiary": "date",
+     "reading_direction": "random",
+     "hierarchy_strength": 0.8,
+     "scale_contrast": 0.9
+    },
+    "typography": {
+     "category": "handwritten",
+     "width": "normal",
+     "weight": "bold",
+     "contrast": "medium",
+     "case": "mixed",
+     "tracking": "normal",
+     "leading": "normal",
+     "scale": "oversized",
+     "alignment": "mixed",
+     "orientation": "rotated",
+     "distortion": 0.6,
+     "cropping": 0.6,
+     "layering": "overlap"
+    },
+    "color": {
+     "strategy": "triadic",
+     "temperature": "mixed",
+     "saturation": 0.7,
+     "contrast": 0.8,
+     "brightness": 0.5,
+     "dominant_ratio": 0.5,
+     "accent_ratio": 0.2,
+     "accent_count": 3,
+     "gradient": false,
+     "palette": [
+      "#F4EFE0",
+      "#1F6FB2",
+      "#E4572E",
+      "#2A9D8F"
+     ],
+     "ai_aesthetic_risk": 0.1
+    },
+    "imagery": {
+     "source": "collage",
+     "treatment": "posterize",
+     "color_treatment": "full_color",
+     "image_density": 0.6
+    },
+    "graphic_language": {
+     "elements": [
+      "line",
+      "circle",
+      "arrow",
+      "symbol"
+     ],
+     "shape_language": "organic",
+     "line_weight": "variable",
+     "corner_style": "mixed",
+     "repetition": 0.4,
+     "pattern": "random",
+     "symbolism": "ambiguous"
+    },
+    "texture": {
+     "presence": 0.6,
+     "type": [
+      "paper_grain",
+      "ink_bleed",
+      "scratch"
+     ],
+     "scale": "coarse",
+     "contrast": 0.5,
+     "uniformity": 0.15
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 6,
+     "perspective": 0.3,
+     "parallax": 0.3,
+     "blur_depth": 0.3,
+     "foreground_ratio": 0.6
+    },
+    "motion": {
+     "enabled": true,
+     "style": "organic",
+     "intensity": 0.5,
+     "speed": "fast",
+     "direction": "multi_axis"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "secondary": [
+      "click"
+     ],
+     "intensity": 0.5,
+     "discoverability": 0.8
+    },
+    "density": {
+     "overall": 0.8,
+     "text": 0.7,
+     "image": 0.6,
+     "graphic": 0.9,
+     "information": 0.7
+    },
+    "negative_space": {
+     "amount": 0.2,
+     "distribution": "fragmented",
+     "location": "multiple"
+    },
+    "materiality": {
+     "medium": "mixed_media",
+     "physicality": 0.7,
+     "imperfection": 0.6,
+     "surface": "rough",
+     "printing_process": "screen_print"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.85,
+     "precision_vs_imperfection": 0.7,
+     "minimalism_vs_density": 0.85,
+     "static_vs_dynamic": 0.7,
+     "legibility_vs_expression": 0.3,
+     "digital_vs_physical": 0.6
+    }
+   }
+  },
+  {
+   "key": "90s-tech",
+   "name": "90s Tech 九十年代科技",
+   "description": "CRT 荧光、像素、等宽字体、技术网格、chrome 质感",
+   "tags": [
+    "90s",
+    "tech",
+    "retro",
+    "monospace",
+    "cyber"
+   ],
+   "dna": {
+    "design_movements": [
+     "cyberpunk"
+    ],
+    "composition": {
+     "structure": "modular",
+     "focal_point": "center",
+     "visual_axis": "horizontal",
+     "balance": "stable",
+     "symmetry": 0.6,
+     "edge_tension": 0.5,
+     "cropping": "moderate",
+     "layering": "medium",
+     "overlap": 0.3,
+     "alignment": [
+      "left_edge"
+     ]
+    },
+    "grid": {
+     "type": "12_column",
+     "alignment_mode": "strict",
+     "grid_visibility": 0.4,
+     "break_grid": 0.3
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "graphic",
+     "tertiary": "metadata",
+     "reading_direction": "left_to_right",
+     "hierarchy_strength": 0.85,
+     "scale_contrast": 0.7
+    },
+    "typography": {
+     "category": "monospace",
+     "width": "normal",
+     "weight": "bold",
+     "contrast": "medium",
+     "case": "uppercase",
+     "tracking": "loose",
+     "leading": "normal",
+     "scale": "large",
+     "alignment": "left",
+     "distortion": 0.2,
+     "cropping": 0.2,
+     "layering": "stacked"
+    },
+    "color": {
+     "strategy": "duotone",
+     "temperature": "cool",
+     "saturation": 0.7,
+     "contrast": 0.9,
+     "brightness": 0.4,
+     "dominant_ratio": 0.7,
+     "accent_ratio": 0.15,
+     "accent_count": 2,
+     "gradient": false,
+     "palette": [
+      "#05070D",
+      "#00E5FF",
+      "#5A5AFF"
+     ],
+     "ai_aesthetic_risk": 0.25
+    },
+    "imagery": {
+     "source": "abstract",
+     "treatment": "pixelated",
+     "color_treatment": "duotone",
+     "image_density": 0.5
+    },
+    "graphic_language": {
+     "elements": [
+      "grid",
+      "coordinate",
+      "frame",
+      "barcode"
+     ],
+     "shape_language": "mechanical",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.7,
+     "pattern": "modular",
+     "symbolism": "functional"
+    },
+    "texture": {
+     "presence": 0.3,
+     "type": [
+      "screen_print",
+      "paper_grain"
+     ],
+     "scale": "fine",
+     "contrast": 0.4,
+     "uniformity": 0.6
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 4,
+     "perspective": 0.5,
+     "parallax": 0.4,
+     "blur_depth": 0.2,
+     "foreground_ratio": 0.5
+    },
+    "motion": {
+     "enabled": true,
+     "style": "mechanical",
+     "intensity": 0.6,
+     "speed": "fast",
+     "direction": "horizontal",
+     "easing": "steps"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "click",
+     "secondary": [
+      "hover",
+      "keyboard"
+     ],
+     "intensity": 0.6,
+     "responsiveness": 0.9,
+     "discoverability": 0.8
+    },
+    "density": {
+     "overall": 0.75,
+     "text": 0.7,
+     "image": 0.3,
+     "graphic": 0.7,
+     "information": 0.8
+    },
+    "negative_space": {
+     "amount": 0.25,
+     "distribution": "compressed",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "digital",
+     "physicality": 0.1,
+     "imperfection": 0.3,
+     "surface": "glass",
+     "printing_process": "none"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.3,
+     "precision_vs_imperfection": 0.2,
+     "minimalism_vs_density": 0.75,
+     "static_vs_dynamic": 0.8,
+     "legibility_vs_expression": 0.6,
+     "digital_vs_physical": 0.2
+    }
+   }
+  },
+  {
+   "key": "underground-music",
+   "name": "Underground Music 地下音乐",
+   "description": "Xerox 复印、粗噪点、高对比、潦草字体、反主流",
+   "tags": [
+    "music",
+    "underground",
+    "xerox",
+    "punk",
+    "noise"
+   ],
+   "dna": {
+    "design_movements": [
+     "underground_music"
+    ],
+    "composition": {
+     "structure": "broken_grid",
+     "focal_point": "lower_left",
+     "visual_axis": "diagonal",
+     "balance": "chaotic",
+     "symmetry": 0.05,
+     "edge_tension": 0.95,
+     "cropping": "extreme",
+     "layering": "deep",
+     "overlap": 0.85,
+     "alignment": [
+      "mixed"
+     ]
+    },
+    "grid": {
+     "type": "broken",
+     "alignment_mode": "free",
+     "grid_visibility": 0,
+     "break_grid": 1
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "date",
+     "tertiary": "graphic",
+     "reading_direction": "diagonal",
+     "hierarchy_strength": 0.9,
+     "scale_contrast": 0.95
+    },
+    "typography": {
+     "category": "experimental",
+     "width": "condensed",
+     "weight": "black",
+     "contrast": "extreme",
+     "case": "uppercase",
+     "tracking": "very_tight",
+     "leading": "tight",
+     "scale": "extreme",
+     "alignment": "mixed",
+     "orientation": "rotated",
+     "distortion": 0.8,
+     "cropping": 0.9,
+     "layering": "overlap"
+    },
+    "color": {
+     "strategy": "monochrome",
+     "temperature": "neutral",
+     "saturation": 0.1,
+     "contrast": 1,
+     "brightness": 0.3,
+     "dominant_ratio": 0.9,
+     "accent_ratio": 0.05,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#0A0A0A",
+      "#E8E4DC",
+      "#FF3B30"
+     ],
+     "ai_aesthetic_risk": 0.1
+    },
+    "imagery": {
+     "source": "photography",
+     "treatment": "xerox",
+     "color_treatment": "monochrome",
+     "contrast": "extreme",
+     "image_density": 0.7
+    },
+    "graphic_language": {
+     "elements": [
+      "cross",
+      "arrow",
+      "line",
+      "number"
+     ],
+     "shape_language": "irregular",
+     "line_weight": "bold",
+     "corner_style": "sharp",
+     "repetition": 0.5,
+     "pattern": "random",
+     "symbolism": "ambiguous"
+    },
+    "texture": {
+     "presence": 0.85,
+     "type": [
+      "xerox",
+      "noise",
+      "scratch",
+      "ink_bleed"
+     ],
+     "scale": "coarse",
+     "contrast": 0.8,
+     "uniformity": 0.05
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 4,
+     "perspective": 0.2,
+     "parallax": 0.1
+    },
+    "motion": {
+     "enabled": true,
+     "style": "chaotic",
+     "intensity": 0.7,
+     "speed": "fast",
+     "direction": "multi_axis"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "click",
+     "secondary": [
+      "hover"
+     ],
+     "intensity": 0.6
+    },
+    "density": {
+     "overall": 0.9,
+     "text": 0.85,
+     "image": 0.6,
+     "graphic": 0.8,
+     "information": 0.8
+    },
+    "negative_space": {
+     "amount": 0.1,
+     "distribution": "fragmented",
+     "location": "none"
+    },
+    "materiality": {
+     "medium": "photocopied",
+     "physicality": 0.8,
+     "imperfection": 0.9,
+     "surface": "rough",
+     "printing_process": "xerox"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.95,
+     "precision_vs_imperfection": 0.9,
+     "minimalism_vs_density": 0.9,
+     "static_vs_dynamic": 0.8,
+     "legibility_vs_expression": 0.2,
+     "digital_vs_physical": 0.7
+    }
+   }
+  },
+  {
+   "key": "contemporary-museum",
+   "name": "Contemporary Museum 当代美术馆",
+   "description": "冷静极简、大留白、中性色、说明文字小字号",
+   "tags": [
+    "museum",
+    "minimal",
+    "neutral",
+    "institutional"
+   ],
+   "dna": {
+    "design_movements": [
+     "minimalism"
+    ],
+    "composition": {
+     "structure": "centered",
+     "focal_point": "center",
+     "visual_axis": "horizontal",
+     "balance": "stable",
+     "symmetry": 0.7,
+     "edge_tension": 0.2,
+     "cropping": "subtle",
+     "layering": "flat",
+     "overlap": 0.05,
+     "alignment": [
+      "center_axis"
+     ]
+    },
+    "grid": {
+     "type": "modular",
+     "columns": 12,
+     "gutter": "large",
+     "margin": "large",
+     "alignment_mode": "strict",
+     "grid_visibility": 0,
+     "break_grid": 0.05
+    },
+    "visual_hierarchy": {
+     "primary": "image",
+     "secondary": "title",
+     "tertiary": "metadata",
+     "reading_direction": "left_to_right",
+     "hierarchy_strength": 0.6,
+     "scale_contrast": 0.4
+    },
+    "typography": {
+     "category": "humanist_sans",
+     "width": "normal",
+     "weight": "regular",
+     "contrast": "medium",
+     "case": "lowercase",
+     "tracking": "normal",
+     "leading": "loose",
+     "scale": "medium",
+     "alignment": "left",
+     "distortion": 0,
+     "cropping": 0,
+     "layering": "isolated"
+    },
+    "color": {
+     "strategy": "neutral",
+     "temperature": "neutral",
+     "saturation": 0.05,
+     "contrast": 0.7,
+     "brightness": 0.6,
+     "dominant_ratio": 0.95,
+     "accent_ratio": 0.02,
+     "accent_count": 0,
+     "gradient": false,
+     "palette": [
+      "#1A1A1A",
+      "#F5F4F0",
+      "#8A8A85"
+     ],
+     "ai_aesthetic_risk": 0.02
+    },
+    "imagery": {
+     "source": "photography",
+     "scale": "large",
+     "treatment": "raw",
+     "color_treatment": "full_color",
+     "focus": "sharp",
+     "image_density": 0.5
+    },
+    "graphic_language": {
+     "elements": [
+      "line"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.1,
+     "pattern": "none",
+     "symbolism": "functional"
+    },
+    "texture": {
+     "presence": 0.05,
+     "type": [
+      "paper"
+     ],
+     "scale": "fine",
+     "uniformity": 0.95
+    },
+    "depth": {
+     "mode": "flat",
+     "layers": 2,
+     "perspective": 0,
+     "parallax": 0
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "secondary": [
+      "scroll"
+     ],
+     "intensity": 0.15
+    },
+    "density": {
+     "overall": 0.2,
+     "text": 0.2,
+     "image": 0.4,
+     "graphic": 0.05,
+     "information": 0.2
+    },
+    "negative_space": {
+     "amount": 0.8,
+     "distribution": "uniform",
+     "location": "center"
+    },
+    "materiality": {
+     "medium": "digital",
+     "physicality": 0.1,
+     "imperfection": 0.05,
+     "surface": "matte",
+     "printing_process": "none"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.1,
+     "minimalism_vs_density": 0.95,
+     "static_vs_dynamic": 0.1,
+     "legibility_vs_expression": 0.85
+    }
+   }
+  },
+  {
+   "key": "experimental-typography",
+   "name": "Experimental Typography 实验字体排版",
+   "description": "字体即图形、极端字号、重叠裁切、可变字体",
+   "tags": [
+    "typography",
+    "experimental",
+    "type-led"
+   ],
+   "dna": {
+    "design_movements": [
+     "experimental_typography"
+    ],
+    "composition": {
+     "structure": "broken_grid",
+     "focal_point": "multiple",
+     "visual_axis": "diagonal",
+     "balance": "tense",
+     "symmetry": 0.05,
+     "edge_tension": 0.9,
+     "cropping": "extreme",
+     "layering": "deep",
+     "overlap": 0.8,
+     "alignment": [
+      "mixed"
+     ]
+    },
+    "grid": {
+     "type": "broken",
+     "alignment_mode": "free",
+     "grid_visibility": 0,
+     "break_grid": 0.9
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "graphic",
+     "tertiary": "metadata",
+     "reading_direction": "random",
+     "hierarchy_strength": 0.9,
+     "scale_contrast": 1
+    },
+    "typography": {
+     "category": "variable",
+     "width": "ultra_wide",
+     "weight": "variable",
+     "contrast": "extreme",
+     "case": "mixed",
+     "tracking": "very_loose",
+     "leading": "very_tight",
+     "scale": "extreme",
+     "alignment": "mixed",
+     "orientation": "rotated",
+     "distortion": 0.9,
+     "cropping": 0.9,
+     "layering": "overlap",
+     "variable_font": true
+    },
+    "color": {
+     "strategy": "black_and_accent",
+     "temperature": "neutral",
+     "saturation": 0.3,
+     "contrast": 0.95,
+     "brightness": 0.35,
+     "dominant_ratio": 0.75,
+     "accent_ratio": 0.1,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#0B0B0B",
+      "#F2F0EA",
+      "#FF5C1A"
+     ],
+     "ai_aesthetic_risk": 0.05
+    },
+    "imagery": {
+     "source": "typography_only",
+     "treatment": "raw",
+     "image_density": 0.1
+    },
+    "graphic_language": {
+     "elements": [
+      "line",
+      "cross",
+      "frame"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "variable",
+     "corner_style": "sharp",
+     "repetition": 0.2,
+     "pattern": "none",
+     "symbolism": "ambiguous"
+    },
+    "texture": {
+     "presence": 0.15,
+     "type": [
+      "paper"
+     ],
+     "scale": "fine",
+     "contrast": 0.3,
+     "uniformity": 0.7
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 5,
+     "perspective": 0.3,
+     "parallax": 0.2,
+     "blur_depth": 0.2
+    },
+    "motion": {
+     "enabled": true,
+     "style": "kinetic",
+     "intensity": 0.6,
+     "speed": "fast",
+     "direction": "multi_axis"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "secondary": [
+      "click"
+     ],
+     "intensity": 0.6,
+     "discoverability": 0.8
+    },
+    "density": {
+     "overall": 0.65,
+     "text": 0.9,
+     "image": 0.1,
+     "graphic": 0.4,
+     "information": 0.5
+    },
+    "negative_space": {
+     "amount": 0.35,
+     "distribution": "asymmetric",
+     "location": "multiple"
+    },
+    "materiality": {
+     "medium": "digital",
+     "physicality": 0.2,
+     "imperfection": 0.2,
+     "surface": "matte",
+     "printing_process": "none"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.8,
+     "precision_vs_imperfection": 0.5,
+     "minimalism_vs_density": 0.6,
+     "static_vs_dynamic": 0.8,
+     "legibility_vs_expression": 0.15,
+     "digital_vs_physical": 0.4
+    }
+   }
+  },
+  {
+   "key": "photocopy-punk",
+   "name": "Photocopy Punk 复印朋克",
+   "description": "复印机噪点、脏污、错位、手写涂改",
+   "tags": [
+    "punk",
+    "photocopy",
+    "zine",
+    "noise",
+    "grunge"
+   ],
+   "dna": {
+    "design_movements": [
+     "underground_music"
+    ],
+    "composition": {
+     "structure": "collage",
+     "focal_point": "center",
+     "visual_axis": "radial",
+     "balance": "chaotic",
+     "symmetry": 0.05,
+     "edge_tension": 0.9,
+     "cropping": "extreme",
+     "layering": "deep",
+     "overlap": 0.9,
+     "alignment": [
+      "mixed"
+     ]
+    },
+    "grid": {
+     "type": "broken",
+     "alignment_mode": "free",
+     "grid_visibility": 0,
+     "break_grid": 1
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "graphic",
+     "tertiary": "date",
+     "reading_direction": "random",
+     "hierarchy_strength": 0.8,
+     "scale_contrast": 0.9
+    },
+    "typography": {
+     "category": "handwritten",
+     "width": "normal",
+     "weight": "bold",
+     "contrast": "extreme",
+     "case": "mixed",
+     "tracking": "normal",
+     "leading": "tight",
+     "scale": "oversized",
+     "alignment": "mixed",
+     "orientation": "rotated",
+     "distortion": 0.9,
+     "cropping": 0.9,
+     "layering": "masked"
+    },
+    "color": {
+     "strategy": "monochrome",
+     "temperature": "neutral",
+     "saturation": 0.05,
+     "contrast": 0.95,
+     "brightness": 0.4,
+     "dominant_ratio": 0.9,
+     "accent_ratio": 0.05,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#111111",
+      "#E6E2D8"
+     ],
+     "ai_aesthetic_risk": 0.08
+    },
+    "imagery": {
+     "source": "photography",
+     "treatment": "xerox",
+     "color_treatment": "monochrome",
+     "contrast": "extreme",
+     "image_density": 0.8
+    },
+    "graphic_language": {
+     "elements": [
+      "cross",
+      "arrow",
+      "line",
+      "annotation"
+     ],
+     "shape_language": "irregular",
+     "line_weight": "bold",
+     "corner_style": "sharp",
+     "repetition": 0.6,
+     "pattern": "random",
+     "symbolism": "ambiguous"
+    },
+    "texture": {
+     "presence": 0.9,
+     "type": [
+      "xerox",
+      "noise",
+      "ink_bleed",
+      "scratch"
+     ],
+     "scale": "coarse",
+     "contrast": 0.9,
+     "uniformity": 0.02
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 4,
+     "perspective": 0.1,
+     "parallax": 0.05
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": false,
+     "primary": "none",
+     "intensity": 0
+    },
+    "density": {
+     "overall": 0.9,
+     "text": 0.85,
+     "image": 0.7,
+     "graphic": 0.9,
+     "information": 0.7
+    },
+    "negative_space": {
+     "amount": 0.08,
+     "distribution": "fragmented",
+     "location": "none"
+    },
+    "materiality": {
+     "medium": "photocopied",
+     "physicality": 0.9,
+     "imperfection": 0.95,
+     "surface": "rough",
+     "printing_process": "xerox"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.9,
+     "precision_vs_imperfection": 0.95,
+     "minimalism_vs_density": 0.9,
+     "static_vs_dynamic": 0.3,
+     "legibility_vs_expression": 0.25,
+     "digital_vs_physical": 0.8
+    }
+   }
+  },
+  {
+   "key": "risograph",
+   "name": "Risograph 孔版印刷",
+   "description": "套色错位、荧光色、网点、纸张质感",
+   "tags": [
+    "risograph",
+    "print",
+    "duotone",
+    "zine"
+   ],
+   "dna": {
+    "design_movements": [
+     "print_physicality"
+    ],
+    "composition": {
+     "structure": "modular",
+     "focal_point": "center",
+     "visual_axis": "horizontal",
+     "balance": "stable",
+     "symmetry": 0.5,
+     "edge_tension": 0.5,
+     "cropping": "moderate",
+     "layering": "shallow",
+     "overlap": 0.4,
+     "alignment": [
+      "left_edge",
+      "center_axis"
+     ]
+    },
+    "grid": {
+     "type": "8_column",
+     "columns": 8,
+     "gutter": "small",
+     "margin": "small",
+     "alignment_mode": "mixed",
+     "grid_visibility": 0.1,
+     "break_grid": 0.3
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "image",
+     "tertiary": "date",
+     "reading_direction": "top_to_bottom",
+     "hierarchy_strength": 0.8,
+     "scale_contrast": 0.7
+    },
+    "typography": {
+     "category": "grotesk",
+     "width": "condensed",
+     "weight": "bold",
+     "contrast": "low",
+     "case": "uppercase",
+     "tracking": "tight",
+     "leading": "normal",
+     "scale": "large",
+     "alignment": "left",
+     "distortion": 0.15,
+     "cropping": 0.3,
+     "layering": "isolated"
+    },
+    "color": {
+     "strategy": "duotone",
+     "temperature": "warm",
+     "saturation": 0.8,
+     "contrast": 0.8,
+     "brightness": 0.5,
+     "dominant_ratio": 0.7,
+     "accent_ratio": 0.15,
+     "accent_count": 2,
+     "gradient": false,
+     "palette": [
+      "#FFF4E0",
+      "#F25C54",
+      "#3A86FF"
+     ],
+     "ai_aesthetic_risk": 0.12
+    },
+    "imagery": {
+     "source": "illustration",
+     "treatment": "risograph",
+     "color_treatment": "duotone",
+     "contrast": "high",
+     "image_density": 0.5
+    },
+    "graphic_language": {
+     "elements": [
+      "circle",
+      "line",
+      "dot"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "medium",
+     "corner_style": "slightly_rounded",
+     "repetition": 0.5,
+     "pattern": "linear",
+     "symbolism": "decorative"
+    },
+    "texture": {
+     "presence": 0.6,
+     "type": [
+      "risograph",
+      "paper"
+     ],
+     "scale": "medium",
+     "contrast": 0.5,
+     "uniformity": 0.4
+    },
+    "depth": {
+     "mode": "flat",
+     "layers": 2,
+     "perspective": 0,
+     "parallax": 0
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "intensity": 0.2
+    },
+    "density": {
+     "overall": 0.5,
+     "text": 0.5,
+     "image": 0.4,
+     "graphic": 0.4,
+     "information": 0.5
+    },
+    "negative_space": {
+     "amount": 0.4,
+     "distribution": "asymmetric",
+     "location": "upper_left"
+    },
+    "materiality": {
+     "medium": "risograph",
+     "physicality": 0.7,
+     "imperfection": 0.6,
+     "surface": "fibrous",
+     "printing_process": "risograph"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.4,
+     "precision_vs_imperfection": 0.7,
+     "minimalism_vs_density": 0.5,
+     "static_vs_dynamic": 0.2,
+     "legibility_vs_expression": 0.6,
+     "digital_vs_physical": 0.8
+    }
+   }
+  },
+  {
+   "key": "neo-editorial",
+   "name": "Neo-Editorial 新杂志编辑",
+   "description": "杂志网格、衬线+无衬线混排、规则线、信息密度",
+   "tags": [
+    "editorial",
+    "magazine",
+    "fashion",
+    "sophisticated"
+   ],
+   "dna": {
+    "design_movements": [
+     "editorial"
+    ],
+    "composition": {
+     "structure": "split",
+     "focal_point": "upper_left",
+     "visual_axis": "horizontal",
+     "balance": "dynamic",
+     "symmetry": 0.3,
+     "edge_tension": 0.5,
+     "cropping": "moderate",
+     "layering": "shallow",
+     "overlap": 0.2,
+     "alignment": [
+      "left_edge",
+      "baseline"
+     ]
+    },
+    "grid": {
+     "type": "12_column",
+     "columns": 12,
+     "rows": 12,
+     "gutter": "medium",
+     "margin": "medium",
+     "baseline_grid": true,
+     "alignment_mode": "strict",
+     "grid_visibility": 0.05,
+     "break_grid": 0.25
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "image",
+     "tertiary": "metadata",
+     "reading_direction": "left_to_right",
+     "hierarchy_strength": 0.85,
+     "scale_contrast": 0.8,
+     "weight_contrast": 0.7
+    },
+    "typography": {
+     "category": "mixed",
+     "width": "normal",
+     "weight": "medium",
+     "contrast": "high",
+     "case": "title_case",
+     "tracking": "normal",
+     "leading": "normal",
+     "scale": "large",
+     "alignment": "left",
+     "orientation": "horizontal",
+     "distortion": 0.1,
+     "cropping": 0.2,
+     "layering": "stacked"
+    },
+    "color": {
+     "strategy": "neutral",
+     "temperature": "warm",
+     "saturation": 0.2,
+     "contrast": 0.8,
+     "brightness": 0.5,
+     "dominant_ratio": 0.85,
+     "accent_ratio": 0.06,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#141414",
+      "#F6F3EC",
+      "#B03A2E"
+     ],
+     "ai_aesthetic_risk": 0.03
+    },
+    "imagery": {
+     "source": "photography",
+     "scale": "large",
+     "treatment": "raw",
+     "color_treatment": "full_color",
+     "image_density": 0.6
+    },
+    "graphic_language": {
+     "elements": [
+      "line",
+      "frame",
+      "number"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.4,
+     "pattern": "linear",
+     "symbolism": "functional"
+    },
+    "texture": {
+     "presence": 0.1,
+     "type": [
+      "paper"
+     ],
+     "scale": "fine",
+     "uniformity": 0.9
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 3,
+     "perspective": 0.1,
+     "parallax": 0.1
+    },
+    "motion": {
+     "enabled": true,
+     "style": "subtle",
+     "intensity": 0.2,
+     "speed": "slow",
+     "direction": "vertical"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "scroll",
+     "secondary": [
+      "hover"
+     ],
+     "intensity": 0.3,
+     "discoverability": 0.5
+    },
+    "density": {
+     "overall": 0.6,
+     "text": 0.7,
+     "image": 0.5,
+     "graphic": 0.4,
+     "information": 0.65
+    },
+    "negative_space": {
+     "amount": 0.35,
+     "distribution": "asymmetric",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "magazine",
+     "physicality": 0.4,
+     "imperfection": 0.1,
+     "surface": "matte",
+     "printing_process": "offset"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.3,
+     "precision_vs_imperfection": 0.2,
+     "minimalism_vs_density": 0.5,
+     "static_vs_dynamic": 0.4,
+     "legibility_vs_expression": 0.8,
+     "digital_vs_physical": 0.4
+    }
+   }
+  },
+  {
+   "key": "minimal-luxury",
+   "name": "Minimal Luxury 极简奢华",
+   "description": "白+点缀色、细字重、超大留白、单一视觉锚点",
+   "tags": [
+    "luxury",
+    "minimal",
+    "white",
+    "refined"
+   ],
+   "dna": {
+    "design_movements": [
+     "minimalism",
+     "luxury_editorial"
+    ],
+    "composition": {
+     "structure": "centered",
+     "focal_point": "center",
+     "visual_axis": "horizontal",
+     "balance": "stable",
+     "symmetry": 0.85,
+     "edge_tension": 0.15,
+     "cropping": "none",
+     "layering": "flat",
+     "overlap": 0.02,
+     "alignment": [
+      "center_axis"
+     ]
+    },
+    "grid": {
+     "type": "modular",
+     "columns": 6,
+     "gutter": "large",
+     "margin": "large",
+     "alignment_mode": "strict",
+     "grid_visibility": 0,
+     "break_grid": 0
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "logo",
+     "tertiary": "date",
+     "reading_direction": "top_to_bottom",
+     "hierarchy_strength": 0.8,
+     "scale_contrast": 0.5,
+     "weight_contrast": 0.3
+    },
+    "typography": {
+     "category": "humanist_sans",
+     "width": "normal",
+     "weight": "thin",
+     "contrast": "low",
+     "case": "uppercase",
+     "tracking": "very_loose",
+     "leading": "loose",
+     "scale": "medium",
+     "alignment": "center",
+     "distortion": 0,
+     "cropping": 0,
+     "layering": "isolated"
+    },
+    "color": {
+     "strategy": "white_and_accent",
+     "temperature": "neutral",
+     "saturation": 0.05,
+     "contrast": 0.6,
+     "brightness": 0.9,
+     "dominant_ratio": 0.92,
+     "accent_ratio": 0.03,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#FFFFFF",
+      "#E8E5DE",
+      "#9A8B6F"
+     ],
+     "ai_aesthetic_risk": 0.02
+    },
+    "imagery": {
+     "source": "product",
+     "scale": "medium",
+     "treatment": "raw",
+     "color_treatment": "full_color",
+     "focus": "sharp",
+     "image_density": 0.3
+    },
+    "graphic_language": {
+     "elements": [
+      "line"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.05,
+     "pattern": "none",
+     "symbolism": "functional"
+    },
+    "texture": {
+     "presence": 0.05,
+     "type": [
+      "paper"
+     ],
+     "scale": "fine",
+     "uniformity": 0.98
+    },
+    "depth": {
+     "mode": "flat",
+     "layers": 1,
+     "perspective": 0,
+     "parallax": 0
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "intensity": 0.1
+    },
+    "density": {
+     "overall": 0.1,
+     "text": 0.15,
+     "image": 0.3,
+     "graphic": 0.03,
+     "information": 0.1
+    },
+    "negative_space": {
+     "amount": 0.9,
+     "distribution": "central",
+     "location": "center",
+     "tension": 0.15
+    },
+    "materiality": {
+     "medium": "digital",
+     "physicality": 0.1,
+     "imperfection": 0.02,
+     "surface": "glossy",
+     "printing_process": "none"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.05,
+     "precision_vs_imperfection": 0.05,
+     "minimalism_vs_density": 0.98,
+     "static_vs_dynamic": 0.05,
+     "legibility_vs_expression": 0.9,
+     "digital_vs_physical": 0.2
+    }
+   }
+  },
+  {
+   "key": "anti-design",
+   "name": "Anti-Design 反设计",
+   "description": "故意难看、错位、反网格、冲突配色、反常识",
+   "tags": [
+    "anti-design",
+    "brutal",
+    "ugly",
+    "ironic",
+    "experimental"
+   ],
+   "dna": {
+    "design_movements": [
+     "anti_design"
+    ],
+    "composition": {
+     "structure": "broken_grid",
+     "focal_point": "multiple",
+     "visual_axis": "diagonal",
+     "balance": "chaotic",
+     "symmetry": 0.02,
+     "edge_tension": 0.95,
+     "cropping": "extreme",
+     "layering": "deep",
+     "overlap": 0.9,
+     "alignment": [
+      "mixed"
+     ]
+    },
+    "grid": {
+     "type": "broken",
+     "alignment_mode": "free",
+     "grid_visibility": 0,
+     "break_grid": 1
+    },
+    "visual_hierarchy": {
+     "primary": "graphic",
+     "secondary": "title",
+     "tertiary": "date",
+     "reading_direction": "random",
+     "hierarchy_strength": 0.5,
+     "scale_contrast": 0.6
+    },
+    "typography": {
+     "category": "experimental",
+     "width": "normal",
+     "weight": "variable",
+     "contrast": "extreme",
+     "case": "mixed",
+     "tracking": "very_loose",
+     "leading": "very_tight",
+     "scale": "medium",
+     "alignment": "mixed",
+     "orientation": "rotated",
+     "distortion": 1,
+     "cropping": 0.9,
+     "layering": "masked"
+    },
+    "color": {
+     "strategy": "unexpected_accent",
+     "temperature": "mixed",
+     "saturation": 0.9,
+     "contrast": 0.9,
+     "brightness": 0.4,
+     "dominant_ratio": 0.6,
+     "accent_ratio": 0.2,
+     "accent_count": 4,
+     "gradient": false,
+     "palette": [
+      "#0F0F0F",
+      "#F4F0E6",
+      "#D8E600",
+      "#FF00A8",
+      "#00B8D9"
+     ],
+     "ai_aesthetic_risk": 0.2
+    },
+    "imagery": {
+     "source": "mixed",
+     "treatment": "glitch",
+     "color_treatment": "negative",
+     "image_density": 0.7
+    },
+    "graphic_language": {
+     "elements": [
+      "arrow",
+      "cross",
+      "line",
+      "annotation",
+      "circle"
+     ],
+     "shape_language": "irregular",
+     "line_weight": "variable",
+     "corner_style": "mixed",
+     "repetition": 0.3,
+     "pattern": "random",
+     "symbolism": "ambiguous"
+    },
+    "texture": {
+     "presence": 0.5,
+     "type": [
+      "noise",
+      "scratch",
+      "xerox"
+     ],
+     "scale": "coarse",
+     "contrast": 0.6,
+     "uniformity": 0.1
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 6,
+     "perspective": 0.4,
+     "parallax": 0.4,
+     "blur_depth": 0.4
+    },
+    "motion": {
+     "enabled": true,
+     "style": "chaotic",
+     "intensity": 0.8,
+     "speed": "fast",
+     "direction": "multi_axis",
+     "easing": "steps"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "click",
+     "secondary": [
+      "hover",
+      "drag"
+     ],
+     "intensity": 0.8,
+     "discoverability": 0.9
+    },
+    "density": {
+     "overall": 0.8,
+     "text": 0.7,
+     "image": 0.6,
+     "graphic": 0.9,
+     "information": 0.6
+    },
+    "negative_space": {
+     "amount": 0.15,
+     "distribution": "fragmented",
+     "location": "none"
+    },
+    "materiality": {
+     "medium": "mixed_media",
+     "physicality": 0.6,
+     "imperfection": 0.8,
+     "surface": "rough",
+     "printing_process": "mixed"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.95,
+     "precision_vs_imperfection": 0.9,
+     "minimalism_vs_density": 0.8,
+     "static_vs_dynamic": 0.8,
+     "legibility_vs_expression": 0.1,
+     "digital_vs_physical": 0.6
+    }
+   }
+  },
+  {
+   "key": "information-dense",
+   "name": "Information Dense 信息密集型",
+   "description": "高密度数据、图表、标注、多层级信息结构",
+   "tags": [
+    "dense",
+    "information",
+    "data",
+    "diagram",
+    "technical"
+   ],
+   "dna": {
+    "design_movements": [
+     "editorial"
+    ],
+    "composition": {
+     "structure": "modular",
+     "focal_point": "upper_left",
+     "visual_axis": "horizontal",
+     "balance": "stable",
+     "symmetry": 0.5,
+     "edge_tension": 0.4,
+     "cropping": "none",
+     "layering": "shallow",
+     "overlap": 0.2,
+     "alignment": [
+      "left_edge",
+      "baseline"
+     ]
+    },
+    "grid": {
+     "type": "12_column",
+     "columns": 12,
+     "rows": 16,
+     "gutter": "small",
+     "margin": "tight",
+     "baseline_grid": true,
+     "alignment_mode": "strict",
+     "grid_visibility": 0.2,
+     "break_grid": 0.15
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "graphic",
+     "tertiary": "metadata",
+     "reading_direction": "top_to_bottom",
+     "hierarchy_strength": 0.9,
+     "scale_contrast": 0.6,
+     "weight_contrast": 0.8
+    },
+    "typography": {
+     "category": "monospace",
+     "width": "normal",
+     "weight": "regular",
+     "contrast": "low",
+     "case": "uppercase",
+     "tracking": "normal",
+     "leading": "tight",
+     "scale": "medium",
+     "alignment": "left",
+     "distortion": 0.05,
+     "cropping": 0.1,
+     "layering": "stacked"
+    },
+    "color": {
+     "strategy": "high_contrast",
+     "temperature": "neutral",
+     "saturation": 0.2,
+     "contrast": 0.9,
+     "brightness": 0.45,
+     "dominant_ratio": 0.7,
+     "accent_ratio": 0.08,
+     "accent_count": 2,
+     "gradient": false,
+     "palette": [
+      "#0F1115",
+      "#E8E6DF",
+      "#F2B705",
+      "#2E86DE"
+     ],
+     "ai_aesthetic_risk": 0.06
+    },
+    "imagery": {
+     "source": "diagram",
+     "treatment": "raw",
+     "color_treatment": "monochrome",
+     "image_density": 0.7
+    },
+    "graphic_language": {
+     "elements": [
+      "grid",
+      "chart",
+      "diagram",
+      "number",
+      "annotation",
+      "frame"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.7,
+     "pattern": "modular",
+     "symbolism": "functional"
+    },
+    "texture": {
+     "presence": 0.05,
+     "type": [
+      "paper"
+     ],
+     "scale": "fine",
+     "uniformity": 0.95
+    },
+    "depth": {
+     "mode": "flat",
+     "layers": 2,
+     "perspective": 0,
+     "parallax": 0
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "secondary": [
+      "click"
+     ],
+     "intensity": 0.4,
+     "responsiveness": 0.9,
+     "discoverability": 0.8
+    },
+    "density": {
+     "overall": 0.95,
+     "text": 0.95,
+     "image": 0.3,
+     "graphic": 0.8,
+     "information": 0.95
+    },
+    "negative_space": {
+     "amount": 0.05,
+     "distribution": "compressed",
+     "location": "none"
+    },
+    "materiality": {
+     "medium": "printed",
+     "physicality": 0.3,
+     "imperfection": 0.1,
+     "surface": "matte",
+     "printing_process": "offset"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.15,
+     "precision_vs_imperfection": 0.1,
+     "minimalism_vs_density": 0.95,
+     "static_vs_dynamic": 0.2,
+     "legibility_vs_expression": 0.9,
+     "digital_vs_physical": 0.3
+    }
+   }
+  },
+  {
+   "key": "cinematic",
+   "name": "Cinematic 电影感",
+   "description": "摄影大片、深景深、胶片颗粒、暗调、宽幅",
+   "tags": [
+    "cinema",
+    "film",
+    "photography",
+    "dramatic",
+    "dark"
+   ],
+   "dna": {
+    "design_movements": [
+     "cinematic"
+    ],
+    "composition": {
+     "structure": "full_bleed",
+     "focal_point": "center",
+     "visual_axis": "horizontal",
+     "balance": "stable",
+     "symmetry": 0.5,
+     "edge_tension": 0.5,
+     "cropping": "aggressive",
+     "layering": "deep",
+     "overlap": 0.3,
+     "alignment": [
+      "center_axis"
+     ]
+    },
+    "grid": {
+     "type": "custom",
+     "alignment_mode": "free",
+     "grid_visibility": 0,
+     "break_grid": 0.5
+    },
+    "visual_hierarchy": {
+     "primary": "image",
+     "secondary": "title",
+     "tertiary": "date",
+     "reading_direction": "top_to_bottom",
+     "hierarchy_strength": 0.8,
+     "scale_contrast": 0.7
+    },
+    "typography": {
+     "category": "serif",
+     "width": "normal",
+     "weight": "regular",
+     "contrast": "high",
+     "case": "title_case",
+     "tracking": "loose",
+     "leading": "normal",
+     "scale": "large",
+     "alignment": "center",
+     "distortion": 0.05,
+     "cropping": 0.3,
+     "layering": "stacked"
+    },
+    "color": {
+     "strategy": "complementary",
+     "temperature": "cool",
+     "saturation": 0.35,
+     "contrast": 0.85,
+     "brightness": 0.3,
+     "dominant_ratio": 0.75,
+     "accent_ratio": 0.1,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#0B0F14",
+      "#C8CFD6",
+      "#E4572E"
+     ],
+     "ai_aesthetic_risk": 0.04
+    },
+    "imagery": {
+     "source": "photography",
+     "scale": "hero",
+     "treatment": "grain",
+     "color_treatment": "full_color",
+     "focus": "soft",
+     "depth": "deep",
+     "image_density": 0.85
+    },
+    "graphic_language": {
+     "elements": [
+      "frame",
+      "line"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.1,
+     "pattern": "none",
+     "symbolism": "semantic"
+    },
+    "texture": {
+     "presence": 0.5,
+     "type": [
+      "film_grain",
+      "noise"
+     ],
+     "scale": "fine",
+     "contrast": 0.4,
+     "uniformity": 0.5
+    },
+    "depth": {
+     "mode": "photographic",
+     "layers": 5,
+     "perspective": 0.4,
+     "parallax": 0.4,
+     "blur_depth": 0.6,
+     "foreground_ratio": 0.5
+    },
+    "motion": {
+     "enabled": true,
+     "style": "cinematic",
+     "intensity": 0.5,
+     "speed": "slow",
+     "direction": "horizontal"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "secondary": [
+      "scroll"
+     ],
+     "intensity": 0.4,
+     "discoverability": 0.5
+    },
+    "density": {
+     "overall": 0.3,
+     "text": 0.2,
+     "image": 0.9,
+     "graphic": 0.1,
+     "information": 0.25
+    },
+    "negative_space": {
+     "amount": 0.6,
+     "distribution": "asymmetric",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "film",
+     "physicality": 0.4,
+     "imperfection": 0.4,
+     "surface": "glossy",
+     "printing_process": "none"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.3,
+     "precision_vs_imperfection": 0.5,
+     "minimalism_vs_density": 0.6,
+     "static_vs_dynamic": 0.5,
+     "legibility_vs_expression": 0.6,
+     "digital_vs_physical": 0.4
+    }
+   }
+  },
+  {
+   "key": "neo-grotesk-sport",
+   "name": "Neo-Grotesk Sport 运动新无衬线",
+   "description": "粗壮压缩字体、斜切、速度线、高饱和点缀",
+   "tags": [
+    "sport",
+    "bold",
+    "dynamic",
+    "energetic"
+   ],
+   "dna": {
+    "design_movements": [
+     "swiss_international"
+    ],
+    "composition": {
+     "structure": "diagonal",
+     "focal_point": "upper_left",
+     "visual_axis": "diagonal",
+     "balance": "dynamic",
+     "symmetry": 0.2,
+     "edge_tension": 0.75,
+     "cropping": "aggressive",
+     "layering": "medium",
+     "overlap": 0.4,
+     "alignment": [
+      "left_edge"
+     ]
+    },
+    "grid": {
+     "type": "8_column",
+     "columns": 8,
+     "alignment_mode": "mixed",
+     "grid_visibility": 0.1,
+     "break_grid": 0.5
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "number",
+     "tertiary": "date",
+     "reading_direction": "diagonal",
+     "hierarchy_strength": 0.95,
+     "scale_contrast": 0.95
+    },
+    "typography": {
+     "category": "neo_grotesk",
+     "width": "ultra_condensed",
+     "weight": "black",
+     "contrast": "low",
+     "case": "uppercase",
+     "tracking": "very_tight",
+     "leading": "tight",
+     "scale": "extreme",
+     "alignment": "left",
+     "orientation": "rotated",
+     "distortion": 0.2,
+     "cropping": 0.5,
+     "layering": "stacked"
+    },
+    "color": {
+     "strategy": "black_and_accent",
+     "temperature": "cool",
+     "saturation": 0.6,
+     "contrast": 0.95,
+     "brightness": 0.35,
+     "dominant_ratio": 0.75,
+     "accent_ratio": 0.12,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#0A0A0A",
+      "#F2F2F0",
+      "#FFDD00"
+     ],
+     "ai_aesthetic_risk": 0.05
+    },
+    "imagery": {
+     "source": "photography",
+     "treatment": "threshold",
+     "color_treatment": "duotone",
+     "contrast": "extreme",
+     "image_density": 0.5
+    },
+    "graphic_language": {
+     "elements": [
+      "line",
+      "polygon",
+      "number",
+      "frame"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "bold",
+     "corner_style": "sharp",
+     "repetition": 0.6,
+     "pattern": "linear",
+     "symbolism": "semantic"
+    },
+    "texture": {
+     "presence": 0.2,
+     "type": [
+      "paper_grain"
+     ],
+     "scale": "fine",
+     "contrast": 0.4,
+     "uniformity": 0.6
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 3,
+     "perspective": 0.4,
+     "parallax": 0.5,
+     "blur_depth": 0.2
+    },
+    "motion": {
+     "enabled": true,
+     "style": "mechanical",
+     "intensity": 0.7,
+     "speed": "fast",
+     "direction": "diagonal",
+     "easing": "steps"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "click",
+     "secondary": [
+      "hover"
+     ],
+     "intensity": 0.7,
+     "responsiveness": 0.9
+    },
+    "density": {
+     "overall": 0.6,
+     "text": 0.7,
+     "image": 0.4,
+     "graphic": 0.6,
+     "information": 0.6
+    },
+    "negative_space": {
+     "amount": 0.3,
+     "distribution": "asymmetric",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "digital",
+     "physicality": 0.2,
+     "imperfection": 0.1,
+     "surface": "matte",
+     "printing_process": "none"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.5,
+     "precision_vs_imperfection": 0.2,
+     "minimalism_vs_density": 0.5,
+     "static_vs_dynamic": 0.85,
+     "legibility_vs_expression": 0.7,
+     "digital_vs_physical": 0.2
+    }
+   }
+  },
+  {
+   "key": "retro-travel",
+   "name": "Retro Travel 复古旅行",
+   "description": "中古世纪风、暖色、太阳放射纹、手绘插画",
+   "tags": [
+    "retro",
+    "travel",
+    "vintage",
+    "mid-century",
+    "warm"
+   ],
+   "dna": {
+    "design_movements": [
+     "vintage_travel"
+    ],
+    "composition": {
+     "structure": "frame_within_frame",
+     "focal_point": "center",
+     "visual_axis": "horizontal",
+     "balance": "stable",
+     "symmetry": 0.6,
+     "edge_tension": 0.4,
+     "cropping": "moderate",
+     "layering": "shallow",
+     "overlap": 0.3,
+     "alignment": [
+      "center_axis"
+     ]
+    },
+    "grid": {
+     "type": "modular",
+     "columns": 6,
+     "gutter": "medium",
+     "margin": "medium",
+     "alignment_mode": "strict",
+     "grid_visibility": 0.05,
+     "break_grid": 0.2
+    },
+    "visual_hierarchy": {
+     "primary": "image",
+     "secondary": "title",
+     "tertiary": "date",
+     "reading_direction": "top_to_bottom",
+     "hierarchy_strength": 0.75,
+     "scale_contrast": 0.6
+    },
+    "typography": {
+     "category": "serif",
+     "width": "normal",
+     "weight": "medium",
+     "contrast": "medium",
+     "case": "title_case",
+     "tracking": "loose",
+     "leading": "loose",
+     "scale": "large",
+     "alignment": "center",
+     "distortion": 0.05,
+     "cropping": 0.1,
+     "layering": "isolated"
+    },
+    "color": {
+     "strategy": "earth",
+     "temperature": "warm",
+     "saturation": 0.6,
+     "contrast": 0.7,
+     "brightness": 0.6,
+     "dominant_ratio": 0.7,
+     "accent_ratio": 0.1,
+     "accent_count": 2,
+     "gradient": false,
+     "palette": [
+      "#F7E8D0",
+      "#C96F3B",
+      "#3E7C59",
+      "#1F3A5F"
+     ],
+     "ai_aesthetic_risk": 0.05
+    },
+    "imagery": {
+     "source": "illustration",
+     "scale": "large",
+     "treatment": "raw",
+     "color_treatment": "full_color",
+     "focus": "sharp",
+     "image_density": 0.6
+    },
+    "graphic_language": {
+     "elements": [
+      "circle",
+      "line",
+      "frame",
+      "symbol"
+     ],
+     "shape_language": "organic",
+     "line_weight": "medium",
+     "corner_style": "slightly_rounded",
+     "repetition": 0.4,
+     "pattern": "radial",
+     "symbolism": "decorative"
+    },
+    "texture": {
+     "presence": 0.5,
+     "type": [
+      "paper",
+      "fold",
+      "fabric"
+     ],
+     "scale": "coarse",
+     "contrast": 0.4,
+     "uniformity": 0.4
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 3,
+     "perspective": 0.1,
+     "parallax": 0.1
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "intensity": 0.2
+    },
+    "density": {
+     "overall": 0.4,
+     "text": 0.3,
+     "image": 0.6,
+     "graphic": 0.3,
+     "information": 0.4
+    },
+    "negative_space": {
+     "amount": 0.5,
+     "distribution": "central",
+     "location": "center"
+    },
+    "materiality": {
+     "medium": "printed",
+     "physicality": 0.5,
+     "imperfection": 0.4,
+     "surface": "rough",
+     "printing_process": "screen_print"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.3,
+     "precision_vs_imperfection": 0.4,
+     "minimalism_vs_density": 0.5,
+     "static_vs_dynamic": 0.2,
+     "legibility_vs_expression": 0.7,
+     "digital_vs_physical": 0.6
+    }
+   }
+  },
+  {
+   "key": "techno-rave",
+   "name": "Techno Rave 锐舞派对",
+   "description": "荧光色、放射构图、高能动态、频闪感",
+   "tags": [
+    "rave",
+    "techno",
+    "neon",
+    "party",
+    "music"
+   ],
+   "dna": {
+    "design_movements": [
+     "cyberpunk"
+    ],
+    "composition": {
+     "structure": "radial",
+     "focal_point": "center",
+     "visual_axis": "radial",
+     "balance": "dynamic",
+     "symmetry": 0.6,
+     "edge_tension": 0.7,
+     "cropping": "moderate",
+     "layering": "deep",
+     "overlap": 0.6,
+     "alignment": [
+      "center_axis"
+     ]
+    },
+    "grid": {
+     "type": "radial",
+     "alignment_mode": "mixed",
+     "grid_visibility": 0.3,
+     "break_grid": 0.4
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "date",
+     "tertiary": "graphic",
+     "reading_direction": "center_out",
+     "hierarchy_strength": 0.9,
+     "scale_contrast": 0.9
+    },
+    "typography": {
+     "category": "grotesk",
+     "width": "ultra_condensed",
+     "weight": "black",
+     "contrast": "low",
+     "case": "uppercase",
+     "tracking": "very_tight",
+     "leading": "tight",
+     "scale": "extreme",
+     "alignment": "center",
+     "distortion": 0.4,
+     "cropping": 0.4,
+     "layering": "overlap"
+    },
+    "color": {
+     "strategy": "fluorescent",
+     "temperature": "cool",
+     "saturation": 0.9,
+     "contrast": 0.9,
+     "brightness": 0.4,
+     "dominant_ratio": 0.6,
+     "accent_ratio": 0.2,
+     "accent_count": 3,
+     "gradient": false,
+     "palette": [
+      "#0D0221",
+      "#00E5FF",
+      "#F72585",
+      "#FFE600"
+     ],
+     "ai_aesthetic_risk": 0.35
+    },
+    "imagery": {
+     "source": "abstract",
+     "treatment": "chromatic_aberration",
+     "color_treatment": "high_saturation",
+     "image_density": 0.5
+    },
+    "graphic_language": {
+     "elements": [
+      "circle",
+      "line",
+      "grid",
+      "polygon"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "bold",
+     "corner_style": "sharp",
+     "repetition": 0.8,
+     "pattern": "radial",
+     "symbolism": "decorative"
+    },
+    "texture": {
+     "presence": 0.2,
+     "type": [
+      "noise"
+     ],
+     "scale": "fine",
+     "contrast": 0.5,
+     "uniformity": 0.5
+    },
+    "depth": {
+     "mode": "perspective",
+     "layers": 5,
+     "perspective": 0.8,
+     "parallax": 0.6,
+     "blur_depth": 0.3
+    },
+    "motion": {
+     "enabled": true,
+     "style": "kinetic",
+     "intensity": 0.9,
+     "speed": "fast",
+     "direction": "radial",
+     "easing": "spring"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "click",
+     "secondary": [
+      "hover",
+      "audio"
+     ],
+     "intensity": 0.9,
+     "responsiveness": 1,
+     "discoverability": 0.9
+    },
+    "density": {
+     "overall": 0.7,
+     "text": 0.6,
+     "image": 0.3,
+     "graphic": 0.8,
+     "information": 0.5
+    },
+    "negative_space": {
+     "amount": 0.25,
+     "distribution": "edge",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "digital",
+     "physicality": 0.1,
+     "imperfection": 0.2,
+     "surface": "glass",
+     "printing_process": "none"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.7,
+     "precision_vs_imperfection": 0.3,
+     "minimalism_vs_density": 0.7,
+     "static_vs_dynamic": 0.95,
+     "legibility_vs_expression": 0.4,
+     "digital_vs_physical": 0.2
+    }
+   }
+  },
+  {
+   "key": "data-viz-editorial",
+   "name": "Data Viz Editorial 数据可视化编辑",
+   "description": "信息图表与编辑排版结合、统计叙事",
+   "tags": [
+    "data",
+    "chart",
+    "editorial",
+    "infographic"
+   ],
+   "dna": {
+    "design_movements": [
+     "editorial"
+    ],
+    "composition": {
+     "structure": "modular",
+     "focal_point": "upper_left",
+     "visual_axis": "vertical",
+     "balance": "stable",
+     "symmetry": 0.4,
+     "edge_tension": 0.4,
+     "cropping": "none",
+     "layering": "shallow",
+     "overlap": 0.15,
+     "alignment": [
+      "left_edge",
+      "baseline"
+     ]
+    },
+    "grid": {
+     "type": "12_column",
+     "columns": 12,
+     "rows": 12,
+     "gutter": "small",
+     "margin": "medium",
+     "baseline_grid": true,
+     "alignment_mode": "strict",
+     "grid_visibility": 0.15,
+     "break_grid": 0.2
+    },
+    "visual_hierarchy": {
+     "primary": "graphic",
+     "secondary": "title",
+     "tertiary": "metadata",
+     "reading_direction": "top_to_bottom",
+     "hierarchy_strength": 0.85,
+     "scale_contrast": 0.6
+    },
+    "typography": {
+     "category": "humanist_sans",
+     "width": "normal",
+     "weight": "medium",
+     "contrast": "medium",
+     "case": "mixed",
+     "tracking": "normal",
+     "leading": "normal",
+     "scale": "medium",
+     "alignment": "left",
+     "distortion": 0.05,
+     "cropping": 0.1,
+     "layering": "stacked"
+    },
+    "color": {
+     "strategy": "muted",
+     "temperature": "cool",
+     "saturation": 0.4,
+     "contrast": 0.75,
+     "brightness": 0.55,
+     "dominant_ratio": 0.7,
+     "accent_ratio": 0.1,
+     "accent_count": 3,
+     "gradient": false,
+     "palette": [
+      "#F7F7F4",
+      "#1E293B",
+      "#4F83CC",
+      "#D97706",
+      "#059669"
+     ],
+     "ai_aesthetic_risk": 0.06
+    },
+    "imagery": {
+     "source": "diagram",
+     "scale": "medium",
+     "treatment": "raw",
+     "color_treatment": "full_color",
+     "image_density": 0.8
+    },
+    "graphic_language": {
+     "elements": [
+      "chart",
+      "diagram",
+      "grid",
+      "number",
+      "annotation",
+      "frame"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "thin",
+     "corner_style": "slightly_rounded",
+     "repetition": 0.6,
+     "pattern": "modular",
+     "symbolism": "functional"
+    },
+    "texture": {
+     "presence": 0.05,
+     "type": [
+      "paper"
+     ],
+     "scale": "fine",
+     "uniformity": 0.9
+    },
+    "depth": {
+     "mode": "flat",
+     "layers": 2,
+     "perspective": 0,
+     "parallax": 0
+    },
+    "motion": {
+     "enabled": true,
+     "style": "mechanical",
+     "intensity": 0.4,
+     "speed": "medium",
+     "direction": "vertical",
+     "easing": "ease_in_out"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "secondary": [
+      "click",
+      "scroll"
+     ],
+     "intensity": 0.5,
+     "responsiveness": 0.95,
+     "discoverability": 0.8
+    },
+    "density": {
+     "overall": 0.85,
+     "text": 0.6,
+     "image": 0.5,
+     "graphic": 0.9,
+     "information": 0.9
+    },
+    "negative_space": {
+     "amount": 0.15,
+     "distribution": "compressed",
+     "location": "none"
+    },
+    "materiality": {
+     "medium": "magazine",
+     "physicality": 0.3,
+     "imperfection": 0.1,
+     "surface": "matte",
+     "printing_process": "offset"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.15,
+     "precision_vs_imperfection": 0.1,
+     "minimalism_vs_density": 0.85,
+     "static_vs_dynamic": 0.3,
+     "legibility_vs_expression": 0.85,
+     "digital_vs_physical": 0.3
+    }
+   }
+  },
+  {
+   "key": "dark-noir",
+   "name": "Dark Noir 暗黑黑色电影",
+   "description": "黑白硬光、硬阴影、胶片颗粒、氛围阴影",
+   "tags": [
+    "noir",
+    "dark",
+    "film",
+    "mystery",
+    "black"
+   ],
+   "dna": {
+    "design_movements": [
+     "cinematic"
+    ],
+    "composition": {
+     "structure": "full_bleed",
+     "focal_point": "center",
+     "visual_axis": "vertical",
+     "balance": "tense",
+     "symmetry": 0.3,
+     "edge_tension": 0.7,
+     "cropping": "aggressive",
+     "layering": "deep",
+     "overlap": 0.4,
+     "alignment": [
+      "left_edge"
+     ]
+    },
+    "grid": {
+     "type": "custom",
+     "alignment_mode": "free",
+     "grid_visibility": 0,
+     "break_grid": 0.5
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "image",
+     "tertiary": "date",
+     "reading_direction": "top_to_bottom",
+     "hierarchy_strength": 0.85,
+     "scale_contrast": 0.8
+    },
+    "typography": {
+     "category": "serif",
+     "width": "normal",
+     "weight": "bold",
+     "contrast": "high",
+     "case": "uppercase",
+     "tracking": "loose",
+     "leading": "normal",
+     "scale": "large",
+     "alignment": "left",
+     "distortion": 0.1,
+     "cropping": 0.4,
+     "layering": "stacked"
+    },
+    "color": {
+     "strategy": "monochrome",
+     "temperature": "neutral",
+     "saturation": 0.05,
+     "contrast": 0.95,
+     "brightness": 0.25,
+     "dominant_ratio": 0.9,
+     "accent_ratio": 0.05,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#050505",
+      "#D9D4CB",
+      "#8C1F28"
+     ],
+     "ai_aesthetic_risk": 0.05
+    },
+    "imagery": {
+     "source": "photography",
+     "scale": "hero",
+     "treatment": "grain",
+     "color_treatment": "monochrome",
+     "contrast": "extreme",
+     "focus": "sharp",
+     "image_density": 0.85
+    },
+    "graphic_language": {
+     "elements": [
+      "frame",
+      "line"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.1,
+     "pattern": "none",
+     "symbolism": "semantic"
+    },
+    "texture": {
+     "presence": 0.6,
+     "type": [
+      "film_grain",
+      "noise"
+     ],
+     "scale": "coarse",
+     "contrast": 0.7,
+     "uniformity": 0.3
+    },
+    "depth": {
+     "mode": "photographic",
+     "layers": 4,
+     "perspective": 0.3,
+     "parallax": 0.2,
+     "blur_depth": 0.5,
+     "foreground_ratio": 0.6
+    },
+    "motion": {
+     "enabled": true,
+     "style": "cinematic",
+     "intensity": 0.3,
+     "speed": "slow",
+     "direction": "horizontal"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "secondary": [
+      "scroll"
+     ],
+     "intensity": 0.3,
+     "discoverability": 0.4
+    },
+    "density": {
+     "overall": 0.35,
+     "text": 0.3,
+     "image": 0.8,
+     "graphic": 0.1,
+     "information": 0.3
+    },
+    "negative_space": {
+     "amount": 0.65,
+     "distribution": "asymmetric",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "film",
+     "physicality": 0.5,
+     "imperfection": 0.6,
+     "surface": "matte",
+     "printing_process": "none"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.5,
+     "precision_vs_imperfection": 0.6,
+     "minimalism_vs_density": 0.6,
+     "static_vs_dynamic": 0.4,
+     "legibility_vs_expression": 0.5,
+     "digital_vs_physical": 0.5
+    }
+   }
+  },
+  {
+   "key": "vaporwave",
+   "name": "Vaporwave 蒸汽波",
+   "description": "复古未来、粉紫青、透视网格、雕塑/古希腊元素",
+   "tags": [
+    "vaporwave",
+    "retro",
+    "neon",
+    "dreamy"
+   ],
+   "dna": {
+    "design_movements": [
+     "cyberpunk"
+    ],
+    "composition": {
+     "structure": "diagonal",
+     "focal_point": "center",
+     "visual_axis": "vertical",
+     "balance": "stable",
+     "symmetry": 0.7,
+     "edge_tension": 0.4,
+     "cropping": "moderate",
+     "layering": "deep",
+     "overlap": 0.5,
+     "alignment": [
+      "center_axis"
+     ]
+    },
+    "grid": {
+     "type": "radial",
+     "alignment_mode": "mixed",
+     "grid_visibility": 0.5,
+     "break_grid": 0.2
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "graphic",
+     "tertiary": "date",
+     "reading_direction": "top_to_bottom",
+     "hierarchy_strength": 0.8,
+     "scale_contrast": 0.7
+    },
+    "typography": {
+     "category": "display_serif",
+     "width": "normal",
+     "weight": "medium",
+     "contrast": "high",
+     "case": "mixed",
+     "tracking": "loose",
+     "leading": "normal",
+     "scale": "oversized",
+     "alignment": "center",
+     "distortion": 0.3,
+     "cropping": 0.3,
+     "layering": "stacked"
+    },
+    "color": {
+     "strategy": "pastel",
+     "temperature": "cool",
+     "saturation": 0.7,
+     "contrast": 0.7,
+     "brightness": 0.55,
+     "dominant_ratio": 0.6,
+     "accent_ratio": 0.2,
+     "accent_count": 3,
+     "gradient": false,
+     "palette": [
+      "#120C24",
+      "#FF71CE",
+      "#01CDFE",
+      "#05FFA1"
+     ],
+     "ai_aesthetic_risk": 0.45
+    },
+    "imagery": {
+     "source": "3d",
+     "treatment": "chromatic_aberration",
+     "color_treatment": "high_saturation",
+     "image_density": 0.5
+    },
+    "graphic_language": {
+     "elements": [
+      "grid",
+      "polygon",
+      "circle",
+      "symbol"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "hairline",
+     "corner_style": "slightly_rounded",
+     "repetition": 0.7,
+     "pattern": "generative",
+     "symbolism": "decorative"
+    },
+    "texture": {
+     "presence": 0.2,
+     "type": [
+      "noise"
+     ],
+     "scale": "fine",
+     "contrast": 0.4,
+     "uniformity": 0.6
+    },
+    "depth": {
+     "mode": "perspective",
+     "layers": 6,
+     "perspective": 0.9,
+     "parallax": 0.6,
+     "blur_depth": 0.3,
+     "foreground_ratio": 0.4
+    },
+    "motion": {
+     "enabled": true,
+     "style": "fluid",
+     "intensity": 0.6,
+     "speed": "slow",
+     "direction": "vertical"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "secondary": [
+      "scroll"
+     ],
+     "intensity": 0.5,
+     "discoverability": 0.7
+    },
+    "density": {
+     "overall": 0.6,
+     "text": 0.4,
+     "image": 0.4,
+     "graphic": 0.7,
+     "information": 0.4
+    },
+    "negative_space": {
+     "amount": 0.4,
+     "distribution": "central",
+     "location": "center"
+    },
+    "materiality": {
+     "medium": "digital",
+     "physicality": 0.1,
+     "imperfection": 0.2,
+     "surface": "glossy",
+     "printing_process": "none"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.4,
+     "precision_vs_imperfection": 0.2,
+     "minimalism_vs_density": 0.5,
+     "static_vs_dynamic": 0.6,
+     "legibility_vs_expression": 0.5,
+     "digital_vs_physical": 0.3
+    }
+   }
+  },
+  {
+   "key": "soviet-brutalist",
+   "name": "Soviet Brutalist 苏式粗野",
+   "description": "红黑、粗壮几何、宣传画构图、强硬秩序",
+   "tags": [
+    "soviet",
+    "brutalist",
+    "propaganda",
+    "bold",
+    "red"
+   ],
+   "dna": {
+    "design_movements": [
+     "brutalist"
+    ],
+    "composition": {
+     "structure": "symmetrical",
+     "focal_point": "center",
+     "visual_axis": "vertical",
+     "balance": "stable",
+     "symmetry": 0.8,
+     "edge_tension": 0.5,
+     "cropping": "moderate",
+     "layering": "shallow",
+     "overlap": 0.3,
+     "alignment": [
+      "center_axis"
+     ]
+    },
+    "grid": {
+     "type": "6_column",
+     "columns": 6,
+     "alignment_mode": "strict",
+     "grid_visibility": 0.2,
+     "break_grid": 0.2
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "graphic",
+     "tertiary": "date",
+     "reading_direction": "top_to_bottom",
+     "hierarchy_strength": 0.95,
+     "scale_contrast": 0.9
+    },
+    "typography": {
+     "category": "grotesk",
+     "width": "condensed",
+     "weight": "black",
+     "contrast": "low",
+     "case": "uppercase",
+     "tracking": "very_tight",
+     "leading": "tight",
+     "scale": "extreme",
+     "alignment": "center",
+     "distortion": 0.1,
+     "cropping": 0.3,
+     "layering": "stacked"
+    },
+    "color": {
+     "strategy": "black_and_accent",
+     "temperature": "neutral",
+     "saturation": 0.5,
+     "contrast": 0.95,
+     "brightness": 0.35,
+     "dominant_ratio": 0.8,
+     "accent_ratio": 0.1,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#1A1A1A",
+      "#F0EDE4",
+      "#D7263D"
+     ],
+     "ai_aesthetic_risk": 0.05
+    },
+    "imagery": {
+     "source": "illustration",
+     "treatment": "threshold",
+     "color_treatment": "duotone",
+     "contrast": "extreme",
+     "image_density": 0.5
+    },
+    "graphic_language": {
+     "elements": [
+      "polygon",
+      "line",
+      "polygon",
+      "arrow"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "bold",
+     "corner_style": "sharp",
+     "repetition": 0.7,
+     "pattern": "linear",
+     "symbolism": "semantic"
+    },
+    "texture": {
+     "presence": 0.4,
+     "type": [
+      "paper_grain",
+      "ink_bleed"
+     ],
+     "scale": "coarse",
+     "contrast": 0.5,
+     "uniformity": 0.3
+    },
+    "depth": {
+     "mode": "flat",
+     "layers": 2,
+     "perspective": 0.2,
+     "parallax": 0
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "click",
+     "intensity": 0.3
+    },
+    "density": {
+     "overall": 0.6,
+     "text": 0.6,
+     "image": 0.4,
+     "graphic": 0.6,
+     "information": 0.5
+    },
+    "negative_space": {
+     "amount": 0.35,
+     "distribution": "uniform",
+     "location": "center"
+    },
+    "materiality": {
+     "medium": "printed",
+     "physicality": 0.6,
+     "imperfection": 0.4,
+     "surface": "rough",
+     "printing_process": "offset"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.25,
+     "precision_vs_imperfection": 0.3,
+     "minimalism_vs_density": 0.5,
+     "static_vs_dynamic": 0.3,
+     "legibility_vs_expression": 0.7,
+     "digital_vs_physical": 0.5
+    }
+   }
+  },
+  {
+   "key": "art-deco",
+   "name": "Art Deco 装饰艺术",
+   "description": "金黑、对称、几何装饰、奢华字体",
+   "tags": [
+    "deco",
+    "luxury",
+    "geometric",
+    "gold",
+    "symmetry"
+   ],
+   "dna": {
+    "design_movements": [
+     "luxury_editorial"
+    ],
+    "composition": {
+     "structure": "symmetrical",
+     "focal_point": "center",
+     "visual_axis": "vertical",
+     "balance": "stable",
+     "symmetry": 0.95,
+     "edge_tension": 0.2,
+     "cropping": "subtle",
+     "layering": "shallow",
+     "overlap": 0.2,
+     "alignment": [
+      "center_axis"
+     ]
+    },
+    "grid": {
+     "type": "modular",
+     "columns": 8,
+     "gutter": "medium",
+     "margin": "medium",
+     "alignment_mode": "strict",
+     "grid_visibility": 0.1,
+     "break_grid": 0.1
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "graphic",
+     "tertiary": "date",
+     "reading_direction": "top_to_bottom",
+     "hierarchy_strength": 0.9,
+     "scale_contrast": 0.8
+    },
+    "typography": {
+     "category": "display_serif",
+     "width": "normal",
+     "weight": "bold",
+     "contrast": "high",
+     "case": "uppercase",
+     "tracking": "loose",
+     "leading": "normal",
+     "scale": "large",
+     "alignment": "center",
+     "distortion": 0.05,
+     "cropping": 0.1,
+     "layering": "stacked"
+    },
+    "color": {
+     "strategy": "black_and_accent",
+     "temperature": "warm",
+     "saturation": 0.3,
+     "contrast": 0.85,
+     "brightness": 0.4,
+     "dominant_ratio": 0.8,
+     "accent_ratio": 0.1,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#101010",
+      "#E8DCC0",
+      "#B8860B",
+      "#5C3A21"
+     ],
+     "ai_aesthetic_risk": 0.05
+    },
+    "imagery": {
+     "source": "illustration",
+     "treatment": "silhouette",
+     "color_treatment": "duotone",
+     "image_density": 0.4
+    },
+    "graphic_language": {
+     "elements": [
+      "line",
+      "polygon",
+      "frame",
+      "circle"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.8,
+     "pattern": "linear",
+     "symbolism": "decorative"
+    },
+    "texture": {
+     "presence": 0.3,
+     "type": [
+      "paper",
+      "metal"
+     ],
+     "scale": "fine",
+     "contrast": 0.5,
+     "uniformity": 0.7
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 3,
+     "perspective": 0.1,
+     "parallax": 0
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "intensity": 0.2
+    },
+    "density": {
+     "overall": 0.5,
+     "text": 0.4,
+     "image": 0.3,
+     "graphic": 0.6,
+     "information": 0.4
+    },
+    "negative_space": {
+     "amount": 0.5,
+     "distribution": "uniform",
+     "location": "center"
+    },
+    "materiality": {
+     "medium": "letterpress",
+     "physicality": 0.7,
+     "imperfection": 0.1,
+     "surface": "metallic",
+     "printing_process": "letterpress"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.1,
+     "precision_vs_imperfection": 0.1,
+     "minimalism_vs_density": 0.4,
+     "static_vs_dynamic": 0.15,
+     "legibility_vs_expression": 0.75,
+     "digital_vs_physical": 0.4
+    }
+   }
+  },
+  {
+   "key": "bauhaus",
+   "name": "Bauhaus 包豪斯",
+   "description": "几何基本形、三原色、网格理性、构成感",
+   "tags": [
+    "bauhaus",
+    "geometric",
+    "primary",
+    "modernist",
+    "constructivist"
+   ],
+   "dna": {
+    "design_movements": [
+     "swiss_international"
+    ],
+    "composition": {
+     "structure": "modular",
+     "focal_point": "upper_left",
+     "visual_axis": "diagonal",
+     "balance": "dynamic",
+     "symmetry": 0.3,
+     "edge_tension": 0.6,
+     "cropping": "moderate",
+     "layering": "medium",
+     "overlap": 0.5,
+     "alignment": [
+      "left_edge",
+      "right_edge"
+     ]
+    },
+    "grid": {
+     "type": "6_column",
+     "columns": 6,
+     "rows": 6,
+     "gutter": "small",
+     "margin": "medium",
+     "alignment_mode": "strict",
+     "grid_visibility": 0.15,
+     "break_grid": 0.4
+    },
+    "visual_hierarchy": {
+     "primary": "graphic",
+     "secondary": "title",
+     "tertiary": "date",
+     "reading_direction": "diagonal",
+     "hierarchy_strength": 0.85,
+     "scale_contrast": 0.8
+    },
+    "typography": {
+     "category": "grotesk",
+     "width": "normal",
+     "weight": "bold",
+     "contrast": "low",
+     "case": "lowercase",
+     "tracking": "tight",
+     "leading": "normal",
+     "scale": "large",
+     "alignment": "left",
+     "distortion": 0.1,
+     "cropping": 0.2,
+     "layering": "overlap"
+    },
+    "color": {
+     "strategy": "triadic",
+     "temperature": "neutral",
+     "saturation": 0.8,
+     "contrast": 0.85,
+     "brightness": 0.5,
+     "dominant_ratio": 0.6,
+     "accent_ratio": 0.2,
+     "accent_count": 3,
+     "gradient": false,
+     "palette": [
+      "#F4EFE0",
+      "#E63329",
+      "#1F6FB2",
+      "#F2B705"
+     ],
+     "ai_aesthetic_risk": 0.08
+    },
+    "imagery": {
+     "source": "abstract",
+     "treatment": "posterize",
+     "color_treatment": "full_color",
+     "image_density": 0.5
+    },
+    "graphic_language": {
+     "elements": [
+      "circle",
+      "square",
+      "line",
+      "polygon"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "medium",
+     "corner_style": "sharp",
+     "repetition": 0.8,
+     "pattern": "modular",
+     "symbolism": "semantic"
+    },
+    "texture": {
+     "presence": 0.2,
+     "type": [
+      "paper"
+     ],
+     "scale": "fine",
+     "contrast": 0.4,
+     "uniformity": 0.7
+    },
+    "depth": {
+     "mode": "flat",
+     "layers": 3,
+     "perspective": 0.1,
+     "parallax": 0.1
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "intensity": 0.3
+    },
+    "density": {
+     "overall": 0.5,
+     "text": 0.4,
+     "image": 0.3,
+     "graphic": 0.8,
+     "information": 0.5
+    },
+    "negative_space": {
+     "amount": 0.45,
+     "distribution": "asymmetric",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "printed",
+     "physicality": 0.5,
+     "imperfection": 0.3,
+     "surface": "matte",
+     "printing_process": "screen_print"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.4,
+     "precision_vs_imperfection": 0.3,
+     "minimalism_vs_density": 0.5,
+     "static_vs_dynamic": 0.4,
+     "legibility_vs_expression": 0.6,
+     "digital_vs_physical": 0.5
+    }
+   }
+  },
+  {
+   "key": "editorial-photography",
+   "name": "Editorial Photography 杂志摄影",
+   "description": "大图为主、衬线标题、克制排版、画报质感",
+   "tags": [
+    "photography",
+    "editorial",
+    "magazine",
+    "image-led"
+   ],
+   "dna": {
+    "design_movements": [
+     "luxury_editorial"
+    ],
+    "composition": {
+     "structure": "split",
+     "focal_point": "upper_right",
+     "visual_axis": "horizontal",
+     "balance": "dynamic",
+     "symmetry": 0.2,
+     "edge_tension": 0.4,
+     "cropping": "aggressive",
+     "layering": "shallow",
+     "overlap": 0.15,
+     "alignment": [
+      "left_edge"
+     ]
+    },
+    "grid": {
+     "type": "12_column",
+     "columns": 12,
+     "gutter": "large",
+     "margin": "medium",
+     "alignment_mode": "strict",
+     "grid_visibility": 0,
+     "break_grid": 0.2
+    },
+    "visual_hierarchy": {
+     "primary": "image",
+     "secondary": "title",
+     "tertiary": "metadata",
+     "reading_direction": "left_to_right",
+     "hierarchy_strength": 0.8,
+     "scale_contrast": 0.6
+    },
+    "typography": {
+     "category": "serif",
+     "width": "normal",
+     "weight": "regular",
+     "contrast": "high",
+     "case": "title_case",
+     "tracking": "normal",
+     "leading": "loose",
+     "scale": "large",
+     "alignment": "left",
+     "distortion": 0.05,
+     "cropping": 0.2,
+     "layering": "isolated"
+    },
+    "color": {
+     "strategy": "neutral",
+     "temperature": "warm",
+     "saturation": 0.25,
+     "contrast": 0.8,
+     "brightness": 0.5,
+     "dominant_ratio": 0.85,
+     "accent_ratio": 0.05,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#1A1A1A",
+      "#F5F2EA",
+      "#A33B20"
+     ],
+     "ai_aesthetic_risk": 0.03
+    },
+    "imagery": {
+     "source": "photography",
+     "scale": "hero",
+     "treatment": "raw",
+     "color_treatment": "full_color",
+     "focus": "sharp",
+     "depth": "deep",
+     "image_density": 0.85
+    },
+    "graphic_language": {
+     "elements": [
+      "line",
+      "frame"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.15,
+     "pattern": "none",
+     "symbolism": "semantic"
+    },
+    "texture": {
+     "presence": 0.15,
+     "type": [
+      "paper"
+     ],
+     "scale": "fine",
+     "uniformity": 0.85
+    },
+    "depth": {
+     "mode": "photographic",
+     "layers": 3,
+     "perspective": 0.2,
+     "parallax": 0.2,
+     "blur_depth": 0.4,
+     "foreground_ratio": 0.5
+    },
+    "motion": {
+     "enabled": true,
+     "style": "subtle",
+     "intensity": 0.2,
+     "speed": "slow",
+     "direction": "vertical"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "scroll",
+     "secondary": [
+      "hover"
+     ],
+     "intensity": 0.3,
+     "discoverability": 0.5
+    },
+    "density": {
+     "overall": 0.3,
+     "text": 0.3,
+     "image": 0.85,
+     "graphic": 0.1,
+     "information": 0.3
+    },
+    "negative_space": {
+     "amount": 0.6,
+     "distribution": "asymmetric",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "magazine",
+     "physicality": 0.4,
+     "imperfection": 0.1,
+     "surface": "glossy",
+     "printing_process": "offset"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.2,
+     "precision_vs_imperfection": 0.15,
+     "minimalism_vs_density": 0.6,
+     "static_vs_dynamic": 0.3,
+     "legibility_vs_expression": 0.8,
+     "digital_vs_physical": 0.3
+    }
+   }
+  },
+  {
+   "key": "festival-neon",
+   "name": "Festival Neon 音乐节霓虹",
+   "description": "霓虹灯管、高饱和、夜晚氛围、派对能量",
+   "tags": [
+    "festival",
+    "neon",
+    "music",
+    "night",
+    "energy"
+   ],
+   "dna": {
+    "design_movements": [
+     "cyberpunk"
+    ],
+    "composition": {
+     "structure": "radial",
+     "focal_point": "center",
+     "visual_axis": "radial",
+     "balance": "dynamic",
+     "symmetry": 0.4,
+     "edge_tension": 0.7,
+     "cropping": "moderate",
+     "layering": "deep",
+     "overlap": 0.6,
+     "alignment": [
+      "center_axis"
+     ]
+    },
+    "grid": {
+     "type": "radial",
+     "alignment_mode": "free",
+     "grid_visibility": 0.2,
+     "break_grid": 0.4
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "date",
+     "tertiary": "graphic",
+     "reading_direction": "center_out",
+     "hierarchy_strength": 0.9,
+     "scale_contrast": 0.85
+    },
+    "typography": {
+     "category": "geometric_sans",
+     "width": "condensed",
+     "weight": "bold",
+     "contrast": "medium",
+     "case": "uppercase",
+     "tracking": "tight",
+     "leading": "tight",
+     "scale": "oversized",
+     "alignment": "center",
+     "distortion": 0.3,
+     "cropping": 0.3,
+     "layering": "overlap"
+    },
+    "color": {
+     "strategy": "complementary",
+     "temperature": "cool",
+     "saturation": 0.85,
+     "contrast": 0.9,
+     "brightness": 0.45,
+     "dominant_ratio": 0.6,
+     "accent_ratio": 0.2,
+     "accent_count": 3,
+     "gradient": false,
+     "palette": [
+      "#0A0618",
+      "#FF2BD6",
+      "#00E5FF",
+      "#FFE600"
+     ],
+     "ai_aesthetic_risk": 0.4
+    },
+    "imagery": {
+     "source": "abstract",
+     "treatment": "glitch",
+     "color_treatment": "high_saturation",
+     "image_density": 0.5
+    },
+    "graphic_language": {
+     "elements": [
+      "circle",
+      "polygon",
+      "line",
+      "grid"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "medium",
+     "corner_style": "sharp",
+     "repetition": 0.7,
+     "pattern": "radial",
+     "symbolism": "decorative"
+    },
+    "texture": {
+     "presence": 0.15,
+     "type": [
+      "noise"
+     ],
+     "scale": "fine",
+     "contrast": 0.4,
+     "uniformity": 0.6
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 5,
+     "perspective": 0.6,
+     "parallax": 0.6,
+     "blur_depth": 0.4,
+     "foreground_ratio": 0.5
+    },
+    "motion": {
+     "enabled": true,
+     "style": "fluid",
+     "intensity": 0.8,
+     "speed": "fast",
+     "direction": "multi_axis",
+     "easing": "spring"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "click",
+     "secondary": [
+      "hover",
+      "audio"
+     ],
+     "intensity": 0.8,
+     "responsiveness": 0.95
+    },
+    "density": {
+     "overall": 0.65,
+     "text": 0.5,
+     "image": 0.4,
+     "graphic": 0.8,
+     "information": 0.4
+    },
+    "negative_space": {
+     "amount": 0.3,
+     "distribution": "edge",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "digital",
+     "physicality": 0.1,
+     "imperfection": 0.2,
+     "surface": "glass",
+     "printing_process": "none"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.65,
+     "precision_vs_imperfection": 0.3,
+     "minimalism_vs_density": 0.7,
+     "static_vs_dynamic": 0.95,
+     "legibility_vs_expression": 0.4,
+     "digital_vs_physical": 0.2
+    }
+   }
+  },
+  {
+   "key": "museum-minimal",
+   "name": "Museum Minimal 美术馆极简",
+   "description": "白墙感、文字说明、克制、中性",
+   "tags": [
+    "museum",
+    "minimal",
+    "white",
+    "institutional",
+    "quiet"
+   ],
+   "dna": {
+    "design_movements": [
+     "minimalism"
+    ],
+    "composition": {
+     "structure": "centered",
+     "focal_point": "center",
+     "visual_axis": "horizontal",
+     "balance": "stable",
+     "symmetry": 0.9,
+     "edge_tension": 0.1,
+     "cropping": "subtle",
+     "layering": "flat",
+     "overlap": 0.02,
+     "alignment": [
+      "center_axis"
+     ]
+    },
+    "grid": {
+     "type": "modular",
+     "columns": 6,
+     "gutter": "large",
+     "margin": "large",
+     "alignment_mode": "strict",
+     "grid_visibility": 0,
+     "break_grid": 0
+    },
+    "visual_hierarchy": {
+     "primary": "image",
+     "secondary": "metadata",
+     "tertiary": "title",
+     "reading_direction": "left_to_right",
+     "hierarchy_strength": 0.5,
+     "scale_contrast": 0.3,
+     "weight_contrast": 0.2
+    },
+    "typography": {
+     "category": "humanist_sans",
+     "width": "normal",
+     "weight": "light",
+     "contrast": "medium",
+     "case": "lowercase",
+     "tracking": "normal",
+     "leading": "loose",
+     "scale": "small",
+     "alignment": "left",
+     "distortion": 0,
+     "cropping": 0,
+     "layering": "isolated"
+    },
+    "color": {
+     "strategy": "colorless",
+     "temperature": "neutral",
+     "saturation": 0.02,
+     "contrast": 0.6,
+     "brightness": 0.7,
+     "dominant_ratio": 0.98,
+     "accent_ratio": 0.01,
+     "accent_count": 0,
+     "gradient": false,
+     "palette": [
+      "#111111",
+      "#FFFFFF",
+      "#B0B0AA"
+     ],
+     "ai_aesthetic_risk": 0.01
+    },
+    "imagery": {
+     "source": "photography",
+     "scale": "medium",
+     "treatment": "raw",
+     "color_treatment": "full_color",
+     "image_density": 0.4
+    },
+    "graphic_language": {
+     "elements": [],
+     "shape_language": "geometric",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.02,
+     "pattern": "none",
+     "symbolism": "functional"
+    },
+    "texture": {
+     "presence": 0.02,
+     "type": [
+      "paper"
+     ],
+     "scale": "fine",
+     "uniformity": 0.99
+    },
+    "depth": {
+     "mode": "flat",
+     "layers": 1,
+     "perspective": 0,
+     "parallax": 0
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "intensity": 0.05
+    },
+    "density": {
+     "overall": 0.08,
+     "text": 0.15,
+     "image": 0.3,
+     "graphic": 0.02,
+     "information": 0.12
+    },
+    "negative_space": {
+     "amount": 0.9,
+     "distribution": "central",
+     "location": "center",
+     "tension": 0.1
+    },
+    "materiality": {
+     "medium": "digital",
+     "physicality": 0.05,
+     "imperfection": 0.02,
+     "surface": "matte",
+     "printing_process": "none"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.02,
+     "precision_vs_imperfection": 0.02,
+     "minimalism_vs_density": 0.99,
+     "static_vs_dynamic": 0.02,
+     "legibility_vs_expression": 0.9,
+     "digital_vs_physical": 0.1
+    }
+   }
+  },
+  {
+   "key": "book-cover-classic",
+   "name": "Book Cover Classic 经典书封",
+   "description": "居中衬线、对称、留白、经典型",
+   "tags": [
+    "book",
+    "classic",
+    "serif",
+    "literature",
+    "timeless"
+   ],
+   "dna": {
+    "design_movements": [
+     "editorial"
+    ],
+    "composition": {
+     "structure": "centered",
+     "focal_point": "center",
+     "visual_axis": "horizontal",
+     "balance": "stable",
+     "symmetry": 0.9,
+     "edge_tension": 0.15,
+     "cropping": "none",
+     "layering": "flat",
+     "overlap": 0.05,
+     "alignment": [
+      "center_axis"
+     ]
+    },
+    "grid": {
+     "type": "modular",
+     "columns": 6,
+     "gutter": "medium",
+     "margin": "large",
+     "alignment_mode": "strict",
+     "grid_visibility": 0,
+     "break_grid": 0.05
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "graphic",
+     "tertiary": "date",
+     "reading_direction": "top_to_bottom",
+     "hierarchy_strength": 0.85,
+     "scale_contrast": 0.7
+    },
+    "typography": {
+     "category": "serif",
+     "width": "normal",
+     "weight": "medium",
+     "contrast": "high",
+     "case": "title_case",
+     "tracking": "loose",
+     "leading": "loose",
+     "scale": "large",
+     "alignment": "center",
+     "distortion": 0,
+     "cropping": 0.05,
+     "layering": "isolated"
+    },
+    "color": {
+     "strategy": "monochrome",
+     "temperature": "neutral",
+     "saturation": 0.1,
+     "contrast": 0.8,
+     "brightness": 0.5,
+     "dominant_ratio": 0.85,
+     "accent_ratio": 0.05,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#141414",
+      "#F4F1E8",
+      "#7A6A4F"
+     ],
+     "ai_aesthetic_risk": 0.02
+    },
+    "imagery": {
+     "source": "illustration",
+     "scale": "medium",
+     "treatment": "raw",
+     "color_treatment": "monochrome",
+     "image_density": 0.4
+    },
+    "graphic_language": {
+     "elements": [
+      "line",
+      "frame"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.2,
+     "pattern": "none",
+     "symbolism": "semantic"
+    },
+    "texture": {
+     "presence": 0.3,
+     "type": [
+      "paper",
+      "fold"
+     ],
+     "scale": "coarse",
+     "contrast": 0.3,
+     "uniformity": 0.6
+    },
+    "depth": {
+     "mode": "flat",
+     "layers": 2,
+     "perspective": 0,
+     "parallax": 0
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": false,
+     "primary": "none",
+     "intensity": 0
+    },
+    "density": {
+     "overall": 0.25,
+     "text": 0.3,
+     "image": 0.3,
+     "graphic": 0.15,
+     "information": 0.2
+    },
+    "negative_space": {
+     "amount": 0.75,
+     "distribution": "central",
+     "location": "center"
+    },
+    "materiality": {
+     "medium": "letterpress",
+     "physicality": 0.7,
+     "imperfection": 0.3,
+     "surface": "rough",
+     "printing_process": "letterpress"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.1,
+     "precision_vs_imperfection": 0.2,
+     "minimalism_vs_density": 0.75,
+     "static_vs_dynamic": 0.1,
+     "legibility_vs_expression": 0.85,
+     "digital_vs_physical": 0.6
+    }
+   }
+  },
+  {
+   "key": "comic-pop",
+   "name": "Comic Pop 漫画波普",
+   "description": "网点、粗轮廓、撞色、动态构图、流行感",
+   "tags": [
+    "comic",
+    "pop",
+    "halftone",
+    "bold",
+    "fun"
+   ],
+   "dna": {
+    "design_movements": [
+     "pop_art"
+    ],
+    "composition": {
+     "structure": "diagonal",
+     "focal_point": "center",
+     "visual_axis": "diagonal",
+     "balance": "dynamic",
+     "symmetry": 0.2,
+     "edge_tension": 0.8,
+     "cropping": "aggressive",
+     "layering": "medium",
+     "overlap": 0.6,
+     "alignment": [
+      "mixed"
+     ]
+    },
+    "grid": {
+     "type": "broken",
+     "alignment_mode": "free",
+     "grid_visibility": 0.1,
+     "break_grid": 0.6
+    },
+    "visual_hierarchy": {
+     "primary": "graphic",
+     "secondary": "title",
+     "tertiary": "date",
+     "reading_direction": "diagonal",
+     "hierarchy_strength": 0.85,
+     "scale_contrast": 0.9
+    },
+    "typography": {
+     "category": "slab_serif",
+     "width": "normal",
+     "weight": "black",
+     "contrast": "medium",
+     "case": "uppercase",
+     "tracking": "tight",
+     "leading": "normal",
+     "scale": "oversized",
+     "alignment": "center",
+     "distortion": 0.3,
+     "cropping": 0.4,
+     "layering": "overlap"
+    },
+    "color": {
+     "strategy": "complementary",
+     "temperature": "warm",
+     "saturation": 0.9,
+     "contrast": 0.9,
+     "brightness": 0.5,
+     "dominant_ratio": 0.6,
+     "accent_ratio": 0.2,
+     "accent_count": 3,
+     "gradient": false,
+     "palette": [
+      "#FFF3E0",
+      "#FFD100",
+      "#FF3D71",
+      "#1B6CA8"
+     ],
+     "ai_aesthetic_risk": 0.1
+    },
+    "imagery": {
+     "source": "illustration",
+     "treatment": "halftone",
+     "color_treatment": "full_color",
+     "contrast": "high",
+     "image_density": 0.6
+    },
+    "graphic_language": {
+     "elements": [
+      "dot",
+      "circle",
+      "polygon",
+      "line"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "bold",
+     "corner_style": "slightly_rounded",
+     "repetition": 0.8,
+     "pattern": "radial",
+     "symbolism": "decorative"
+    },
+    "texture": {
+     "presence": 0.6,
+     "type": [
+      "screen_print",
+      "paper"
+     ],
+     "scale": "medium",
+     "contrast": 0.6,
+     "uniformity": 0.3
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 4,
+     "perspective": 0.3,
+     "parallax": 0.3,
+     "blur_depth": 0.2
+    },
+    "motion": {
+     "enabled": true,
+     "style": "elastic",
+     "intensity": 0.7,
+     "speed": "fast",
+     "direction": "diagonal",
+     "easing": "spring"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "click",
+     "secondary": [
+      "hover"
+     ],
+     "intensity": 0.6,
+     "discoverability": 0.8
+    },
+    "density": {
+     "overall": 0.7,
+     "text": 0.5,
+     "image": 0.6,
+     "graphic": 0.9,
+     "information": 0.5
+    },
+    "negative_space": {
+     "amount": 0.25,
+     "distribution": "edge",
+     "location": "multiple"
+    },
+    "materiality": {
+     "medium": "screen_print",
+     "physicality": 0.5,
+     "imperfection": 0.3,
+     "surface": "matte",
+     "printing_process": "screen_print"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.6,
+     "precision_vs_imperfection": 0.3,
+     "minimalism_vs_density": 0.7,
+     "static_vs_dynamic": 0.8,
+     "legibility_vs_expression": 0.5,
+     "digital_vs_physical": 0.4
+    }
+   }
+  },
+  {
+   "key": "medical-technical",
+   "name": "Medical Technical 医学技术",
+   "description": "干净、等宽标注、图解、冷色、严谨",
+   "tags": [
+    "medical",
+    "technical",
+    "clean",
+    "diagram",
+    "clinical"
+   ],
+   "dna": {
+    "design_movements": [
+     "editorial"
+    ],
+    "composition": {
+     "structure": "modular",
+     "focal_point": "upper_left",
+     "visual_axis": "horizontal",
+     "balance": "stable",
+     "symmetry": 0.5,
+     "edge_tension": 0.3,
+     "cropping": "none",
+     "layering": "flat",
+     "overlap": 0.1,
+     "alignment": [
+      "left_edge",
+      "baseline"
+     ]
+    },
+    "grid": {
+     "type": "12_column",
+     "columns": 12,
+     "rows": 12,
+     "gutter": "small",
+     "margin": "medium",
+     "baseline_grid": true,
+     "alignment_mode": "strict",
+     "grid_visibility": 0.15,
+     "break_grid": 0.1
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "graphic",
+     "tertiary": "metadata",
+     "reading_direction": "left_to_right",
+     "hierarchy_strength": 0.9,
+     "scale_contrast": 0.6
+    },
+    "typography": {
+     "category": "monospace",
+     "width": "normal",
+     "weight": "regular",
+     "contrast": "low",
+     "case": "uppercase",
+     "tracking": "normal",
+     "leading": "normal",
+     "scale": "medium",
+     "alignment": "left",
+     "distortion": 0,
+     "cropping": 0.05,
+     "layering": "stacked"
+    },
+    "color": {
+     "strategy": "neutral",
+     "temperature": "cool",
+     "saturation": 0.1,
+     "contrast": 0.8,
+     "brightness": 0.6,
+     "dominant_ratio": 0.85,
+     "accent_ratio": 0.06,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#0E1726",
+      "#F2F6F9",
+      "#2E86DE"
+     ],
+     "ai_aesthetic_risk": 0.02
+    },
+    "imagery": {
+     "source": "diagram",
+     "scale": "medium",
+     "treatment": "raw",
+     "color_treatment": "monochrome",
+     "image_density": 0.6
+    },
+    "graphic_language": {
+     "elements": [
+      "grid",
+      "diagram",
+      "number",
+      "annotation",
+      "frame"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.5,
+     "pattern": "modular",
+     "symbolism": "functional"
+    },
+    "texture": {
+     "presence": 0.02,
+     "type": [
+      "paper"
+     ],
+     "scale": "fine",
+     "uniformity": 0.98
+    },
+    "depth": {
+     "mode": "flat",
+     "layers": 1,
+     "perspective": 0,
+     "parallax": 0
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "intensity": 0.3,
+     "responsiveness": 0.9
+    },
+    "density": {
+     "overall": 0.7,
+     "text": 0.7,
+     "image": 0.4,
+     "graphic": 0.5,
+     "information": 0.8
+    },
+    "negative_space": {
+     "amount": 0.3,
+     "distribution": "uniform",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "digital",
+     "physicality": 0.05,
+     "imperfection": 0.02,
+     "surface": "matte",
+     "printing_process": "none"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.05,
+     "precision_vs_imperfection": 0.02,
+     "minimalism_vs_density": 0.7,
+     "static_vs_dynamic": 0.1,
+     "legibility_vs_expression": 0.95,
+     "digital_vs_physical": 0.2
+    }
+   }
+  },
+  {
+   "key": "architecture-poster",
+   "name": "Architecture Poster 建筑海报",
+   "description": "建筑线稿、细线、网格、单色、结构感",
+   "tags": [
+    "architecture",
+    "blueprint",
+    "lines",
+    "grid",
+    "minimal"
+   ],
+   "dna": {
+    "design_movements": [
+     "minimalism",
+     "swiss_international"
+    ],
+    "composition": {
+     "structure": "symmetrical",
+     "focal_point": "center",
+     "visual_axis": "vertical",
+     "balance": "stable",
+     "symmetry": 0.8,
+     "edge_tension": 0.3,
+     "cropping": "subtle",
+     "layering": "shallow",
+     "overlap": 0.1,
+     "alignment": [
+      "center_axis",
+      "baseline"
+     ]
+    },
+    "grid": {
+     "type": "12_column",
+     "columns": 12,
+     "rows": 16,
+     "gutter": "small",
+     "margin": "medium",
+     "baseline_grid": true,
+     "alignment_mode": "strict",
+     "grid_visibility": 0.3,
+     "break_grid": 0.1
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "graphic",
+     "tertiary": "metadata",
+     "reading_direction": "top_to_bottom",
+     "hierarchy_strength": 0.8,
+     "scale_contrast": 0.6
+    },
+    "typography": {
+     "category": "monospace",
+     "width": "condensed",
+     "weight": "medium",
+     "contrast": "low",
+     "case": "uppercase",
+     "tracking": "loose",
+     "leading": "normal",
+     "scale": "medium",
+     "alignment": "left",
+     "distortion": 0,
+     "cropping": 0.1,
+     "layering": "isolated"
+    },
+    "color": {
+     "strategy": "monochrome",
+     "temperature": "neutral",
+     "saturation": 0.05,
+     "contrast": 0.85,
+     "brightness": 0.5,
+     "dominant_ratio": 0.9,
+     "accent_ratio": 0.05,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#12181F",
+      "#E6EBF0",
+      "#5B7A99"
+     ],
+     "ai_aesthetic_risk": 0.02
+    },
+    "imagery": {
+     "source": "diagram",
+     "scale": "medium",
+     "treatment": "threshold",
+     "color_treatment": "monochrome",
+     "image_density": 0.6
+    },
+    "graphic_language": {
+     "elements": [
+      "grid",
+      "line",
+      "frame",
+      "coordinate"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.7,
+     "pattern": "modular",
+     "symbolism": "functional"
+    },
+    "texture": {
+     "presence": 0.1,
+     "type": [
+      "paper"
+     ],
+     "scale": "fine",
+     "uniformity": 0.9
+    },
+    "depth": {
+     "mode": "flat",
+     "layers": 2,
+     "perspective": 0.1,
+     "parallax": 0
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "intensity": 0.1
+    },
+    "density": {
+     "overall": 0.45,
+     "text": 0.4,
+     "image": 0.3,
+     "graphic": 0.6,
+     "information": 0.5
+    },
+    "negative_space": {
+     "amount": 0.55,
+     "distribution": "uniform",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "printed",
+     "physicality": 0.4,
+     "imperfection": 0.1,
+     "surface": "matte",
+     "printing_process": "offset"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.1,
+     "precision_vs_imperfection": 0.05,
+     "minimalism_vs_density": 0.6,
+     "static_vs_dynamic": 0.1,
+     "legibility_vs_expression": 0.85,
+     "digital_vs_physical": 0.4
+    }
+   }
+  },
+  {
+   "key": "film-festival",
+   "name": "Film Festival 电影节",
+   "description": "电影感摄影+编辑排版、衬线片名、奖杯感",
+   "tags": [
+    "film",
+    "festival",
+    "cinema",
+    "awards",
+    "prestige"
+   ],
+   "dna": {
+    "design_movements": [
+     "cinematic",
+     "luxury_editorial"
+    ],
+    "composition": {
+     "structure": "split",
+     "focal_point": "upper_left",
+     "visual_axis": "horizontal",
+     "balance": "dynamic",
+     "symmetry": 0.3,
+     "edge_tension": 0.5,
+     "cropping": "moderate",
+     "layering": "shallow",
+     "overlap": 0.2,
+     "alignment": [
+      "left_edge"
+     ]
+    },
+    "grid": {
+     "type": "12_column",
+     "columns": 12,
+     "gutter": "large",
+     "margin": "large",
+     "alignment_mode": "strict",
+     "grid_visibility": 0,
+     "break_grid": 0.15
+    },
+    "visual_hierarchy": {
+     "primary": "image",
+     "secondary": "title",
+     "tertiary": "date",
+     "reading_direction": "left_to_right",
+     "hierarchy_strength": 0.85,
+     "scale_contrast": 0.7
+    },
+    "typography": {
+     "category": "serif",
+     "width": "normal",
+     "weight": "medium",
+     "contrast": "high",
+     "case": "title_case",
+     "tracking": "loose",
+     "leading": "loose",
+     "scale": "large",
+     "alignment": "left",
+     "distortion": 0.05,
+     "cropping": 0.2,
+     "layering": "stacked"
+    },
+    "color": {
+     "strategy": "neutral",
+     "temperature": "neutral",
+     "saturation": 0.2,
+     "contrast": 0.85,
+     "brightness": 0.4,
+     "dominant_ratio": 0.85,
+     "accent_ratio": 0.06,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#0E0E10",
+      "#EAE6DE",
+      "#C9A227"
+     ],
+     "ai_aesthetic_risk": 0.02
+    },
+    "imagery": {
+     "source": "photography",
+     "scale": "hero",
+     "treatment": "grain",
+     "color_treatment": "full_color",
+     "focus": "soft",
+     "image_density": 0.8
+    },
+    "graphic_language": {
+     "elements": [
+      "line",
+      "frame",
+      "number"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.2,
+     "pattern": "linear",
+     "symbolism": "semantic"
+    },
+    "texture": {
+     "presence": 0.4,
+     "type": [
+      "film_grain",
+      "paper"
+     ],
+     "scale": "fine",
+     "contrast": 0.4,
+     "uniformity": 0.6
+    },
+    "depth": {
+     "mode": "photographic",
+     "layers": 4,
+     "perspective": 0.2,
+     "parallax": 0.3,
+     "blur_depth": 0.5,
+     "foreground_ratio": 0.5
+    },
+    "motion": {
+     "enabled": true,
+     "style": "cinematic",
+     "intensity": 0.4,
+     "speed": "slow",
+     "direction": "horizontal"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "secondary": [
+      "scroll"
+     ],
+     "intensity": 0.4,
+     "discoverability": 0.6
+    },
+    "density": {
+     "overall": 0.35,
+     "text": 0.3,
+     "image": 0.8,
+     "graphic": 0.15,
+     "information": 0.3
+    },
+    "negative_space": {
+     "amount": 0.6,
+     "distribution": "asymmetric",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "film",
+     "physicality": 0.4,
+     "imperfection": 0.3,
+     "surface": "glossy",
+     "printing_process": "none"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.25,
+     "precision_vs_imperfection": 0.2,
+     "minimalism_vs_density": 0.6,
+     "static_vs_dynamic": 0.4,
+     "legibility_vs_expression": 0.8,
+     "digital_vs_physical": 0.3
+    }
+   }
+  },
+  {
+   "key": "fashion-avant",
+   "name": "Fashion Avant 先锋时尚",
+   "description": "前卫、实验字体、非对称、怪诞、高级感",
+   "tags": [
+    "fashion",
+    "avant-garde",
+    "experimental",
+    "editorial",
+    "weird"
+   ],
+   "dna": {
+    "design_movements": [
+     "experimental_typography",
+     "luxury_editorial"
+    ],
+    "composition": {
+     "structure": "asymmetric",
+     "focal_point": "lower_left",
+     "visual_axis": "diagonal",
+     "balance": "tense",
+     "symmetry": 0.1,
+     "edge_tension": 0.85,
+     "cropping": "aggressive",
+     "layering": "deep",
+     "overlap": 0.6,
+     "alignment": [
+      "mixed"
+     ]
+    },
+    "grid": {
+     "type": "broken",
+     "alignment_mode": "free",
+     "grid_visibility": 0,
+     "break_grid": 0.7
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "image",
+     "tertiary": "metadata",
+     "reading_direction": "diagonal",
+     "hierarchy_strength": 0.8,
+     "scale_contrast": 0.9
+    },
+    "typography": {
+     "category": "experimental",
+     "width": "wide",
+     "weight": "variable",
+     "contrast": "extreme",
+     "case": "mixed",
+     "tracking": "very_loose",
+     "leading": "normal",
+     "scale": "extreme",
+     "alignment": "mixed",
+     "orientation": "rotated",
+     "distortion": 0.8,
+     "cropping": 0.7,
+     "layering": "masked",
+     "variable_font": true
+    },
+    "color": {
+     "strategy": "monochrome",
+     "temperature": "neutral",
+     "saturation": 0.1,
+     "contrast": 0.9,
+     "brightness": 0.4,
+     "dominant_ratio": 0.85,
+     "accent_ratio": 0.05,
+     "accent_count": 1,
+     "gradient": false,
+     "palette": [
+      "#0A0A0A",
+      "#F2F0EC",
+      "#C0C0C0"
+     ],
+     "ai_aesthetic_risk": 0.05
+    },
+    "imagery": {
+     "source": "photography",
+     "scale": "large",
+     "treatment": "chromatic_aberration",
+     "color_treatment": "monochrome",
+     "contrast": "extreme",
+     "image_density": 0.6
+    },
+    "graphic_language": {
+     "elements": [
+      "line",
+      "frame",
+      "cross"
+     ],
+     "shape_language": "irregular",
+     "line_weight": "hairline",
+     "corner_style": "sharp",
+     "repetition": 0.1,
+     "pattern": "none",
+     "symbolism": "ambiguous"
+    },
+    "texture": {
+     "presence": 0.2,
+     "type": [
+      "paper",
+      "fabric"
+     ],
+     "scale": "fine",
+     "contrast": 0.4,
+     "uniformity": 0.7
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 5,
+     "perspective": 0.3,
+     "parallax": 0.3,
+     "blur_depth": 0.3
+    },
+    "motion": {
+     "enabled": true,
+     "style": "organic",
+     "intensity": 0.5,
+     "speed": "slow",
+     "direction": "multi_axis"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "secondary": [
+      "drag"
+     ],
+     "intensity": 0.5,
+     "discoverability": 0.7
+    },
+    "density": {
+     "overall": 0.5,
+     "text": 0.5,
+     "image": 0.6,
+     "graphic": 0.3,
+     "information": 0.4
+    },
+    "negative_space": {
+     "amount": 0.5,
+     "distribution": "asymmetric",
+     "location": "multiple"
+    },
+    "materiality": {
+     "medium": "magazine",
+     "physicality": 0.3,
+     "imperfection": 0.4,
+     "surface": "matte",
+     "printing_process": "offset"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.8,
+     "precision_vs_imperfection": 0.6,
+     "minimalism_vs_density": 0.5,
+     "static_vs_dynamic": 0.7,
+     "legibility_vs_expression": 0.2,
+     "digital_vs_physical": 0.4
+    }
+   }
+  },
+  {
+   "key": "gig-risograph",
+   "name": "Gig Risograph 演出孔版",
+   "description": "乐队演出、双色套印、错位、纸张肌理",
+   "tags": [
+    "gig",
+    "music",
+    "risograph",
+    "print",
+    "show"
+   ],
+   "dna": {
+    "design_movements": [
+     "print_physicality",
+     "underground_music"
+    ],
+    "composition": {
+     "structure": "diagonal",
+     "focal_point": "center",
+     "visual_axis": "diagonal",
+     "balance": "dynamic",
+     "symmetry": 0.2,
+     "edge_tension": 0.7,
+     "cropping": "moderate",
+     "layering": "shallow",
+     "overlap": 0.5,
+     "alignment": [
+      "left_edge"
+     ]
+    },
+    "grid": {
+     "type": "8_column",
+     "columns": 8,
+     "gutter": "small",
+     "margin": "small",
+     "alignment_mode": "mixed",
+     "grid_visibility": 0.1,
+     "break_grid": 0.5
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "date",
+     "tertiary": "graphic",
+     "reading_direction": "diagonal",
+     "hierarchy_strength": 0.9,
+     "scale_contrast": 0.9
+    },
+    "typography": {
+     "category": "grotesk",
+     "width": "condensed",
+     "weight": "black",
+     "contrast": "low",
+     "case": "uppercase",
+     "tracking": "very_tight",
+     "leading": "tight",
+     "scale": "extreme",
+     "alignment": "left",
+     "distortion": 0.2,
+     "cropping": 0.5,
+     "layering": "overlap"
+    },
+    "color": {
+     "strategy": "duotone",
+     "temperature": "warm",
+     "saturation": 0.85,
+     "contrast": 0.85,
+     "brightness": 0.5,
+     "dominant_ratio": 0.7,
+     "accent_ratio": 0.15,
+     "accent_count": 2,
+     "gradient": false,
+     "palette": [
+      "#FFF3DC",
+      "#E8483C",
+      "#2A6FB0"
+     ],
+     "ai_aesthetic_risk": 0.1
+    },
+    "imagery": {
+     "source": "illustration",
+     "treatment": "risograph",
+     "color_treatment": "duotone",
+     "contrast": "high",
+     "image_density": 0.5
+    },
+    "graphic_language": {
+     "elements": [
+      "line",
+      "circle",
+      "dot",
+      "arrow"
+     ],
+     "shape_language": "organic",
+     "line_weight": "bold",
+     "corner_style": "slightly_rounded",
+     "repetition": 0.6,
+     "pattern": "random",
+     "symbolism": "decorative"
+    },
+    "texture": {
+     "presence": 0.7,
+     "type": [
+      "risograph",
+      "paper_grain"
+     ],
+     "scale": "coarse",
+     "contrast": 0.6,
+     "uniformity": 0.3
+    },
+    "depth": {
+     "mode": "flat",
+     "layers": 3,
+     "perspective": 0.1,
+     "parallax": 0.05
+    },
+    "motion": {
+     "enabled": false,
+     "style": "static",
+     "intensity": 0
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "hover",
+     "intensity": 0.2
+    },
+    "density": {
+     "overall": 0.6,
+     "text": 0.6,
+     "image": 0.4,
+     "graphic": 0.6,
+     "information": 0.5
+    },
+    "negative_space": {
+     "amount": 0.3,
+     "distribution": "asymmetric",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "risograph",
+     "physicality": 0.8,
+     "imperfection": 0.7,
+     "surface": "fibrous",
+     "printing_process": "risograph"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.6,
+     "precision_vs_imperfection": 0.7,
+     "minimalism_vs_density": 0.6,
+     "static_vs_dynamic": 0.4,
+     "legibility_vs_expression": 0.5,
+     "digital_vs_physical": 0.8
+    }
+   }
+  },
+  {
+   "key": "climate-activist",
+   "name": "Climate Activist 气候行动",
+   "description": "高对比、大地色+警示色、信息数据、紧迫感",
+   "tags": [
+    "climate",
+    "activist",
+    "impact",
+    "data",
+    "urgent"
+   ],
+   "dna": {
+    "design_movements": [
+     "brutalist",
+     "editorial"
+    ],
+    "composition": {
+     "structure": "broken_grid",
+     "focal_point": "upper_left",
+     "visual_axis": "diagonal",
+     "balance": "tense",
+     "symmetry": 0.1,
+     "edge_tension": 0.8,
+     "cropping": "aggressive",
+     "layering": "deep",
+     "overlap": 0.5,
+     "alignment": [
+      "left_edge",
+      "right_edge"
+     ]
+    },
+    "grid": {
+     "type": "6_column",
+     "columns": 6,
+     "rows": 10,
+     "gutter": "small",
+     "margin": "tight",
+     "alignment_mode": "mixed",
+     "grid_visibility": 0.2,
+     "break_grid": 0.6
+    },
+    "visual_hierarchy": {
+     "primary": "title",
+     "secondary": "graphic",
+     "tertiary": "metadata",
+     "reading_direction": "diagonal",
+     "hierarchy_strength": 0.95,
+     "scale_contrast": 0.9
+    },
+    "typography": {
+     "category": "grotesk",
+     "width": "condensed",
+     "weight": "black",
+     "contrast": "low",
+     "case": "uppercase",
+     "tracking": "very_tight",
+     "leading": "tight",
+     "scale": "extreme",
+     "alignment": "left",
+     "distortion": 0.2,
+     "cropping": 0.6,
+     "layering": "stacked"
+    },
+    "color": {
+     "strategy": "high_contrast",
+     "temperature": "warm",
+     "saturation": 0.7,
+     "contrast": 0.95,
+     "brightness": 0.4,
+     "dominant_ratio": 0.7,
+     "accent_ratio": 0.15,
+     "accent_count": 2,
+     "gradient": false,
+     "palette": [
+      "#0F1A12",
+      "#EAF2E5",
+      "#D7263D",
+      "#F2B705"
+     ],
+     "ai_aesthetic_risk": 0.06
+    },
+    "imagery": {
+     "source": "photography",
+     "treatment": "posterize",
+     "color_treatment": "duotone",
+     "contrast": "extreme",
+     "image_density": 0.6
+    },
+    "graphic_language": {
+     "elements": [
+      "arrow",
+      "chart",
+      "number",
+      "line",
+      "annotation"
+     ],
+     "shape_language": "geometric",
+     "line_weight": "bold",
+     "corner_style": "sharp",
+     "repetition": 0.5,
+     "pattern": "linear",
+     "symbolism": "semantic"
+    },
+    "texture": {
+     "presence": 0.3,
+     "type": [
+      "paper_grain"
+     ],
+     "scale": "medium",
+     "contrast": 0.5,
+     "uniformity": 0.4
+    },
+    "depth": {
+     "mode": "layered",
+     "layers": 3,
+     "perspective": 0.2,
+     "parallax": 0.2
+    },
+    "motion": {
+     "enabled": true,
+     "style": "mechanical",
+     "intensity": 0.5,
+     "speed": "fast",
+     "direction": "vertical",
+     "easing": "steps"
+    },
+    "interaction": {
+     "enabled": true,
+     "primary": "click",
+     "secondary": [
+      "hover"
+     ],
+     "intensity": 0.6,
+     "discoverability": 0.8
+    },
+    "density": {
+     "overall": 0.8,
+     "text": 0.75,
+     "image": 0.5,
+     "graphic": 0.7,
+     "information": 0.85
+    },
+    "negative_space": {
+     "amount": 0.15,
+     "distribution": "compressed",
+     "location": "edge"
+    },
+    "materiality": {
+     "medium": "printed",
+     "physicality": 0.5,
+     "imperfection": 0.5,
+     "surface": "rough",
+     "printing_process": "offset"
+    },
+    "design_tension": {
+     "order_vs_chaos": 0.7,
+     "precision_vs_imperfection": 0.5,
+     "minimalism_vs_density": 0.85,
+     "static_vs_dynamic": 0.7,
+     "legibility_vs_expression": 0.6,
+     "digital_vs_physical": 0.5
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+  "$comment": "photo-hotspots: 图片层 + 点击热点（人物/宠物/画面），无按钮",
+  "canvas": { "width": 1200, "height": 1600, "unit": "px", "responsive": true },
+  "content": {
+    "title": "AURORA",
+    "subtitle": "PHOTOGRAPHY EXHIBITION",
+    "location": "SHANGHAI · M50 GALLERY",
+    "metadata": {
+      "brand": "M50",
+      "tag": "EXHIBITION",
+      "note": "CLICK ANYWHERE TO EXPLORE"
+    },
+    "hotspots": [
+      { "x": 30, "y": 38, "r": 9, "label": "THE SUBJECT", "detail": "A portrait study in low light — shot on 35mm, pushed two stops. Hover to feel the grain." },
+      { "x": 68, "y": 60, "r": 8, "label": "THE COMPANION", "detail": "Her cat followed her into the darkroom. Click again to close." },
+      { "x": 50, "y": 92, "r": 34, "label": "THE NIGHT", "detail": "The whole scene. Click anywhere on the photo to explore, no buttons needed." }
+    ]
+  },
+  "style": {
+    "colors": {
+      "bg": "#0c0c12",
+      "surface": "#16161f",
+      "ink": "#f2f0ea",
+      "accent": "#e8b34b",
+      "accent2": "#7c9a92",
+      "muted": "#9a978e"
+    },
+    "typography": {
+      "fontFamily": "'Playfair Display', Georgia, 'Times New Roman', serif",
+      "bodyFont": "'Helvetica Neue', Arial, sans-serif",
+      "scaleRatio": 1.25,
+      "titleScale": 2.3
+    },
+    "layout": { "gridColumns": 12, "gutter": 24, "margin": 56 },
+    "imagery": {
+      "image": { "src": "../../assets/reference/ref.jpg", "fit": "cover", "duotone": true, "scrim": true, "zoom": true }
+    }
+  },
+  "animation": {
+    "title": { "reveal": "chars", "stagger": 0.06 },
+    "scroll": { "reveal": true }
+  },
+  "interactions": {
+    "background": { "type": "parallax", "depth": 0.08 },
+    "glow": { "type": "cursorLight", "blend": "screen" },
+    "title": { "type": "hover", "effect": "distort" }
+  },
+  "assets": []
+}

@@ -1,0 +1,19 @@
+node_modules/
+dist/
+build/
+out/
+.DS_Store
+*.log
+.screenshot/
+
+
+poster-engine/out/
+poster-engine/
+test-out-*
+out/
+
+assets/reference/reference/
+
+# 用户要求不上 GitHub：蒙娜丽莎素材与示例
+assets/reference/mona-*
+examples/mona-two-faces/

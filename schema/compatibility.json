@@ -1,0 +1,356 @@
+{
+  "version": "1.0.0",
+  "description": "Compatibility and anti-pattern rules for Poster Design Vocabulary.",
+  "rules": [
+    {
+      "id": "luxury_editorial",
+      "when": {
+        "design_movements": [
+          "luxury_editorial"
+        ]
+      },
+      "prefer": {
+        "typography.category": [
+          "serif",
+          "display_serif"
+        ],
+        "color.strategy": [
+          "monochrome",
+          "neutral",
+          "black_and_accent"
+        ],
+        "negative_space.amount": [
+          0.65,
+          1
+        ],
+        "density.overall": [
+          0.1,
+          0.35
+        ]
+      },
+      "avoid": {
+        "color.gradient": true,
+        "graphic_language.elements": [
+          "particles",
+          "noise"
+        ],
+        "motion.style": [
+          "chaotic",
+          "glitch"
+        ]
+      }
+    },
+    {
+      "id": "swiss",
+      "when": {
+        "design_movements": [
+          "swiss_international"
+        ]
+      },
+      "prefer": {
+        "grid.type": [
+          "8_column",
+          "12_column",
+          "baseline"
+        ],
+        "grid.break_grid": [
+          0,
+          0.25
+        ],
+        "typography.category": [
+          "grotesk",
+          "neo_grotesk"
+        ],
+        "composition.alignment": [
+          "left_edge",
+          "baseline"
+        ]
+      },
+      "avoid": {
+        "composition.balance": [
+          "chaotic"
+        ],
+        "color.gradient": true
+      }
+    },
+    {
+      "id": "brutalist",
+      "when": {
+        "design_movements": [
+          "brutalist"
+        ]
+      },
+      "prefer": {
+        "composition.structure": [
+          "asymmetric",
+          "broken_grid",
+          "edge_aligned"
+        ],
+        "typography.scale": [
+          "oversized",
+          "extreme"
+        ],
+        "materiality.imperfection": [
+          0.45,
+          0.95
+        ],
+        "design_tension.order_vs_chaos": [
+          0.55,
+          0.95
+        ]
+      },
+      "avoid": {
+        "corner_style": [
+          "rounded"
+        ],
+        "graphic_language.symbolism": [
+          "decorative"
+        ]
+      }
+    },
+    {
+      "id": "japanese_experimental",
+      "when": {
+        "design_movements": [
+          "japanese_experimental"
+        ]
+      },
+      "prefer": {
+        "composition.structure": [
+          "asymmetric",
+          "collage",
+          "broken_grid"
+        ],
+        "negative_space.distribution": [
+          "asymmetric",
+          "fragmented"
+        ],
+        "graphic_language.shape_language": [
+          "organic",
+          "irregular",
+          "mixed"
+        ]
+      },
+      "avoid": {
+        "color.strategy": [
+          "fluorescent"
+        ]
+      }
+    },
+    {
+      "id": "cyberpunk_guardrail",
+      "when": {
+        "design_movements": [
+          "cyberpunk"
+        ]
+      },
+      "prefer": {
+        "color.strategy": [
+          "black_and_accent",
+          "duotone"
+        ],
+        "materiality.physicality": [
+          0.1,
+          0.45
+        ]
+      },
+      "avoid": {
+        "color.palette_combinations": [
+          "purple_cyan_pink_gradient"
+        ],
+        "color.gradient": true,
+        "graphic_language.elements": [
+          "particles"
+        ]
+      },
+      "notes": "Avoid default neon-gradient, glow-heavy, particle-heavy AI aesthetics unless explicitly requested."
+    },
+    {
+      "id": "print_physicality",
+      "when": {
+        "materiality.medium": [
+          "printed",
+          "photocopied",
+          "risograph",
+          "screen_print",
+          "letterpress"
+        ]
+      },
+      "prefer": {
+        "materiality.imperfection": [
+          0.45,
+          0.9
+        ],
+        "texture.presence": [
+          0.35,
+          0.9
+        ]
+      },
+      "avoid": {
+        "texture.uniformity": [
+          0.85,
+          1
+        ]
+      }
+    },
+    {
+      "id": "experimental_typography",
+      "when": {
+        "typography.scale": [
+          "oversized",
+          "extreme"
+        ]
+      },
+      "prefer": {
+        "composition.structure": [
+          "asymmetric",
+          "broken_grid",
+          "edge_aligned"
+        ],
+        "visual_hierarchy.primary": [
+          "title"
+        ]
+      },
+      "avoid": {
+        "visual_hierarchy.reading_direction": [
+          "center_out"
+        ]
+      }
+    },
+    {
+      "id": "minimalism",
+      "when": {
+        "density.overall": [
+          0,
+          0.3
+        ]
+      },
+      "prefer": {
+        "negative_space.amount": [
+          0.65,
+          1
+        ],
+        "graphic_language.repetition": [
+          0,
+          0.3
+        ],
+        "color.strategy": [
+          "monochrome",
+          "neutral",
+          "black_and_accent"
+        ]
+      },
+      "avoid": {
+        "graphic_language.repetition": [
+          0.7,
+          1
+        ],
+        "texture.presence": [
+          0.7,
+          1
+        ]
+      }
+    },
+    {
+      "id": "high_motion",
+      "when": {
+        "motion.enabled": true
+      },
+      "prefer": {
+        "depth.mode": [
+          "layered",
+          "perspective",
+          "3d"
+        ],
+        "interaction.enabled": true
+      },
+      "avoid": {
+        "motion.intensity": [
+          0,
+          0.15
+        ]
+      }
+    },
+    {
+      "id": "ai_aesthetic_guardrail",
+      "when": {
+        "color.ai_aesthetic_risk": [
+          0.6,
+          1
+        ]
+      },
+      "prefer": {
+        "materiality.imperfection": [
+          0.35,
+          0.85
+        ],
+        "color.strategy": [
+          "monochrome",
+          "duotone",
+          "black_and_accent",
+          "neutral"
+        ]
+      },
+      "avoid": {
+        "color.gradient": true,
+        "motion.style": [
+          "glitch"
+        ],
+        "graphic_language.elements": [
+          "particles"
+        ]
+      },
+      "notes": "Use only when the user did not explicitly request those aesthetics."
+    }
+  ],
+  "anti_patterns": [
+    {
+      "id": "neon_gradient_default",
+      "signals": [
+        "purple",
+        "cyan",
+        "pink",
+        "gradient",
+        "glow"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "centered_everything",
+      "signals": [
+        "centered composition",
+        "center aligned typography",
+        "hero image centered"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "decorative_tech_noise",
+      "signals": [
+        "random lines",
+        "floating particles",
+        "fake coordinates",
+        "meaningless grids"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "rounded_card_stack",
+      "signals": [
+        "multiple cards",
+        "large corner radius",
+        "soft shadow"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "generic_glassmorphism",
+      "signals": [
+        "glass panels",
+        "blurred translucent cards",
+        "blue-purple gradient"
+      ],
+      "severity": "high"
+    }
+  ]
+}

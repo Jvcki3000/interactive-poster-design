@@ -1,0 +1,30 @@
+{
+  "source": "assets\\reference\\ref.jpg",
+  "palette": [
+    {
+      "hex": "#6fc4f1",
+      "count": 699,
+      "share": 0.1011
+    },
+    {
+      "hex": "#9e8e90",
+      "count": 671,
+      "share": 0.0971
+    },
+    {
+      "hex": "#640304",
+      "count": 576,
+      "share": 0.0833
+    },
+    {
+      "hex": "#870203",
+      "count": 536,
+      "share": 0.0775
+    },
+    {
+      "hex": "#68beed",
+      "count": 497,
+      "share": 0.0719
+    }
+  ]
+}

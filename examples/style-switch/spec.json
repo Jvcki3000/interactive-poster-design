@@ -1,0 +1,31 @@
+﻿{
+  "$comment": "style-switch: 按钮型切换海报风格（style.switchPhases 3 主题）+ 点击人物触发活动（hotspot action:link）",
+  "canvas": { "width": 1080, "height": 1620, "unit": "px", "responsive": true },
+  "content": {
+    "title": "SWITCH",
+    "subtitle": "ONE POSTER · MANY MOODS",
+    "date": "2026.12.18",
+    "location": "CLICK THE STYLE BUTTON · CLICK THE DOT TO VISIT",
+    "metadata": { "brand": "SWITCH LIVE", "tag": "MULTI-STYLE POSTER", "note": "3 THEMES · 1 POSTER" },
+    "hotspots": [
+      { "x": 50, "y": 40, "rx": 18, "ry": 24, "mode": "hover", "label": "VISIT SITE", "detail": "点击打开活动官网", "action": { "type": "link", "url": "https://example.com" } }
+    ]
+  },
+  "style": {
+    "colors": { "bg": "#0a0a14", "surface": "#15152a", "ink": "#f4f2ff", "accent": "#ff2bd6", "accent2": "#00e5ff", "muted": "#8a87a8" },
+    "typography": { "fontFamily": "'Arial Narrow', 'Helvetica Neue', Arial, sans-serif", "bodyFont": "'Helvetica Neue', Arial, sans-serif", "scaleRatio": 1.3, "titleScale": 2.8 },
+    "layout": { "gridColumns": 12, "gutter": 24, "margin": 56, "mode": "hero" },
+    "switchPhases": [
+      { "name": "NEON", "colors": { "bg": "#0a0a14", "surface": "#15152a", "ink": "#f4f2ff", "accent": "#ff2bd6", "accent2": "#00e5ff", "muted": "#8a87a8" }, "fx": { "glow": 2, "contrast": 1.15, "saturate": 1.2 } },
+      { "name": "WARM", "colors": { "bg": "#241610", "surface": "#4a2f1d", "ink": "#f4ece0", "accent": "#c9a86a", "accent2": "#8a6a4a", "muted": "#b7a68f" }, "fx": { "glow": 0.8 } },
+      { "name": "MONO", "colors": { "bg": "#101014", "surface": "#1a1a20", "ink": "#e8e8ec", "accent": "#cfcfd6", "accent2": "#8f8f99", "muted": "#9a9aa3" }, "fx": { "saturate": 0, "contrast": 1.2 } }
+    ]
+  },
+  "animation": { "title": { "reveal": "chars", "stagger": 0.06 }, "scroll": { "reveal": true } },
+  "interactions": {
+    "background": { "type": "parallax", "depth": 0.1 },
+    "glow": { "type": "cursorLight", "blend": "screen" },
+    "title": { "type": "hover", "effect": "color-shift" }
+  },
+  "assets": []
+}

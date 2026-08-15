@@ -1,0 +1,51 @@
+{
+  "source": "C:\\Users\\foshanwuyanzu\\Desktop\\poster\\poster-design\\assets\\reference\\web\\ref-swiss-la-isla.jpg",
+  "size": {
+    "width": 550,
+    "height": 778,
+    "ratio": "275:389"
+  },
+  "background": "#537d6b",
+  "is_dark": false,
+  "temperature": "warm",
+  "saturation": "mid",
+  "contrast": "high",
+  "density": 0.71,
+  "negative_space": 0.29,
+  "layout": {
+    "guess": "split",
+    "top": 0.21,
+    "middle": 0.4,
+    "bottom": 0.39
+  },
+  "text_bands": 2,
+  "has_large_type": true,
+  "strategy_guess": "unknown",
+  "palette": [
+    {
+      "hex": "#2e160d",
+      "count": 689,
+      "share": 0.1055
+    },
+    {
+      "hex": "#5d7f6e",
+      "count": 524,
+      "share": 0.0803
+    },
+    {
+      "hex": "#f4f0e4",
+      "count": 484,
+      "share": 0.0741
+    },
+    {
+      "hex": "#dabf8d",
+      "count": 470,
+      "share": 0.072
+    },
+    {
+      "hex": "#9e5c3a",
+      "count": 444,
+      "share": 0.068
+    }
+  ]
+}

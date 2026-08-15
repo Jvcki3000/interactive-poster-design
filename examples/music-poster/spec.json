@@ -1,0 +1,33 @@
+{
+  "$comment": "music-poster: NEON RUSH — 内容只含文案，视觉交给风格预设（--preset）",
+  "canvas": { "width": 1200, "height": 1600, "unit": "px", "responsive": true },
+  "content": {
+    "title": "NEON RUSH",
+    "subtitle": "SYNTHWAVE NIGHT",
+    "date": "05 SEP 2026",
+    "location": "TOKYO · WAREHOUSE 13",
+    "cta": "GET TICKETS",
+    "metadata": {
+      "brand": "NR//26",
+      "tag": "INTERACTIVE POSTER",
+      "lineup": "MIDNIGHT DRIVE · VECTOR · AURORA",
+      "time": "DOORS 21:00",
+      "note": "CLICK THE DATE FOR DETAILS"
+    }
+  },
+  "animation": {
+    "title": { "reveal": "chars", "stagger": 0.06 },
+    "glow": { "pulse": true },
+    "particles": { "count": 40 },
+    "scroll": { "reveal": true }
+  },
+  "interactions": {
+    "background": { "type": "parallax", "depth": 0.15 },
+    "glow": { "type": "cursorLight", "blend": "screen" },
+    "title": { "type": "hover", "effect": "distortion" },
+    "date": { "type": "click", "action": "expand" },
+    "cta": { "type": "hover", "effect": "magnetic" },
+    "poster": { "type": "tilt3d", "max": 5 }
+  },
+  "assets": []
+}

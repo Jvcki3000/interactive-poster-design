@@ -1,0 +1,58 @@
+﻿{
+  "$comment": "protagonist-movie: 用户上传人像为主角的电影海报。照片=assets/reference/protagonist-upload.png；热点 mode:hover 对准人物。",
+  "canvas": { "width": 1080, "height": 1620, "unit": "px", "responsive": true },
+  "content": {
+    "title": "UNTITLED",
+    "subtitle": "A FILM BY YOU",
+    "date": "2026.12.18",
+    "location": "IN THEATERS",
+    "metadata": {
+      "brand": "PRESENTS",
+      "tag": "A PROTAGONIST FILM",
+      "note": "HOVER THE CHARACTER TO EXPLORE"
+    },
+    "hotspots": [
+      {
+        "x": 50, "y": 42, "rx": 19, "ry": 30, "mode": "hover",
+        "label": "THE PROTAGONIST",
+        "meta": "CHARACTER PROFILE",
+        "detail": "你上传的主角——每个人都是自己故事的主角。",
+        "sections": [
+          { "heading": "Name", "text": "（待你提供角色名）" },
+          { "heading": "Role", "text": "主角 · 本片唯一的主人公" },
+          { "heading": "Quote", "text": "\"灯下的人，都有一段不肯说的故事。\"" }
+        ]
+      }
+    ]
+  },
+  "style": {
+    "colors": {
+      "bg": "#241610",
+      "surface": "#4a2f1d",
+      "ink": "#f4ece0",
+      "accent": "#c9a86a",
+      "accent2": "#8a6a4a",
+      "muted": "#b7a68f"
+    },
+    "typography": {
+      "fontFamily": "'Playfair Display', Georgia, 'Times New Roman', serif",
+      "bodyFont": "'Helvetica Neue', Arial, sans-serif",
+      "scaleRatio": 1.3,
+      "titleScale": 2.6
+    },
+    "layout": { "gridColumns": 12, "gutter": 24, "margin": 56, "mode": "hero" },
+    "imagery": {
+      "image": { "src": "../../assets/reference/protagonist-upload.png", "fit": "cover", "scrim": true, "zoom": true }
+    }
+  },
+  "animation": {
+    "title": { "reveal": "chars", "stagger": 0.06 },
+    "scroll": { "reveal": true }
+  },
+  "interactions": {
+    "background": { "type": "parallax", "depth": 0.1 },
+    "glow": { "type": "cursorLight", "blend": "screen" },
+    "title": { "type": "hover", "effect": "distort" }
+  },
+  "assets": []
+}

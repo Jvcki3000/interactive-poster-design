@@ -1,0 +1,81 @@
+{
+  "$comment": "protagonist-poster: 主人公 + 联网参考指纹。参考=瑞士 La isla minima 海报指纹；主人公图=公有领域电影剧照；热点 mode:hover：鼠标移到人物 → 人物高光 + 档案卡浮现（点击可钉住）",
+  "canvas": { "width": 1080, "height": 1620, "unit": "px", "responsive": true },
+  "content": {
+    "title": "NIAGARA",
+    "subtitle": "A NOIR INTERACTIVE POSTER",
+    "date": "1953 · RESTORED 4K",
+    "location": "IN THEATERS NOW",
+    "metadata": {
+      "brand": "CINEMA NOIR // 1953",
+      "tag": "INTERACTIVE POSTER",
+      "note": "CLICK THE CHARACTER TO EXPLORE — NO BUTTONS"
+    },
+    "hotspots": [
+      {
+        "x": 50, "y": 38, "rx": 16, "ry": 26, "mode": "hover",
+        "label": "THE PROTAGONIST",
+        "meta": "CHARACTER PROFILE",
+        "detail": "She steps out of the mist — the woman the whole town is watching.",
+        "sections": [
+          { "heading": "Name", "text": "Rose Loomis — played by Marilyn Monroe" },
+          { "heading": "Role", "text": "The femme fatale of Niagara Falls, 1953" },
+          { "heading": "Quote", "text": "\"There's only two things in this world I'm afraid of — and one of them is this town.\"" }
+        ]
+      },
+      {
+        "x": 50, "y": 64, "rx": 13, "ry": 17, "mode": "hover",
+        "label": "THE WHITE LOOK",
+        "meta": "COSTUME & LIGHT",
+        "detail": "White on white — Technicolor pushed past its comfort zone.",
+        "sections": [
+          { "heading": "Costume", "text": "Ivory dress, wide brim hat — a silhouette cut for the falls." },
+          { "heading": "Lighting", "text": "Backlit haze + hard key light: the classic noir rim." },
+          { "heading": "Color", "text": "Terracotta + sage + sand — lifted from the Swiss reference poster." }
+        ]
+      },
+      {
+        "x": 50, "y": 86, "r": 10, "mode": "click",
+        "label": "THE FALL",
+        "meta": "THE SCENE",
+        "detail": "Niagara Falls — 3,160 tons of water per second, and one secret between them.",
+        "sections": [
+          { "heading": "Location", "text": "Niagara Falls, Ontario / New York — shot on location, 1953." },
+          { "heading": "Genre", "text": "Film noir · Technicolor thriller" },
+          { "heading": "Runtime", "text": "92 minutes · Restored in 4K" }
+        ]
+      }
+    ]
+  },
+  "style": {
+    "colors": {
+      "bg": "#170e08",
+      "surface": "#2e160d",
+      "ink": "#f4f0e4",
+      "accent": "#dabf8d",
+      "accent2": "#9e5c3a",
+      "muted": "#b8a489"
+    },
+    "typography": {
+      "fontFamily": "'Arial Narrow', 'Helvetica Neue', Arial, sans-serif",
+      "bodyFont": "'Helvetica Neue', Arial, sans-serif",
+      "scaleRatio": 1.3,
+      "titleScale": 3.2
+    },
+    "layout": { "gridColumns": 12, "gutter": 24, "margin": 56, "mode": "hero" },
+    "imagery": {
+      "image": { "src": "../../assets/reference/protagonist.jpg", "fit": "cover", "duotone": true, "scrim": true, "zoom": true }
+    }
+  },
+  "animation": {
+    "title": { "reveal": "chars", "stagger": 0.06 },
+    "scroll": { "reveal": true }
+  },
+  "interactions": {
+    "background": { "type": "parallax", "depth": 0.1 },
+    "glow": { "type": "cursorLight", "blend": "screen" },
+    "poster": { "type": "tilt3d", "max": 5 },
+    "title": { "type": "hover", "effect": "distort" }
+  },
+  "assets": []
+}

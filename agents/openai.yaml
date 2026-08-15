@@ -1,0 +1,4 @@
+interface:
+  display_name: "Poster Design"
+  short_description: "交互海报：Brief→Spec→HTML→自检迭代"
+  default_prompt: "Use $poster-design to create an interactive poster from this brief."

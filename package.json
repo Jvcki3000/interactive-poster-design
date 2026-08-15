@@ -1,0 +1,9 @@
+{
+  "name": "poster-skill",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "start": "node scripts/serve.js . 8080"
+  }
+}

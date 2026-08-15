@@ -1,0 +1,53 @@
+{
+  "$comment": "nike-hoops: Nike 风格互动篮球海报 · 鼠标 3D 视差（poster-design skill 示例）",
+  "canvas": { "width": 1200, "height": 1600, "unit": "px", "responsive": true },
+  "content": {
+    "title": "FLIGHT",
+    "subtitle": "BASKETBALL COLLECTION · JUST DO IT",
+    "date": "2026 SEASON",
+    "location": "WORLDWIDE",
+    "price": "$180",
+    "cta": "SHOP NOW",
+    "metadata": {
+      "brand": "NIKE AIR",
+      "tag": "HOOPS",
+      "lineup": "AIR · FLIGHT · COURT",
+      "time": "DROP 01.16",
+      "note": "CLICK THE DATE FOR DETAILS",
+      "moreHeading": "THE COLLECTION"
+    }
+  },
+  "style": {
+    "colors": {
+      "bg": "#0a0a0a",
+      "surface": "#161616",
+      "ink": "#ffffff",
+      "accent": "#c7ff00",
+      "accent2": "#ff6b00",
+      "muted": "#8a8a8a"
+    },
+    "typography": {
+      "fontFamily": "'Arial Narrow', 'Impact', 'Arial Black', Arial, sans-serif",
+      "bodyFont": "'Helvetica Neue', Arial, sans-serif",
+      "scaleRatio": 1.25,
+      "titleScale": 2.6
+    },
+    "layout": { "gridColumns": 12, "gutter": 24, "margin": 56, "mode": "dynamic" },
+    "imagery": { "background": "diagonal volt field + glow", "duotone": true, "ball": { "depth": 0.4 } }
+  },
+  "animation": {
+    "title": { "reveal": "chars", "stagger": 0.05 },
+    "glow": { "pulse": true },
+    "particles": { "count": 24, "color": "#c7ff00" },
+    "scroll": { "reveal": true }
+  },
+  "interactions": {
+    "background": { "type": "parallax", "depth": 0.22 },
+    "glow": { "type": "cursorLight", "blend": "screen" },
+    "title": { "type": "hover", "effect": "distortion" },
+    "date": { "type": "click", "action": "expand" },
+    "cta": { "type": "hover", "effect": "magnetic" },
+    "poster": { "type": "tilt3d", "max": 7 }
+  },
+  "assets": []
+}

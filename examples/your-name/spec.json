@@ -1,0 +1,60 @@
+{
+  "$comment": "your-name: 用户上传人像为主角的电影海报（方向#2 Warm Minimal）。片名 YOUR NAME，可改中文「你的名字」。热点 hover 对准人物。",
+  "canvas": { "width": 1080, "height": 1620, "unit": "px", "responsive": true },
+  "content": {
+    "title": "YOUR NAME",
+    "subtitle": "A FILM BY YOU",
+    "date": "2026.12.18",
+    "location": "IN THEATERS",
+    "metadata": {
+      "brand": "PRESENTS",
+      "tag": "A PROTAGONIST FILM",
+      "note": "HOVER THE CHARACTER TO EXPLORE"
+    },
+    "hotspots": [
+      {
+        "x": 54, "y": 64, "rx": 34, "ry": 36, "mode": "hover",
+        "label": "THE PROTAGONIST",
+        "meta": "CHARACTER PROFILE",
+        "detail": "海报的主角——每个打开这张海报的人，都能在这里遇见自己。",
+        "sections": [
+          { "heading": "Name", "text": "你 · 照片里的主角" },
+          { "heading": "Hometown", "text": "一座会下流星雨的小城" },
+          { "heading": "Story", "text": "名字是最短的咒语：被记住的人，不会消失。" },
+          { "heading": "Quote", "text": "\"无论你在哪里，我一定会去见你。\"" }
+        ]
+      }
+    ]
+  },
+  "style": {
+    "colors": {
+      "bg": "#241610",
+      "surface": "#4a2f1d",
+      "ink": "#f4ece0",
+      "accent": "#c9a86a",
+      "accent2": "#8a6a4a",
+      "muted": "#b7a68f"
+    },
+    "typography": {
+      "fontFamily": "'Playfair Display', Georgia, 'Times New Roman', serif",
+      "bodyFont": "'Helvetica Neue', Arial, sans-serif",
+      "scaleRatio": 1.3,
+      "titleScale": 2.6,
+      "type": "serif"
+    },
+    "layout": { "gridColumns": 12, "gutter": 24, "margin": 56, "mode": "minimal" },
+    "imagery": {
+      "image": { "src": "../../assets/reference/protagonist-upload.png", "silhouette": "../../assets/reference/protagonist-upload-cutout.png", "fit": "cover", "scrim": true, "zoom": true }
+    }
+  },
+  "animation": {
+    "title": { "reveal": "chars", "stagger": 0.06 },
+    "scroll": { "reveal": true }
+  },
+  "interactions": {
+    "background": { "type": "parallax", "depth": 0.1 },
+    "glow": { "type": "cursorLight", "blend": "screen" },
+    "title": { "type": "hover", "effect": "color-shift" }
+  },
+  "assets": []
+}

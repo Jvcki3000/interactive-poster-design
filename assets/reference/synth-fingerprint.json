@@ -1,0 +1,51 @@
+{
+  "source": "C:\\Users\\foshanwuyanzu\\Desktop\\poster\\poster-engine\\assets\\reference\\synth-poster.png",
+  "size": {
+    "width": 900,
+    "height": 1200,
+    "ratio": "3:4"
+  },
+  "background": "#0d0d0d",
+  "is_dark": true,
+  "temperature": "neutral",
+  "saturation": "low",
+  "contrast": "high",
+  "density": 0.058,
+  "negative_space": 0.942,
+  "layout": {
+    "guess": "centered",
+    "top": 0.0,
+    "middle": 0.64,
+    "bottom": 0.36
+  },
+  "text_bands": 2,
+  "has_large_type": true,
+  "strategy_guess": "high-contrast",
+  "palette": [
+    {
+      "hex": "#0d0d0d",
+      "count": 6091,
+      "share": 0.8812
+    },
+    {
+      "hex": "#f0f0f0",
+      "count": 128,
+      "share": 0.0185
+    },
+    {
+      "hex": "#090909",
+      "count": 88,
+      "share": 0.0127
+    },
+    {
+      "hex": "#d50712",
+      "count": 86,
+      "share": 0.0124
+    },
+    {
+      "hex": "#0b0d0d",
+      "count": 76,
+      "share": 0.011
+    }
+  ]
+}

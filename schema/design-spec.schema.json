@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DesignSpec",
+  "description": "Skill（大脑）→ Engine（身体）的输入契约。AI 分析用户 Brief 后输出此结构，Engine 据此渲染交互海报。",
+  "type": "object",
+  "required": ["canvas", "content", "style", "interactions"],
+  "properties": {
+    "canvas": {
+      "type": "object",
+      "description": "画布与输出尺寸",
+      "required": ["width", "height"],
+      "properties": {
+        "width": { "type": "number", "minimum": 1 },
+        "height": { "type": "number", "minimum": 1 },
+        "unit": { "enum": ["px", "mm", "pt"], "default": "px" },
+        "responsive": { "type": "boolean", "default": true }
+      }
+    },
+    "content": {
+      "type": "object",
+      "description": "真实文案（100% 程序化排版）",
+      "properties": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "date": { "type": "string" },
+        "location": { "type": "string" },
+        "price": { "type": "string" },
+        "cta": { "type": "string" },
+        "metadata": { "type": "object", "additionalProperties": { "type": "string" } },
+        "hotspots": {
+          "type": "array",
+          "description": "图片/画面上可点击的热点区域（无按钮交互）",
+          "items": {
+            "type": "object",
+            "required": ["x", "y"],
+            "properties": {
+              "x": { "type": "number", "description": "中心点横向百分比 0-100" },
+              "y": { "type": "number", "description": "中心点纵向百分比 0-100" },
+              "r": { "type": "number", "description": "热点半径百分比（默认 8）" },
+              "label": { "type": "string", "description": "悬停提示标签" },
+              "detail": { "type": "string", "description": "点击弹出的信息" }
+            }
+          }
+        }
+      }
+    },
+    "style": {
+      "type": "object",
+      "description": "视觉方向：Design System 的落地值",
+      "required": ["colors", "typography"],
+      "properties": {
+        "colors": {
+          "type": "object",
+          "description": "颜色系统（设计 token）",
+          "additionalProperties": { "type": "string", "pattern": "^#" }
+        },
+        "typography": {
+          "type": "object",
+          "description": "排版 token：fontFamily / scaleRatio / 层级",
+          "additionalProperties": true
+        },
+        "layout": {
+          "type": "object",
+          "description": "版式：mode / grid / spacing / align / z-layers",
+          "properties": {
+            "mode": { "enum": ["classic", "hero", "split", "minimal", "dynamic"] },
+            "gridColumns": { "type": "number" },
+            "margin": { "type": "number" }
+          },
+          "additionalProperties": true
+        },
+        "imagery": {
+          "type": "object",
+          "description": "图像处理：素材引用与滤镜（blur / duotone / grain…）",
+          "additionalProperties": true
+        },
+            "weather": {
+      "type": "object",
+      "description": "实时天气海报：打开时定位城市 + Open-Meteo 实时天气 → 匹配 phases（match.group/isDay → colors/fx）",
+      "properties": {
+        "defaultCity": { "type": "string" },
+        "lat": { "type": "number" },
+        "lon": { "type": "number" },
+        "phases": { "type": "array", "items": { "type": "object", "required": ["name"], "additionalProperties": true } }
+      },
+      "additionalProperties": true
+    },
+"timePhases": {
+          "type": "array",
+          "description": "时间生命周期：≥2 个相位，海报按真实时间切换配色/滤镜（每相：hour / label / name / colors / fx）",
+          "items": { "type": "object", "required": ["hour"], "properties": { "hour": { "type": "number" }, "label": { "type": "string" }, "name": { "type": "string" }, "colors": { "type": "object", "additionalProperties": { "type": "string" } }, "fx": { "type": "object", "additionalProperties": true } }, "additionalProperties": true } }
+      }
+    },
+    "animation": {
+      "type": "object",
+      "description": "动画规则（声明式，交给 animation 模块）",
+      "additionalProperties": true
+    },
+    "interactions": {
+      "type": "object",
+      "description": "交互地图（声明式，交给 interaction 模块）",
+      "additionalProperties": true
+    },
+    "assets": {
+      "type": "array",
+      "description": "引用素材（本地路径或 URL）",
+      "items": {
+        "type": "object",
+        "required": ["id", "src"],
+        "properties": {
+          "id": { "type": "string" },
+          "src": { "type": "string" },
+          "type": { "enum": ["image", "texture", "font", "logo"] }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$comment": "故意做坏的 spec，用于演示自动迭代",
+  "canvas": {
+    "width": 1200,
+    "height": 1600
+  },
+  "content": {
+    "title": "A REALLY REALLY LONG TITLE THAT WILL OVERFLOW THE CANVAS FOR SURE",
+    "subtitle": "sub",
+    "date": "1 JAN",
+    "location": "HERE",
+    "cta": "GO",
+    "metadata": {
+      "brand": "X",
+      "tag": "Y"
+    }
+  },
+  "style": {
+    "colors": {
+      "bg": "#888888",
+      "ink": "#777777",
+      "accent": "#999999",
+      "accent2": "#aaaaaa",
+      "surface": "#7f7f7f",
+      "muted": "#666666"
+    },
+    "typography": {
+      "baseSize": 8,
+      "titleScale": 4
+    },
+    "layout": {
+      "margin": 8
+    }
+  }
+}

@@ -1,0 +1,1119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/poster-design/design-vocabulary.schema.json",
+  "title": "Poster Design Vocabulary",
+  "description": "A structured design grammar for AI-generated static and interactive posters.",
+  "type": "object",
+  "required": [
+    "design_vocabulary"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "design_vocabulary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "era": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "design_movements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "composition": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "structure": {
+              "enum": [
+                "centered",
+                "asymmetric",
+                "symmetrical",
+                "modular",
+                "split",
+                "full_bleed",
+                "collage",
+                "diagonal",
+                "radial",
+                "frame_within_frame",
+                "stacked",
+                "floating",
+                "edge_aligned",
+                "broken_grid"
+              ]
+            },
+            "orientation": {
+              "enum": [
+                "portrait",
+                "landscape",
+                "square",
+                "custom"
+              ]
+            },
+            "focal_point": {
+              "enum": [
+                "center",
+                "upper_left",
+                "upper_right",
+                "lower_left",
+                "lower_right",
+                "edge",
+                "multiple",
+                "none"
+              ]
+            },
+            "visual_axis": {
+              "enum": [
+                "horizontal",
+                "vertical",
+                "diagonal",
+                "radial",
+                "none"
+              ]
+            },
+            "balance": {
+              "enum": [
+                "stable",
+                "dynamic",
+                "unstable",
+                "tense",
+                "chaotic"
+              ]
+            },
+            "symmetry": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "edge_tension": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "cropping": {
+              "enum": [
+                "none",
+                "subtle",
+                "moderate",
+                "aggressive",
+                "extreme"
+              ]
+            },
+            "layering": {
+              "enum": [
+                "flat",
+                "shallow",
+                "medium",
+                "deep"
+              ]
+            },
+            "overlap": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "alignment": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "left_edge",
+                  "right_edge",
+                  "top_edge",
+                  "bottom_edge",
+                  "center_axis",
+                  "baseline",
+                  "mixed"
+                ]
+              }
+            }
+          }
+        },
+        "grid": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "enum": [
+                "none",
+                "4_column",
+                "6_column",
+                "8_column",
+                "12_column",
+                "modular",
+                "baseline",
+                "radial",
+                "custom",
+                "broken"
+              ]
+            },
+            "columns": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 48
+            },
+            "rows": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 48
+            },
+            "gutter": {
+              "enum": [
+                "none",
+                "tight",
+                "small",
+                "medium",
+                "large",
+                "custom"
+              ]
+            },
+            "margin": {
+              "enum": [
+                "none",
+                "tight",
+                "small",
+                "medium",
+                "large",
+                "custom"
+              ]
+            },
+            "baseline_grid": {
+              "type": "boolean"
+            },
+            "alignment_mode": {
+              "enum": [
+                "strict",
+                "mixed",
+                "free"
+              ]
+            },
+            "grid_visibility": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "break_grid": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "visual_hierarchy": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "primary": {
+              "enum": [
+                "title",
+                "image",
+                "portrait",
+                "number",
+                "logo",
+                "date",
+                "graphic"
+              ]
+            },
+            "secondary": {
+              "enum": [
+                "title",
+                "image",
+                "portrait",
+                "number",
+                "logo",
+                "date",
+                "graphic",
+                "metadata"
+              ]
+            },
+            "tertiary": {
+              "enum": [
+                "title",
+                "image",
+                "portrait",
+                "number",
+                "logo",
+                "date",
+                "graphic",
+                "metadata"
+              ]
+            },
+            "reading_direction": {
+              "enum": [
+                "top_to_bottom",
+                "left_to_right",
+                "diagonal",
+                "center_out",
+                "random",
+                "circular"
+              ]
+            },
+            "hierarchy_strength": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "scale_contrast": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "weight_contrast": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "typography": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "category": {
+              "enum": [
+                "grotesk",
+                "neo_grotesk",
+                "humanist_sans",
+                "geometric_sans",
+                "serif",
+                "display_serif",
+                "slab_serif",
+                "monospace",
+                "condensed",
+                "blackletter",
+                "handwritten",
+                "experimental",
+                "variable",
+                "mixed"
+              ]
+            },
+            "width": {
+              "enum": [
+                "ultra_condensed",
+                "condensed",
+                "normal",
+                "wide",
+                "ultra_wide"
+              ]
+            },
+            "weight": {
+              "enum": [
+                "thin",
+                "light",
+                "regular",
+                "medium",
+                "semibold",
+                "bold",
+                "black",
+                "variable"
+              ]
+            },
+            "contrast": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "extreme"
+              ]
+            },
+            "case": {
+              "enum": [
+                "uppercase",
+                "lowercase",
+                "title_case",
+                "mixed"
+              ]
+            },
+            "tracking": {
+              "enum": [
+                "very_tight",
+                "tight",
+                "normal",
+                "loose",
+                "very_loose"
+              ]
+            },
+            "leading": {
+              "enum": [
+                "very_tight",
+                "tight",
+                "normal",
+                "loose",
+                "very_loose"
+              ]
+            },
+            "scale": {
+              "enum": [
+                "micro",
+                "small",
+                "medium",
+                "large",
+                "oversized",
+                "extreme"
+              ]
+            },
+            "alignment": {
+              "enum": [
+                "left",
+                "right",
+                "center",
+                "justified",
+                "mixed"
+              ]
+            },
+            "orientation": {
+              "enum": [
+                "horizontal",
+                "vertical",
+                "rotated",
+                "mixed"
+              ]
+            },
+            "distortion": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "cropping": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "layering": {
+              "enum": [
+                "isolated",
+                "stacked",
+                "overlap",
+                "masked",
+                "mixed"
+              ]
+            },
+            "variable_font": {
+              "type": "boolean"
+            }
+          }
+        },
+        "color": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "strategy": {
+              "enum": [
+                "monochrome",
+                "duotone",
+                "tritone",
+                "analogous",
+                "complementary",
+                "split_complementary",
+                "triadic",
+                "black_and_accent",
+                "white_and_accent",
+                "neutral",
+                "earth",
+                "pastel",
+                "fluorescent",
+                "muted",
+                "high_contrast",
+                "low_contrast",
+                "unexpected_accent",
+                "colorless"
+              ]
+            },
+            "temperature": {
+              "enum": [
+                "warm",
+                "cool",
+                "neutral",
+                "mixed"
+              ]
+            },
+            "saturation": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "contrast": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "brightness": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "dominant_ratio": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "accent_ratio": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "accent_count": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 8
+            },
+            "gradient": {
+              "type": "boolean"
+            },
+            "palette": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^#[0-9A-Fa-f]{6}$"
+              }
+            },
+            "ai_aesthetic_risk": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "imagery": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "source": {
+              "enum": [
+                "photography",
+                "illustration",
+                "3d",
+                "typography_only",
+                "collage",
+                "diagram",
+                "texture",
+                "abstract",
+                "product",
+                "portrait",
+                "none",
+                "mixed"
+              ]
+            },
+            "subject": {
+              "type": "string"
+            },
+            "scale": {
+              "enum": [
+                "micro",
+                "small",
+                "medium",
+                "large",
+                "hero"
+              ]
+            },
+            "crop": {
+              "enum": [
+                "none",
+                "subtle",
+                "moderate",
+                "aggressive",
+                "extreme"
+              ]
+            },
+            "position": {
+              "enum": [
+                "center",
+                "edge",
+                "corner",
+                "full_bleed",
+                "multiple"
+              ]
+            },
+            "treatment": {
+              "enum": [
+                "raw",
+                "duotone",
+                "tritone",
+                "halftone",
+                "xerox",
+                "risograph",
+                "grain",
+                "blur",
+                "posterize",
+                "threshold",
+                "silhouette",
+                "cutout",
+                "pixelated",
+                "glitch",
+                "chromatic_aberration",
+                "thermal",
+                "infrared"
+              ]
+            },
+            "contrast": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "extreme"
+              ]
+            },
+            "depth": {
+              "enum": [
+                "flat",
+                "shallow",
+                "medium",
+                "deep"
+              ]
+            },
+            "focus": {
+              "enum": [
+                "soft",
+                "moderate",
+                "sharp",
+                "mixed"
+              ]
+            },
+            "color_treatment": {
+              "enum": [
+                "full_color",
+                "monochrome",
+                "duotone",
+                "muted",
+                "high_saturation",
+                "negative"
+              ]
+            },
+            "image_density": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "graphic_language": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "elements": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "line",
+                  "circle",
+                  "square",
+                  "rectangle",
+                  "polygon",
+                  "arrow",
+                  "cross",
+                  "dot",
+                  "grid",
+                  "frame",
+                  "barcode",
+                  "qrcode",
+                  "coordinate",
+                  "annotation",
+                  "number",
+                  "symbol",
+                  "diagram",
+                  "chart",
+                  "noise",
+                  "pattern"
+                ]
+              }
+            },
+            "shape_language": {
+              "enum": [
+                "geometric",
+                "organic",
+                "mechanical",
+                "fluid",
+                "irregular",
+                "mixed"
+              ]
+            },
+            "line_weight": {
+              "enum": [
+                "hairline",
+                "thin",
+                "medium",
+                "bold",
+                "variable"
+              ]
+            },
+            "corner_style": {
+              "enum": [
+                "sharp",
+                "slightly_rounded",
+                "rounded",
+                "mixed"
+              ]
+            },
+            "repetition": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "pattern": {
+              "enum": [
+                "none",
+                "linear",
+                "radial",
+                "modular",
+                "random",
+                "generative"
+              ]
+            },
+            "symbolism": {
+              "enum": [
+                "decorative",
+                "semantic",
+                "functional",
+                "ambiguous"
+              ]
+            }
+          }
+        },
+        "texture": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "presence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "type": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "paper",
+                  "paper_grain",
+                  "film_grain",
+                  "dust",
+                  "noise",
+                  "ink_bleed",
+                  "screen_print",
+                  "risograph",
+                  "xerox",
+                  "fold",
+                  "scratch",
+                  "fabric",
+                  "metal",
+                  "glass",
+                  "plastic",
+                  "none"
+                ]
+              }
+            },
+            "scale": {
+              "enum": [
+                "fine",
+                "medium",
+                "coarse",
+                "mixed"
+              ]
+            },
+            "contrast": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "uniformity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "depth": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "mode": {
+              "enum": [
+                "flat",
+                "layered",
+                "photographic",
+                "3d",
+                "isometric",
+                "perspective",
+                "surreal"
+              ]
+            },
+            "layers": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 20
+            },
+            "perspective": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "parallax": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "blur_depth": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "foreground_ratio": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "motion": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "style": {
+              "enum": [
+                "static",
+                "subtle",
+                "organic",
+                "mechanical",
+                "kinetic",
+                "glitch",
+                "elastic",
+                "fluid",
+                "cinematic",
+                "chaotic"
+              ]
+            },
+            "intensity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "speed": {
+              "enum": [
+                "instant",
+                "fast",
+                "medium",
+                "slow",
+                "very_slow"
+              ]
+            },
+            "direction": {
+              "enum": [
+                "none",
+                "horizontal",
+                "vertical",
+                "diagonal",
+                "radial",
+                "multi_axis"
+              ]
+            },
+            "loop": {
+              "type": "boolean"
+            },
+            "easing": {
+              "enum": [
+                "linear",
+                "ease_in",
+                "ease_out",
+                "ease_in_out",
+                "spring",
+                "steps"
+              ]
+            },
+            "elements": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "background",
+                  "image",
+                  "title",
+                  "metadata",
+                  "graphic",
+                  "particles",
+                  "light",
+                  "texture",
+                  "all"
+                ]
+              }
+            }
+          }
+        },
+        "interaction": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "primary": {
+              "enum": [
+                "none",
+                "cursor",
+                "hover",
+                "click",
+                "scroll",
+                "drag",
+                "touch",
+                "keyboard",
+                "audio",
+                "time",
+                "location"
+              ]
+            },
+            "secondary": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "cursor",
+                  "hover",
+                  "click",
+                  "scroll",
+                  "drag",
+                  "touch",
+                  "keyboard",
+                  "audio",
+                  "time",
+                  "location"
+                ]
+              }
+            },
+            "intensity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "responsiveness": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "discoverability": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "density": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "overall": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "text": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "image": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "graphic": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "information": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "negative_space": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "amount": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "distribution": {
+              "enum": [
+                "uniform",
+                "central",
+                "asymmetric",
+                "edge",
+                "fragmented",
+                "compressed"
+              ]
+            },
+            "location": {
+              "enum": [
+                "none",
+                "upper_left",
+                "upper_right",
+                "lower_left",
+                "lower_right",
+                "center",
+                "edge",
+                "multiple"
+              ]
+            },
+            "tension": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "materiality": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "medium": {
+              "enum": [
+                "digital",
+                "printed",
+                "photocopied",
+                "screen_print",
+                "risograph",
+                "letterpress",
+                "offset",
+                "newspaper",
+                "magazine",
+                "film",
+                "mixed_media"
+              ]
+            },
+            "physicality": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "imperfection": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "surface": {
+              "enum": [
+                "glossy",
+                "matte",
+                "rough",
+                "fibrous",
+                "metallic",
+                "glass",
+                "plastic",
+                "mixed"
+              ]
+            },
+            "printing_process": {
+              "enum": [
+                "none",
+                "offset",
+                "screen_print",
+                "risograph",
+                "letterpress",
+                "xerox",
+                "thermal",
+                "mixed"
+              ]
+            }
+          }
+        },
+        "branding": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "logo_prominence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "brand_color_strictness": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "system_consistency": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "design_tension": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "order_vs_chaos": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "precision_vs_imperfection": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "minimalism_vs_density": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "static_vs_dynamic": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "legibility_vs_expression": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "digital_vs_physical": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "constraints": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "avoid": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "must_include": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "max_gradients": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 10
+            },
+            "max_accent_colors": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 8
+            },
+            "max_interaction_layers": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 20
+            }
+          }
+        }
+      }
+    }
+  }
+}
