@@ -9,6 +9,8 @@ import { listDnaPresets, getDnaPreset, pickDnaPreset, mutateDna } from '../engin
 import { validateDna } from '../engine/design-dna/dna.js';
 import { dnaToSpec } from '../engine/design-dna/index.js';
 import { interpretMood, applyDelta, conceptualName } from '../engine/intent/index.js';
+import { inferRole, treatmentsFor } from '../engine/materials/index.js';
+import { analyzeImages } from '../engine/materials/analyze.js';
 import { render } from '../renderer/html/index.js';
 
 /** 核心：给定 brief + mood，产出 3 个方向（含 DNA/spec/渲染） */
@@ -18,6 +20,13 @@ export function runExplore(brief, opts = {}) {
   const outDir = resolve(opts.out || 'out/explore');
   const renderAll = !!opts.render;
   const moodDelta = interpretMood(moods);
+  // 素材：同一素材每个方向用不同处理/层级
+  let material = null;
+  if (opts.image) {
+    const [analysis] = analyzeImages([opts.image]);
+    const role = opts.role || inferRole(analysis);
+    material = { analysis, role, treatments: opts.treatment ? [opts.treatment] : treatmentsFor(role), hierarchy: [0.85, 0.6, 0.4] };
+  }
   const lines = [];
   if (moods.length) lines.push('mood → 已按 ' + moods.join(', ') + ' 调整设计（内部翻译，无需懂术语）');
   function pickThree() {
@@ -35,7 +44,13 @@ export function runExplore(brief, opts = {}) {
     if (Object.keys(moodDelta).length) dna = applyDelta(dna, moodDelta);
     dna = mutateDna(dna, { seed: seed + i * 137 });
     const v = validateDna(dna);
-    const spec = dnaToSpec(dna, { title: opts.title || 'POSTER', date: opts.date, location: opts.location });
+    let matEntry;
+    if (material) {
+      const treatment = material.treatments[i % material.treatments.length];
+      matEntry = { id: 'material_0' + (i + 1), source_type: 'image', source_url: opts.image, filename: String(opts.image).split(/[\\/]/).pop(), role: material.role, treatment, hierarchy: material.hierarchy[i], placement: material.role === 'background' ? 'full_bleed' : 'center' };
+      dna.design_vocabulary.materials = [matEntry];
+    }
+    const spec = dnaToSpec(dna, { title: opts.title || 'POSTER', date: opts.date, location: opts.location, image: matEntry ? matEntry.source_url : undefined, treatment: matEntry ? matEntry.treatment : undefined });
     const d = dna.design_vocabulary;
     const [name, concept] = conceptualName(i);
     const desc = [ (d.composition||{}).structure, (d.typography||{}).category, (d.color||{}).strategy, (d.materiality||{}).medium ].filter(Boolean).join(' · ');
@@ -65,5 +80,6 @@ const res = runExplore(brief, {
   moods: (flagVal('moods') || '').split(',').map((s) => s.trim()).filter(Boolean),
   seed: flagVal('seed'), out: flagVal('out'), render: args.includes('--render'),
   title: flagVal('title'), date: flagVal('date'), location: flagVal('location'),
+  image: flagVal('image'), role: flagVal('role'), treatment: flagVal('treatment'),
 });
 process.stdout.write(res.lines.join('\n') + '\n');

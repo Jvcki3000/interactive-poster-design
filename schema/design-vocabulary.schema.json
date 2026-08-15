@@ -19,7 +19,8 @@
             "type": "string"
           }
         },
-        "design_movements": {
+        "materials": { "type": "array", "description": "用户上传素材（Material Intelligence）", "items": { "type": "object", "properties": { "id": { "type": "string" }, "source_type": { "type": "string" }, "source_url": { "type": "string" }, "filename": { "type": "string" }, "role": { "type": "string", "enum": ["hero","secondary","background","texture","collage","logo","information","decorative"] }, "treatment": { "type": "string" }, "hierarchy": { "type": "number", "minimum": 0, "maximum": 1 }, "placement": { "type": "string" } } } },
+  "design_movements": {
           "type": "array",
           "items": {
             "type": "string"

@@ -1,49 +1,81 @@
-# Interactive Poster Design — 交互式海报生成 Skill
+# poster-engine
 
-![test](https://github.com/Jvcki3000/interactive-poster-design/actions/workflows/test.yml/badge.svg)
+> Skill 是"大脑"，Engine 是"身体"。
+> 本仓库是 **Interactive Poster Skill** 的可复用运行核心：接收 **Design Spec**，输出可交互的 HTML/SVG/CSS/JS 海报。
 
-把「输入需求 → 引导 → 设计方向 → 生成 → 自检 → 迭代」变成一条命令的 **Codex Skill**。
-
-> **Don't prompt the poster. Art-direct it.** —— 首次体验像和艺术总监合作，而不是配置 AI 生图器。
-
-## 一句话
-
-仓库根目录即完整 Skill（`SKILL.md` 在此）：**一个目录，零外部依赖，装进去就能用**。
+## 架构
 
 ```
-Brief → Design Director → Design DNA → 兼容检查 → 3 方向 → Renderer → Motion/Interaction → Critic → Anti-AI → 迭代
+poster-engine/
+├── renderer/          # 渲染核心：Design Spec → HTML ✅ V0.3
+├── typography/        # 排版：字号阶梯 / cqw 换算 ✅
+├── layout/            # 版式：栅格 / Z 轴分层 ✅
+├── critic/            # Design Critic 自检评分（V0.3）✅
+├── presets/           # 风格预设 swiss/editorial/minimal/experimental/cyberpunk（V0.3）✅
+├── palette/           # 参考图色板 → 角色色（V0.3）✅
+├── animation/         # 动画系统（运行时由 renderer 内联）
+├── interaction/       # 交互系统（运行时由 renderer 内联）
+├── assets/            # 素材（reference/ 参考图）
+├── schema/            # 契约：Design Spec 的 JSON Schema ✅
+├── scripts/           # render / serve / iterate / palette.py ✅
+├── examples/          # event-poster ✅ / music-poster ✅ / brand-poster（占位）
+└── tests/             # node --test ✅ 22 个
 ```
-
-## 能力
-
-- **Design DNA 中枢**：schema 校验 / 36 个结构化预设 / 受控变异 / DNA→spec 适配器
-- **Design Director**：一条命令出海报（`poster.js director "<brief>" --render`）
-- **首次使用引导**：Welcome → Brief → Mood → 3 方向 → 细化 → 生成 → 演化（隐藏内部术语，<90s 出结果）
-- **渲染引擎**：Grid / Typography-as-Image / 语义图形 / 物理材质 / 8 种动效 / 零按钮交互
-- **质量闭环**：Design Critic（10 维）+ Anti-AI（统一规则源）+ 自动迭代（≤3，截图 QA）+ 基准（Diversity ≥0.70）
-
-## 安装（其他 Agent）
-
-```bash
-git clone https://github.com/Jvcki3000/interactive-poster-design.git
-# 链接到 ~/.codex/skills/poster-design（Windows mklink /J，macOS/Linux ln -s）
-# 或 codex skills install --repo Jvcki3000/interactive-poster-design --ref main
-```
-
-依赖：Node ≥ 18（可选 Python + pillow/mediapipe/rembg，用于取色/分割）。
 
 ## 快速开始
 
 ```bash
-cd <repo>
-node scripts/poster.js director "地下电子音乐节海报" --render    # 一条命令出海报
-node scripts/poster.js explore "<brief>" --moods RAW,LOUD        # 首次体验：3 个方向
-node scripts/poster.js bench                                      # 基准 + 多样性报告
-node scripts/poster.js dna-presets list                           # 查看 36 个设计预设
+npm test                                          # 22 个单元测试
+
+# 渲染（含 Design Critic 自检）
+node scripts/render.js examples/event-poster/spec.json --out out/event-poster --critic
+
+# 多风格：同一内容套不同预设
+node scripts/render.js examples/music-poster/spec.json --out out/music-poster/cyberpunk --preset cyberpunk
+node scripts/render.js examples/music-poster/spec.json --out out/music-poster/editorial --preset editorial
+
+# 参考图取色 → 海报配色
+python scripts/palette.py assets/reference/ref.jpg --colors 5 --out assets/reference/ref-palette.json
+node scripts/render.js examples/music-poster/spec.json --out out/music-poster/from-reference --palette assets/reference/ref-palette.json
+
+# 自动迭代：render → critic → 自动修复 → 再渲染
+node scripts/iterate.js examples/bad-demo-spec.json --max 5 --out out/iterated-bad
+
+# 预览（自动打印真实端口，目录列表可点击）
+node scripts/serve.js
 ```
 
-## 文档
+## 已实现能力
 
-- `docs/first-time-ux.md` — 首次使用引导
-- `docs/architecture.md` / `design-system.md` / `presets.md` / `mutation.md` / `critic.md` / `interaction.md` / `benchmarking.md`
-- `agents/` — design-director / design-critic / interaction-director
+### V0.1
+- Text Reveal / Mouse Parallax / Cursor Light / Hover Distortion / Click Expand / Magnetic CTA / Responsive
+
+### V0.2
+- Particles（Canvas 粒子）/ 3D Tilt / Scroll Reveal
+
+### V0.3
+- **Design Critic 自检评分**：7+1 维度打分（hierarchy/typography/composition/contrast/balance/brandConsistency/readability + originality 人工项），加权总分 ≥7 为 PASS，输出改进建议
+- **Style Presets**：5 套风格预设（swiss/editorial/minimal/experimental/cyberpunk），同一内容一键换风格；spec 显式值优先生效
+- **Reference Image**：`scripts/palette.py`（PIL）从参考图提取主色板 → `--palette` 映射成 bg/ink/accent 等角色色
+- **自动迭代**：`scripts/iterate.js` 循环 render→critic→自动修复（对比度/标题溢出/字号/边距）直到 PASS
+- **图形层**（`style.imagery.ball`）：CSS 绘制的可视差图形元素（如篮球），独立深度叠加 3D 视差
+- **排版模式**（`style.layout.mode`）：classic / hero / split / minimal / dynamic 五种构图
+- **Design Director**（`scripts/directions.js`）：一次生成 6 个不同设计方向（色彩策略 × 排版 × 字体）
+- **图片层 + 热点**（`style.imagery.image` / `content.hotspots`）：照片上的无按钮交互（悬停标签、点击信息卡）
+- **Anti-AI Design Critic**：AI-ness 评分（0-100）+ <25 门禁，自动迭代降 AI 味
+- **Color Strategy**（`color-strategy`）：12 种色彩策略生成器，自动修正对比度
+
+## 开发阶段
+
+| 阶段 | 内容 | 状态 |
+| --- | --- | --- |
+| V0.1 | Static → Interactive 基础能力 | ✅ 完成 |
+| V0.2 | + Particles / 3D Tilt / Scroll Reveal | ✅ 完成 |
+| V0.3 | + Design Critic / Style Presets / Reference Image / 自动迭代 | ✅ 完成 |
+| V0.4 | + Multi-page / Audio reactive / WebGL / Generative graphics | 待开发 |
+
+## 约定
+
+- ES Modules（`"type": "module"`），测试用内置 `node:test`
+- 各模块通过 Design Spec 沟通，仅 `renderer` 负责组装
+- 输出零依赖、可直接双击打开的 `index.html`

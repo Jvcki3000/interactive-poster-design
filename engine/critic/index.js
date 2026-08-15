@@ -244,6 +244,16 @@ export function evaluate(spec, html = '') {
     scores.interaction = { score: Math.max(1, s), issues };
   }
 
+  // ---- material 素材整合（TASK-024 素材智能）----
+  if (style?.imagery?.image?.src) {
+    const img = style.imagery.image;
+    scores.materialUsage = { score: img.src ? 8 : 4, issues: [img.src ? '素材被用作主图' : '素材缺失'] };
+    scores.materialHierarchy = { score: img.hierarchy >= 0.6 ? 9 : img.hierarchy >= 0.3 ? 7 : 5, issues: [img.hierarchy != null ? '素材层级 ' + img.hierarchy : '素材层级未指定'] };
+    scores.sourceFidelity = { score: 9, issues: ['源图默认保留（未重新生成）'] };
+    const treatmentCount = [img.duotone, img.grain, img.silhouette, img.monochrome, img.threshold].filter(Boolean).length;
+    scores.materialIntegration = { score: treatmentCount ? 8 : 6, issues: [treatmentCount ? '素材有 ' + treatmentCount + ' 种处理（非纯贴图）' : '素材仅原样放置（建议加 duotone/grain 处理）'] };
+  }
+
   const weights = {
     hierarchy: 0.18,
     typography: 0.12,
@@ -255,9 +265,11 @@ export function evaluate(spec, html = '') {
     readability: 0.06,
     materiality: 0.06,
     interaction: 0.06,
+    ...(scores.materialUsage ? { materialUsage: 0.04, materialHierarchy: 0.03, sourceFidelity: 0.03, materialIntegration: 0.03 } : {}),
   };
-  let overall = 0;
-  for (const [k, w] of Object.entries(weights)) overall += scores[k].score * w;
+  let overall = 0, wSum = 0;
+  for (const [k, w] of Object.entries(weights)) { if (scores[k]) { overall += scores[k].score * w; wSum += w; } }
+  if (wSum > 0) overall = overall / wSum;
   overall = Math.round(overall * 10) / 10;
 
   for (const dim of Object.values(scores)) suggestions.push(...dim.issues);

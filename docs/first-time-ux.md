@@ -25,6 +25,12 @@ Welcome → Brief → Mood → Explore 3 Directions → Choose → Refine → Ge
 - 可选补充：标题 / 日期 / 地点 / 品牌 / CTA。
 - 占位示例："An experimental electronic music festival in Shanghai. Dark, energetic, and slightly chaotic."
 
+### Materials（素材，可选）
+- 问：**"你有没有想用的东西？"**（照片 / Logo / 图形 / 纹理）——[ 上传 ] / [ 不带素材继续 ]
+- 流程：上传 → **Material Intelligence**（分析 → 角色推断 → 处理建议）→ 素材板
+- 角色/处理可改：Hero / 背景 / 设计元素 / 纹理 / 给我惊喜（内部映射见 `docs/material-intelligence-ux.md` + `poster.js materials`）
+- 同一素材可产出 3 个不同方向（处理/层级/构图不同，不只换色）
+
 ### Mood（什么感觉）
 - 问：**"它应该是什么感觉？选 2–3 个词。"**（最多 3 个）
 - 词表：RAW / REFINED / LOUD / QUIET / DENSE / SPARSE / PLAYFUL / SERIOUS / CHAOTIC / PRECISE / DIGITAL / PHYSICAL / EDITORIAL / EXPERIMENTAL / CINEMATIC / INTIMATE。

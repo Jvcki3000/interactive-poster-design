@@ -14,6 +14,8 @@ import { mutateDna } from '../engine/design-dna/dna-presets.js';
 import { validateDna, checkCompatibility } from '../engine/design-dna/dna.js';
 import { dnaToSpec } from '../engine/design-dna/index.js';
 import { render } from '../renderer/html/index.js';
+import { inferRole, treatmentsFor } from '../engine/materials/index.js';
+import { analyzeImages } from '../engine/materials/analyze.js';
 
 const args = process.argv.slice(2);
 const flagVal = (name) => { const i = args.indexOf('--' + name); return i >= 0 ? args[i + 1] : undefined; };
@@ -80,6 +82,14 @@ if (args.includes('--render')) {
     title: flagVal('title') || (brief.split(/[，。,.!?？\s]/)[0].slice(0, 24) || 'UNTITLED'),
     date: flagVal('date'), location: flagVal('location'),
   };
+  if (flagVal('image')) {
+    const [analysis] = analyzeImages([flagVal('image')]);
+    const role = flagVal('role') || inferRole(analysis);
+    const treatment = flagVal('treatment') || treatmentsFor(role)[0];
+    dna.design_vocabulary.materials = [{ id: 'material_01', source_type: 'image', source_url: flagVal('image'), filename: String(flagVal('image')).split(/[\\/]/).pop(), role, treatment, hierarchy: 0.8, placement: 'full_bleed' }];
+    toSpecOpts.image = flagVal('image'); toSpecOpts.treatment = treatment;
+    console.log('素材: 角色=' + role + ' 处理=' + treatment);
+  }
   const spec = dnaToSpec(dna, toSpecOpts);
   if (toSpecOpts.__colorGuarded) {
     console.log('colorGuard: ⚠ 风险 ' + toSpecOpts.__colorGuarded.risk.toFixed(2) + ' > 0.6，已自动换安全色板 ' + JSON.stringify(toSpecOpts.__colorGuarded.after));

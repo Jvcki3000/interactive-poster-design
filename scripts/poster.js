@@ -41,9 +41,14 @@ function absolutizePaths(command, args) {
     if (out[0] === 'to-spec') { if (out[1]) out[1] = abs(out[1]); }
     else { const f = out.findIndex((a) => a && !a.startsWith('--')); if (f >= 0) out[f] = abs(out[f]); }
     set(out.indexOf('--out'), null);
+  } else if (command === 'explore') {
+    set(out.indexOf('--out'), null);
+    set(out.indexOf('--image'), null);
   } else if (command === 'director') {
     set(out.indexOf('--out'), null);
-  } else if (command === 'explore') {
+    set(out.indexOf('--image'), null);
+  } else if (command === 'materials') {
+    for (let i = 0; i < out.length; i++) { const a = out[i]; if (a && !a.startsWith('--') && !/^-/.test(a) && !a.endsWith('.json')) out[i] = abs(a); }
     set(out.indexOf('--out'), null);
   } else if (command === 'refine') {
     const f = out.findIndex((a) => a && a.endsWith('.json')); if (f >= 0) out[f] = abs(out[f]);
@@ -131,6 +136,7 @@ const usage = () => {
   evolve      <dna.json> "<反馈/方向>" [--out workspace] [--seed N] [--render]  # Phase D：演化 + 版本历史（可回退）
   surprise    [--seed N] [--render] [--out dir]                     # Phase E：给我惊喜（随机主题 → 3 方向）
   lab         "<brief>" [--preset key] [--moods X] [--show-dna]    # Phase E：Advanced Design Lab（高级）
+  materials   <图片...> [--out board.json] [--role hero]            # 素材智能：上传板 + 分析 + 角色 + 处理建议
   bench       [--seed N] [--limit M] [--out dir]                    # 基准：24 briefs → 多样性/质量报告（Diversity ≥0.70）
   serve       [dir] [port]`);
 };
@@ -173,6 +179,7 @@ else if (command === 'refine') target = join(engine, 'scripts', 'refine.js');
 else if (command === 'evolve') target = join(engine, 'scripts', 'evolve.js');
 else if (command === 'surprise') target = join(engine, 'scripts', 'surprise.js');
 else if (command === 'lab') target = join(engine, 'scripts', 'lab.js');
+else if (command === 'materials') target = join(engine, 'scripts', 'materials.js');
 else {
   usage();
   process.exit(1);

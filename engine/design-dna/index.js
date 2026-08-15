@@ -3,6 +3,7 @@ import { validateDna, unwrap, aiRiskScore } from './dna.js';
 import { guardColors } from '../color/anti-ai.js';
 import { elementsToGraphics } from '../graphics/index.js';
 import { imageryToSpec } from '../imagery/index.js';
+import { TREATMENT_SPEC } from '../materials/index.js';
 
 const ORIENT_CANVAS = {
   portrait: { width: 1080, height: 1620 },
@@ -169,7 +170,7 @@ export function dnaToSpec(dna, opts = {}) {
       ...(Object.keys(fx).length ? { fx } : {}),
       ...(materiality.medium ? { materiality: { medium: materiality.medium, imperfection: materiality.imperfection ?? 0.5, grain: materiality.physicality ?? 0.4 } } : {}),
       ...(graphicsList.length ? { graphics: graphicsList } : {}),
-      ...(opts.image ? { imagery: { image: { src: opts.image, ...imageryToSpec(d.imagery || {}) } } } : {}),
+      ...(opts.image ? { imagery: { image: { src: opts.image, ...imageryToSpec(d.imagery || {}), ...(opts.treatment ? (TREATMENT_SPEC[opts.treatment] || {}) : {}) } } } : {}),
     },
     animation: { ...anim, ...(motionStyle !== 'static' ? { motionStyle } : {}) },
     interactions,

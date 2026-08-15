@@ -265,6 +265,13 @@ Welcome（MAKE SOMETHING WORTH LOOKING AT / Start creating / Surprise me）
 **文案**：用 "How should it feel? / Three ways we could take this. / What should we change? / Let's push it further."；禁止 "Select your Design DNA preset" 等技术话术。
 **错误态**：保留用户选择（"That direction didn't come together. 你的选择都还在。"），绝不抹掉当前 DNA。
 **老用户**：跳过引导，显示 "What are we making today?"。
+
+**素材智能（Material Intelligence）**：用户上传图片/Logo/纹理成为一等设计素材——
+- `poster.js materials <图片...>` —— 上传板 + 分析（尺寸/朝向/主色/对比/人物/Logo）+ 角色推断 + 处理建议
+- `explore/director --image <path> [--role hero] [--treatment duotone]` —— 素材进入 3 方向 / 单海报（同一素材不同处理）
+- `refine "把它做成双色调"` —— 自然语言素材指令 → 改 role/treatment/hierarchy
+- 源图默认保留（source fidelity）；Critic 有素材整合维度；evolve 不重新生成源图
+- 详情：`docs/material-intelligence-ux.md`
 **Phase D/E（已完成）**：`poster.js evolve`（演化 + 版本历史可回退）/ `poster.js surprise`（随机主题 3 方向）/ `poster.js lab`（高级 Design Lab）。
 
 ## References
