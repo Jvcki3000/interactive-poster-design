@@ -17,6 +17,6 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install Python deps
-        run: pip install pillow pyyaml
+        run: pip install pillow pyyaml numpy
       - name: Run tests
         run: npm test
